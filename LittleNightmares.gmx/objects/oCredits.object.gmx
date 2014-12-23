@@ -47,7 +47,8 @@
 
 if (mouse_check_button_pressed(mb_left) &amp;&amp; distance_to_point(mouse_x,mouse_y) = 0)
     {
-    scrMessageBox("Credits:","Programm,graphic,sounds, and other: Matěj Štágl##Special thanks to: Oki Jamota for his girl sprites");
+
+    scrMessageBox("Autoři:","Matěj Štágl (Lord of flies): zakladatel projektu, programování, grafika, level design a zvuky##(Splicee): programování, level design a grafika###Speciální poděkování: Oki Jamota: sprit Alice");
     }
 </string>
           </argument>

@@ -68,6 +68,7 @@
       <sprite>sprites\sMerchant</sprite>
     </sprites>
     <sprite>sprites\sMessageBox</sprite>
+    <sprite>sprites\sSetings</sprite>
     <sprite>sprites\sprite27</sprite>
     <sprite>sprites\sNextLevel</sprite>
     <sprite>sprites\sWall3</sprite>
@@ -127,6 +128,7 @@
   <fonts name="fonts">
     <font>fonts\fnt0</font>
     <font>fonts\fntText</font>
+    <font>fonts\fntLetters</font>
   </fonts>
   <objects name="objects">
     <object>objects\oPlayer</object>
@@ -192,6 +194,7 @@
       <object>objects\par_wall</object>
       <object>objects\oLight</object>
       <object>objects\oMessageBox</object>
+      <object>objects\oSetings</object>
       <object>objects\oVariableController</object>
     </objects>
     <objects name="Decorations">
@@ -214,9 +217,10 @@
       <object>objects\oMerchant</object>
     </objects>
   </objects>
+  <timelines name="timelines"/>
   <rooms name="rooms">
-    <room>rooms\mapTutorial</room>
     <room>rooms\mapMainMenu</room>
+    <room>rooms\mapTutorial</room>
     <room>rooms\mapLevel2</room>
     <room>rooms\mapLevel1</room>
   </rooms>

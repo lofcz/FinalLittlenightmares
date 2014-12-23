@@ -25,11 +25,18 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>screen = surface_create(room_width,room_height);
-surface_set_target(screen);
-draw_clear_alpha(c_black, 0); 
-bac = background_create_from_surface(screen,view_xview[0],view_yview[0],1024,768,0,0);
-surface_reset_target();
+            <string>screen_save("workingscreenie.png");
+
+instance_deactivate_all(true);
+
+background = sprite_add("workingscreenie.png", 0, false, true, 640, 360);
+
+
+//screen = surface_create(room_width,room_height);
+//surface_set_target(screen);
+//draw_clear_alpha(c_black, 0); 
+//bac = background_create_from_surface(screen,view_xview[0],view_yview[0],1024,768,0,0);
+//surface_reset_target();
 x = view_xview[0] + 510;
 y = view_yview[0] + 420;
 
@@ -40,7 +47,7 @@ tex_alpha = 0;
 image_xscale = 0;
 image_yscale = 0;
 
-alarm[0] = 1;
+//alarm[0] = 1;
 </string>
           </argument>
         </arguments>
@@ -63,7 +70,14 @@ alarm[0] = 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>surface_free(screen);
+            <string>//surface_free(screen);
+
+if (file_exists("workingscreenie.png"))
+{
+    file_delete("workingscreenie.png");
+}
+
+instance_activate_all();
 </string>
           </argument>
         </arguments>
@@ -86,7 +100,7 @@ alarm[0] = 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>/*
 instance_deactivate_all(1);
 
 </string>
@@ -155,15 +169,14 @@ if (tex_alpha = 1)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>surface_set_target(screen);
-draw_background(bac,view_xview,view_yview);
-surface_reset_target();
+            <string>draw_sprite_ext(background, 0, 640, 360,1,1,0,c_white,1);
+
 draw_sprite_ext(sBackEffect,1,view_xview,view_yview,1,1,0,c_white,bac_alpha);
 draw_sprite_ext(sprite_index,-1,x,y,image_xscale,image_yscale,0,c_white,spr_alpha);
 draw_set_alpha(tex_alpha);
 draw_set_font(fnt0)
 draw_text(x,y-225,nadpis);
-draw_text_ext(x-390,y,text,15,790);
+draw_text_ext(x-360,y-120,text,20,760);
 draw_set_alpha(1);
 </string>
           </argument>
