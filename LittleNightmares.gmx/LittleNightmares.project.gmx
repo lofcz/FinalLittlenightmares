@@ -213,8 +213,9 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\mapLevel2</room>
+    <room>rooms\mapTutorial</room>
     <room>rooms\mapMainMenu</room>
+    <room>rooms\mapLevel2</room>
     <room>rooms\mapLevel1</room>
   </rooms>
   <help>
