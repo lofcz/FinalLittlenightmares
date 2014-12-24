@@ -124,7 +124,8 @@ if (shadow_f &gt; 0)
     draw_sprite_stretched(sLight,-1,x1,y1,ww,ww)
     draw_text(view_xview+400,view_yview[0]+400,ww_minus)
     draw_set_blend_mode(bm_normal);
-    
+if (instance_number(oCutscene) = 0 )
+   {    
     
     if (oPlayer.spell_on = 1 &amp;&amp; oPlayer.vision_selected = "vision_red")
         {
@@ -177,6 +178,8 @@ if (shadow_f &gt; 0)
     draw_text(view_xview+5,view_yview+690,"Zvolená vize: "+string(vis))
     draw_text(view_xview+5,view_yview+670,"Mince: "+string(oPlayer.gold))
     draw_set_color(c_black)
+    
+    }
 </string>
           </argument>
         </arguments>

@@ -85,6 +85,8 @@
     <sprite>sprites\sCursor</sprite>
     <sprite>sprites\sShop</sprite>
     <sprite>sprites\sManaOrb</sprite>
+    <sprite>sprites\sCutscene</sprite>
+    <sprite>sprites\sLetter</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Tilesets">
@@ -195,6 +197,7 @@
       <object>objects\oLight</object>
       <object>objects\oMessageBox</object>
       <object>objects\oSetings</object>
+      <object>objects\oCutscene</object>
       <object>objects\oVariableController</object>
     </objects>
     <objects name="Decorations">
@@ -216,13 +219,13 @@
     <objects name="NPC">
       <object>objects\oMerchant</object>
     </objects>
+    <object>objects\oLetter</object>
   </objects>
-  <timelines name="timelines"/>
   <rooms name="rooms">
-    <room>rooms\mapMainMenu</room>
-    <room>rooms\mapTutorial</room>
     <room>rooms\mapLevel2</room>
     <room>rooms\mapLevel1</room>
+    <room>rooms\mapMainMenu</room>
+    <room>rooms\mapTutorial</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
