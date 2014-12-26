@@ -17,6 +17,7 @@
   <sprites name="sprites">
     <sprites name="Player">
       <sprite>sprites\sPlayer</sprite>
+      <sprite>sprites\sprite71</sprite>
       <sprite>sprites\sPlayerGgost</sprite>
       <sprite>sprites\sPlayer3</sprite>
       <sprite>sprites\sPlayer2</sprite>
@@ -46,6 +47,7 @@
       <sprite>sprites\sprite10</sprite>
       <sprite>sprites\sSpikes</sprite>
       <sprite>sprites\sDoor41</sprite>
+      <sprite>sprites\sDoor412</sprite>
       <sprite>sprites\sDoor14</sprite>
     </sprites>
     <sprites name="Items">
@@ -53,6 +55,8 @@
       <sprite>sprites\sCoinGhost</sprite>
       <sprite>sprites\sCoinIF</sprite>
       <sprite>sprites\sKey</sprite>
+      <sprite>sprites\sMedpack</sprite>
+      <sprite>sprites\sManaPack</sprite>
     </sprites>
     <sprites name="Misc">
       <sprite>sprites\sArrow</sprite>
@@ -74,7 +78,6 @@
     <sprite>sprites\sWall3</sprite>
     <sprite>sprites\sBulletin</sprite>
     <sprite>sprites\sLever</sprite>
-    <sprite>sprites\sMedpack</sprite>
     <sprite>sprites\sFlowerSource</sprite>
     <sprite>sprites\sFlower1</sprite>
     <sprite>sprites\sFlower1IF</sprite>
@@ -87,6 +90,16 @@
     <sprite>sprites\sManaOrb</sprite>
     <sprite>sprites\sCutscene</sprite>
     <sprite>sprites\sLetter</sprite>
+    <sprite>sprites\sInventory</sprite>
+    <sprite>sprites\sPotionsSource</sprite>
+    <sprite>sprites\sHpPotion</sprite>
+    <sprite>sprites\sMpPotion</sprite>
+    <sprite>sprites\sFearPotion</sprite>
+    <sprite>sprites\sEmptyPotion</sprite>
+    <sprite>sprites\sprite67</sprite>
+    <sprite>sprites\sprite68</sprite>
+    <sprite>sprites\sDart</sprite>
+    <sprite>sprites\sprite73</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Tilesets">
@@ -106,6 +119,7 @@
     <background>background\background10</background>
     <background>background\background11</background>
     <background>background\background12</background>
+    <background>background\background13</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -113,6 +127,7 @@
       <script>scripts\scrEffectArrow.gml</script>
       <script>scripts\scrEffectMagicSign.gml</script>
       <script>scripts\scrEffectCoin.gml</script>
+      <script>scripts\scrEffectCoin2.gml</script>
       <script>scripts\scrEffectNextLevel.gml</script>
       <script>scripts\scrEffectMedpack.gml</script>
       <script>scripts\scrEffectCheckpoint.gml</script>
@@ -126,9 +141,13 @@
       <script>scripts\scrNullSpecialPoints.gml</script>
     </scripts>
     <script>scripts\scrMessageBox.gml</script>
+    <script>scripts\scrEffectHeal.gml</script>
+    <script>scripts\inventory_item_add.gml</script>
+    <script>scripts\scrMulticoloredText.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt0</font>
+    <font>fonts\fnt1</font>
     <font>fonts\fntText</font>
     <font>fonts\fntLetters</font>
   </fonts>
@@ -137,21 +156,35 @@
     <object>objects\oPlayerGhost</object>
     <object>objects\par_player</object>
     <objects name="Walls">
-      <object>objects\oWall1</object>
-      <object>objects\oWall5</object>
-      <object>objects\sWall1Red</object>
-      <object>objects\oWall3</object>
-      <object>objects\oWall4</object>
-      <object>objects\oWall2</object>
-      <object>objects\oSpikeWall</object>
-      <object>objects\oCrate</object>
+      <objects name="Solid">
+        <object>objects\oWall1</object>
+        <object>objects\sWall1Red</object>
+        <object>objects\oWall5</object>
+        <object>objects\oWall3</object>
+        <object>objects\oWall2</object>
+        <object>objects\oWall4</object>
+        <object>objects\oCrate</object>
+        <object>objects\oSpikeWall</object>
+      </objects>
       <objects name="Doors">
-        <object>objects\oDoor41</object>
-        <object>objects\oDoor41NOKEY</object>
-        <object>objects\oDoor14</object>
-        <object>objects\oDoor14PUZZLE</object>
-        <object>objects\oDoor14KYTKY</object>
-        <object>objects\oDoor14COINS</object>
+        <objects name="Key">
+          <object>objects\oDoor41</object>
+          <object>objects\oDoor412</object>
+          <object>objects\oDoor14</object>
+        </objects>
+        <objects name="NoKey">
+          <object>objects\oDoor41NOKEY</object>
+          <object>objects\oDoor14NOKEY</object>
+        </objects>
+        <objects name="Puzzle">
+          <object>objects\oDoor14PUZZLE</object>
+        </objects>
+        <objects name="Kytky">
+          <object>objects\oDoor14KYTKY</object>
+        </objects>
+        <objects name="Coins">
+          <object>objects\oDoor14COINS</object>
+        </objects>
       </objects>
       <objects name="Traps">
         <object>objects\oDispenser</object>
@@ -187,6 +220,7 @@
       <object>objects\oMagicSign2</object>
       <object>objects\par_sign</object>
       <object>objects\oMedpack</object>
+      <object>objects\oManapack</object>
     </objects>
     <objects name="Controllers">
       <object>objects\oRoomTransition</object>
@@ -220,12 +254,25 @@
       <object>objects\oMerchant</object>
     </objects>
     <object>objects\oLetter</object>
+    <object>objects\oInventory</object>
+    <object>objects\oHpPotion</object>
+    <object>objects\oMpPotion</object>
+    <object>objects\oEmptyPotion</object>
+    <object>objects\object68</object>
+    <object>objects\oDart</object>
+    <object>objects\oHuman1</object>
+    <object>objects\oHuman2</object>
   </objects>
+  <timelines name="timelines">
+    <timeline>timelines\tmlHuman1</timeline>
+  </timelines>
   <rooms name="rooms">
+    <room>rooms\mapIntro</room>
     <room>rooms\mapLevel2</room>
+    <room>rooms\mapTutorial</room>
     <room>rooms\mapLevel1</room>
     <room>rooms\mapMainMenu</room>
-    <room>rooms\mapTutorial</room>
+    <room>rooms\mapLogo</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

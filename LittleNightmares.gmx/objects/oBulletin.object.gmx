@@ -26,6 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>text_alpha = 0;
+color = c_white
+green = 100
 </string>
           </argument>
         </arguments>
@@ -49,7 +51,7 @@
           <argument>
             <kind>1</kind>
             <string>image_alpha = 1;
-
+if (distance_to_object(oPlayer) &lt; 30) {if (green &lt; 255) {green += 5} color = make_colour_rgb(0,green,0)}
 if (distance_to_object(par_player) &lt; 30)
     {
     if (text_alpha &lt; 1)
@@ -114,12 +116,13 @@ else
           <argument>
             <kind>1</kind>
             <string>draw_set_font(fntText)
-draw_self()
+draw_sprite_ext(sprite_index,0,x,y,1,1,image_angle,color,image_alpha)
 draw_set_colour(c_white);
 draw_set_alpha(text_alpha);
 if (distance_to_object(par_player) &lt; 30)
     {
     depth = -10
+    
     draw_text_ext(x-130,y-60,text,15,400)
     }
 else 

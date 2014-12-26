@@ -17,7 +17,7 @@ part_type_life(particle1,53,72);
 emitter1 = part_emitter_create(Sname);
 part_emitter_region(Sname,emitter1,x,x,y,y,0,0);
 part_emitter_burst(Sname,emitter1,particle1,10);
-
+/*
 particle2 = part_type_create();
 part_type_shape(particle2,pt_shape_star);
 part_type_size(particle2,0.10,0.60,0.03,0);

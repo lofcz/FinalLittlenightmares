@@ -167,6 +167,7 @@ else
     draw_surface(Screenshot, 0, 0);
         draw_set_alpha(1);
         
+
 </string>
           </argument>
         </arguments>

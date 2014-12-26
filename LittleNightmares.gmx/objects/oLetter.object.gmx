@@ -29,7 +29,9 @@
 letter = instance_create(x,y,oCutscene)
 letter.str = str
 
-
+oPlayer.speed = 0;
+oPlayer.image_speed = 0;
+oPlayer.image_index = 12;
 instance_destroy()
 </string>
           </argument>

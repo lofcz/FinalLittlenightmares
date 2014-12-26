@@ -102,6 +102,7 @@ flower1if = instance_number(oFlower1IF)
           <argument>
             <kind>1</kind>
             <string>oPlayer.spell_on = 0;
+instance_activate_all()
 with(all)
          {
           image_alpha = 1;

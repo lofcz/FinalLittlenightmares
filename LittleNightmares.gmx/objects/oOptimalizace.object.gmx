@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-10001</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -53,7 +53,7 @@ y=view_yview
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm[0]=room_speed div 30;
+            <string>alarm[0]=room_speed div 8;
 instance_activate_all();
 instance_deactivate_region(x-400,y-400,1500,1500,0,1);
 
@@ -66,6 +66,7 @@ instance_activate_object(oLever2)
 instance_activate_object(oLever3)
 instance_activate_object(oLever4)
 instance_activate_object(oLever5)
+instance_activate_object(oInventory)
 
 
 </string>
