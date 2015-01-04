@@ -3,7 +3,110 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="1" name="datafiles"/>
+  <datafiles number="8" name="datafiles">
+    <datafile>
+      <name>intro2.avi</name>
+      <exists>-1</exists>
+      <size>2315818</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>49402094</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>intro2.avi</filename>
+    </datafile>
+    <datafile>
+      <name>GMMovie.dll</name>
+      <exists>-1</exists>
+      <size>10752</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>GMMovie.dll</filename>
+    </datafile>
+    <datafile>
+      <name>WindowControl.dll</name>
+      <exists>-1</exists>
+      <size>14168</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>WindowControl.dll</filename>
+    </datafile>
+    <datafile>
+      <name>Max WinAPI.dll</name>
+      <exists>-1</exists>
+      <size>180224</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>Max WinAPI.dll</filename>
+    </datafile>
+    <datafile>
+      <name>GmGammaDll.dll</name>
+      <exists>-1</exists>
+      <size>7168</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>GmGammaDll.dll</filename>
+    </datafile>
+    <datafile>
+      <name>PlatinumEngine2.dll</name>
+      <exists>-1</exists>
+      <size>60928</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>PlatinumEngine2.dll</filename>
+    </datafile>
+  </datafiles>
   <NewExtensions/>
   <sounds name="sound">
     <sounds name="SFX">
@@ -49,6 +152,7 @@
       <sprite>sprites\sDoor41</sprite>
       <sprite>sprites\sDoor412</sprite>
       <sprite>sprites\sDoor14</sprite>
+      <sprite>sprites\sprite75</sprite>
     </sprites>
     <sprites name="Items">
       <sprite>sprites\sCoin</sprite>
@@ -70,6 +174,10 @@
     </sprites>
     <sprites name="NPC">
       <sprite>sprites\sMerchant</sprite>
+    </sprites>
+    <sprites name="Chapters">
+      <sprite>sprites\sChapter3</sprite>
+      <sprite>sprites\sChapter3_2</sprite>
     </sprites>
     <sprite>sprites\sMessageBox</sprite>
     <sprite>sprites\sSetings</sprite>
@@ -100,11 +208,14 @@
     <sprite>sprites\sprite68</sprite>
     <sprite>sprites\sDart</sprite>
     <sprite>sprites\sprite73</sprite>
+    <sprite>sprites\sprite74</sprite>
+    <sprite>sprites\sAlphasettings</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Tilesets">
       <background>background\bcgTilesetFloor</background>
       <background>background\bcgTilesetCave</background>
+      <background>background\background15</background>
     </backgrounds>
     <backgrounds name="Bacgrounds">
       <background>background\bcgMainMenu</background>
@@ -120,6 +231,7 @@
     <background>background\background11</background>
     <background>background\background12</background>
     <background>background\background13</background>
+    <background>background\background14</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -134,30 +246,290 @@
       <script>scripts\scrEffectBlood.gml</script>
       <script>scripts\scrEffectManaOrb.gml</script>
       <script>scripts\scrEffectKey.gml</script>
+      <script>scripts\scrEffectHeal.gml</script>
     </scripts>
     <scripts name="Functions">
       <script>scripts\scrRoomTransition.gml</script>
       <script>scripts\scrDeathTransition.gml</script>
       <script>scripts\scrNullSpecialPoints.gml</script>
+      <script>scripts\scrMessageBox.gml</script>
+      <script>scripts\scrMulticoloredText.gml</script>
     </scripts>
-    <script>scripts\scrMessageBox.gml</script>
-    <script>scripts\scrEffectHeal.gml</script>
-    <script>scripts\inventory_item_add.gml</script>
-    <script>scripts\scrMulticoloredText.gml</script>
+    <scripts name="Inventory">
+      <script>scripts\inventory_item_add.gml</script>
+    </scripts>
+    <scripts name="Dlls">
+      <scripts name="GMMovie">
+        <script>scripts\GMMovie_SetParent.gml</script>
+        <script>scripts\GMMovie_SetRepeat.gml</script>
+        <script>scripts\GMMovie_GetRepeat.gml</script>
+        <script>scripts\GMMovie_SetPosition.gml</script>
+        <script>scripts\GMMovie_SetSize.gml</script>
+        <script>scripts\GMMovie_GetPosition.gml</script>
+        <script>scripts\GMMovie_SetZoom.gml</script>
+        <script>scripts\GMMovie_GetSize.gml</script>
+        <script>scripts\GMMovie_GetZoom.gml</script>
+        <script>scripts\GMMovie_SetVolume.gml</script>
+        <script>scripts\GMMovie_GetLength.gml</script>
+        <script>scripts\GMMovie_GetVolume.gml</script>
+        <script>scripts\GMMovie_Seek.gml</script>
+        <script>scripts\GMMovie_GetSeek.gml</script>
+        <script>scripts\GMMovie_Resume.gml</script>
+        <script>scripts\GMMovie_Pause.gml</script>
+        <script>scripts\GMMovie_Stop.gml</script>
+        <script>scripts\GMMovie_Close.gml</script>
+        <script>scripts\GMMovie_Play.gml</script>
+        <script>scripts\GMMovie_Load.gml</script>
+        <script>scripts\GMMovie_Init.gml</script>
+      </scripts>
+      <scripts name="WindowControll">
+        <script>scripts\scr_WCDLL_Init.gml</script>
+        <script>scripts\scr_WCDLL_Maximize.gml</script>
+        <script>scripts\scr_WCDLL_Minimize.gml</script>
+        <script>scripts\scr_WCDLL_Restore.gml</script>
+        <script>scripts\scr_WCDLL_Normal.gml</script>
+        <script>scripts\scr_WCDLL_Hide.gml</script>
+        <script>scripts\scr_WCDLL_Show.gml</script>
+        <script>scripts\scr_WCDLL_FindWindow.gml</script>
+        <script>scripts\scr_WCDLL_TaskBarHandle.gml</script>
+      </scripts>
+      <scripts name="API">
+        <script>scripts\API_Init.gml</script>
+        <script>scripts\API_Styles_Window.gml</script>
+        <script>scripts\API_Styles_Show.gml</script>
+        <script>scripts\API_Styles_WindowEx.gml</script>
+        <script>scripts\API_Styles_Controls.gml</script>
+        <script>scripts\API_Vars_Controls.gml</script>
+        <script>scripts\API_Styles_Dialogs.gml</script>
+        <script>scripts\API_MsgBox_Styles.gml</script>
+        <script>scripts\API_Window_Create.gml</script>
+        <script>scripts\API_Window_Destroy.gml</script>
+        <script>scripts\API_Window_Show.gml</script>
+        <script>scripts\API_Window_SetPos.gml</script>
+        <script>scripts\API_Window_GetDC.gml</script>
+        <script>scripts\API_Window_GetPos.gml</script>
+        <script>scripts\API_Window_SetStyle.gml</script>
+        <script>scripts\API_Window_SetText.gml</script>
+        <script>scripts\API_Window_GetParent.gml</script>
+        <script>scripts\API_Window_SetParent.gml</script>
+        <script>scripts\API_Window_SetIcon.gml</script>
+        <script>scripts\API_Window_SetColor.gml</script>
+        <script>scripts\API_Window_Redraw.gml</script>
+        <script>scripts\API_Menu_Create.gml</script>
+        <script>scripts\API_Menu_CreatePopup.gml</script>
+        <script>scripts\API_Menu_Set.gml</script>
+        <script>scripts\API_Menu_AddMenu.gml</script>
+        <script>scripts\API_Menu_AddString.gml</script>
+        <script>scripts\API_Menu_AddStringBitmap.gml</script>
+        <script>scripts\API_Menu_AddSeparator.gml</script>
+        <script>scripts\API_Menu_SetChecked.gml</script>
+        <script>scripts\API_Menu_SetRadioChecked.gml</script>
+        <script>scripts\API_Menu_GetChecked.gml</script>
+        <script>scripts\API_Menu_SetHilite.gml</script>
+        <script>scripts\API_Menu_GetHilite.gml</script>
+        <script>scripts\API_Menu_SetEnabled.gml</script>
+        <script>scripts\API_Menu_GetEnabled.gml</script>
+        <script>scripts\API_Menu_SetBitmap.gml</script>
+        <script>scripts\API_Menu_ShowPopup.gml</script>
+        <script>scripts\API_Menu_DestroyMenu.gml</script>
+        <script>scripts\API_Menu_RemoveItem.gml</script>
+        <script>scripts\API_Check_Command.gml</script>
+        <script>scripts\API_Check_Quit.gml</script>
+        <script>scripts\API_Check_Set.gml</script>
+        <script>scripts\API_Check_Dropped.gml</script>
+        <script>scripts\API_Check_GetDragFiles.gml</script>
+        <script>scripts\API_Check_GetDragFileName.gml</script>
+        <script>scripts\API_Check_GetDragPointX.gml</script>
+        <script>scripts\API_Check_GetDragPointY.gml</script>
+        <script>scripts\API_Check_Tray.gml</script>
+        <script>scripts\API_Check_Remove.gml</script>
+        <script>scripts\API_Static_Create.gml</script>
+        <script>scripts\API_Edit_Create.gml</script>
+        <script>scripts\API_Button_Create.gml</script>
+        <script>scripts\API_Button_GetState.gml</script>
+        <script>scripts\API_Button_SetBitmap.gml</script>
+        <script>scripts\API_Button_SetIcon.gml</script>
+        <script>scripts\API_Radio_Create.gml</script>
+        <script>scripts\API_Radio_GetState.gml</script>
+        <script>scripts\API_Radio_SetState.gml</script>
+        <script>scripts\API_Checkbox_Create.gml</script>
+        <script>scripts\API_Checkbox_GetState.gml</script>
+        <script>scripts\API_Checkbox_SetState.gml</script>
+        <script>scripts\API_Listbox_Create.gml</script>
+        <script>scripts\API_Listbox_AddString.gml</script>
+        <script>scripts\API_Listbox_DelString.gml</script>
+        <script>scripts\API_Listbox_GetCount.gml</script>
+        <script>scripts\API_Listbox_GetSel.gml</script>
+        <script>scripts\API_Listbox_SetSel.gml</script>
+        <script>scripts\API_Listbox_GetString.gml</script>
+        <script>scripts\API_Listview_Create.gml</script>
+        <script>scripts\API_Listview_AddColumn.gml</script>
+        <script>scripts\API_Listview_AddItem.gml</script>
+        <script>scripts\API_Listview_GetSel.gml</script>
+        <script>scripts\API_Listview_DeleteAll.gml</script>
+        <script>scripts\API_Listview_DeleteItem.gml</script>
+        <script>scripts\API_Listview_DeleteColumn.gml</script>
+        <script>scripts\API_Listview_GetItemText.gml</script>
+        <script>scripts\API_Listview_GetItems.gml</script>
+        <script>scripts\API_Treeview_Create.gml</script>
+        <script>scripts\API_Treeview_AddItem.gml</script>
+        <script>scripts\API_Treeview_DeleteAll.gml</script>
+        <script>scripts\API_Treeview_DeleteItem.gml</script>
+        <script>scripts\API_Treeview_Expand.gml</script>
+        <script>scripts\API_Treeview_GetSel.gml</script>
+        <script>scripts\API_Treeview_SetSel.gml</script>
+        <script>scripts\API_Treeview_SetChecked.gml</script>
+        <script>scripts\API_Treeview_GetChecked.gml</script>
+        <script>scripts\API_Treeview_GetText.gml</script>
+        <script>scripts\API_Treeview_Check.gml</script>
+        <script>scripts\API_Treeview_CheckType.gml</script>
+        <script>scripts\API_Treeview_CheckItem.gml</script>
+        <script>scripts\API_Treeview_EditLabel.gml</script>
+        <script>scripts\API_Treeview_GetItems.gml</script>
+        <script>scripts\API_Combobox_Create.gml</script>
+        <script>scripts\API_Combobox_AddString.gml</script>
+        <script>scripts\API_Combobox_DelString.gml</script>
+        <script>scripts\API_Combobox_GetCount.gml</script>
+        <script>scripts\API_Combobox_GetSel.gml</script>
+        <script>scripts\API_Combobox_SetSel.gml</script>
+        <script>scripts\API_Combobox_GetString.gml</script>
+        <script>scripts\API_Animate_Create.gml</script>
+        <script>scripts\API_Animate_Close.gml</script>
+        <script>scripts\API_Animate_Open.gml</script>
+        <script>scripts\API_Animate_Play.gml</script>
+        <script>scripts\API_Animate_Stop.gml</script>
+        <script>scripts\API_Animate_Seek.gml</script>
+        <script>scripts\API_Trackbar_Create.gml</script>
+        <script>scripts\API_Trackbar_SetRange.gml</script>
+        <script>scripts\API_Trackbar_SetPos.gml</script>
+        <script>scripts\API_Trackbar_GetPos.gml</script>
+        <script>scripts\API_Datetime_Create.gml</script>
+        <script>scripts\API_Datetime_GetValue.gml</script>
+        <script>scripts\API_Datetime_SetValue.gml</script>
+        <script>scripts\API_Ipaddress_Create.gml</script>
+        <script>scripts\API_Ipaddress_GetValue.gml</script>
+        <script>scripts\API_Ipaddress_SetValue.gml</script>
+        <script>scripts\API_Calendar_Create.gml</script>
+        <script>scripts\API_Calendar_GetValue.gml</script>
+        <script>scripts\API_Calendar_SetValue.gml</script>
+        <script>scripts\API_Scrollbar_Create.gml</script>
+        <script>scripts\API_Scrollbar_SetRange.gml</script>
+        <script>scripts\API_Scrollbar_SetPos.gml</script>
+        <script>scripts\API_Scrollbar_GetPos.gml</script>
+        <script>scripts\API_Status_Create.gml</script>
+        <script>scripts\API_Status_SetParts.gml</script>
+        <script>scripts\API_Status_SetText.gml</script>
+        <script>scripts\API_Syslink_Create.gml</script>
+        <script>scripts\API_Syslink_SetLink.gml</script>
+        <script>scripts\API_Tab_Create.gml</script>
+        <script>scripts\API_Tab_AddItem.gml</script>
+        <script>scripts\API_Tab_GetSel.gml</script>
+        <script>scripts\API_Tab_SetSel.gml</script>
+        <script>scripts\API_Updown_Create.gml</script>
+        <script>scripts\API_Updown_GetPos.gml</script>
+        <script>scripts\API_Updown_GetMinRange.gml</script>
+        <script>scripts\API_Updown_GetMaxRange.gml</script>
+        <script>scripts\API_Updown_SetPos.gml</script>
+        <script>scripts\API_Updown_SetRange.gml</script>
+        <script>scripts\API_Updown_SetBuddy.gml</script>
+        <script>scripts\API_Control_SetText.gml</script>
+        <script>scripts\API_Control_SetParent.gml</script>
+        <script>scripts\API_Control_GetParent.gml</script>
+        <script>scripts\API_Control_Show.gml</script>
+        <script>scripts\API_Control_GetText.gml</script>
+        <script>scripts\API_Control_GetHandle.gml</script>
+        <script>scripts\API_Control_GetPos.gml</script>
+        <script>scripts\API_Control_SetPos.gml</script>
+        <script>scripts\API_Control_SetFocus.gml</script>
+        <script>scripts\API_Control_Destroy.gml</script>
+        <script>scripts\API_Control_GetFocus.gml</script>
+        <script>scripts\API_Control_SetColor.gml</script>
+        <script>scripts\API_Control_Redraw.gml</script>
+        <script>scripts\API_Controls_EnableAgw.gml</script>
+        <script>scripts\API_Progress_Create.gml</script>
+        <script>scripts\API_Progress_SetRange.gml</script>
+        <script>scripts\API_Progress_SetPos.gml</script>
+        <script>scripts\API_Control_SetFont.gml</script>
+        <script>scripts\API_AutoFont_SetFont.gml</script>
+        <script>scripts\API_AutoFont_SetOff.gml</script>
+        <script>scripts\API_Static_SetBitmap.gml</script>
+        <script>scripts\API_Static_SetIcon.gml</script>
+        <script>scripts\API_Richedit_GetText.gml</script>
+        <script>scripts\API_Richedit_GetSelText.gml</script>
+        <script>scripts\API_Richedit_SetText.gml</script>
+        <script>scripts\API_Richedit_Load.gml</script>
+        <script>scripts\API_Richedit_SetBackColor.gml</script>
+        <script>scripts\API_Richedit_Create.gml</script>
+        <script>scripts\API_Richedit_ReplaceSelText.gml</script>
+        <script>scripts\API_Dialog_OpenFile.gml</script>
+        <script>scripts\API_Dialog_SaveFile.gml</script>
+        <script>scripts\API_Dialog_File_SetOptions.gml</script>
+        <script>scripts\API_Dialog_About.gml</script>
+        <script>scripts\API_Dialog_About_GetRunning.gml</script>
+        <script>scripts\API_Dialog_MessageBox.gml</script>
+        <script>scripts\API_Dialog_Font.gml</script>
+        <script>scripts\API_Dialog_Font_GetName.gml</script>
+        <script>scripts\API_Dialog_Font_GetSize.gml</script>
+        <script>scripts\API_DS_AddBitmap.gml</script>
+        <script>scripts\API_DS_MoveItem.gml</script>
+        <script>scripts\API_DS_ClearWindow.gml</script>
+        <script>scripts\API_DS_AddEllipse.gml</script>
+        <script>scripts\API_DS_AddRectangle.gml</script>
+        <script>scripts\API_DS_AddRoundrect.gml</script>
+        <script>scripts\API_DS_AddText.gml</script>
+        <script>scripts\API_DS_AddLine.gml</script>
+        <script>scripts\API_DS_SetItemPen.gml</script>
+        <script>scripts\API_DS_SetItemBrush.gml</script>
+        <script>scripts\API_DS_SetAutoClear.gml</script>
+        <script>scripts\API_DS_DeleteItem.gml</script>
+        <script>scripts\API_Tooltip_SetControl.gml</script>
+        <script>scripts\API_Tooltip_SetWindow.gml</script>
+        <script>scripts\API_Scroll_SetRange.gml</script>
+        <script>scripts\API_Scroll_SetPos.gml</script>
+        <script>scripts\API_Scroll_GetPos.gml</script>
+        <script>scripts\API_MDI_Init.gml</script>
+        <script>scripts\API_MDI_CreateClient.gml</script>
+        <script>scripts\API_MDI_CreateWindow.gml</script>
+        <script>scripts\API_MDI_GetFocus.gml</script>
+        <script>scripts\API_Systray_CreateIcon.gml</script>
+        <script>scripts\API_Systray_SetTip.gml</script>
+        <script>scripts\API_Systray_Remove.gml</script>
+        <script>scripts\API_Systray_SetIcon.gml</script>
+        <script>scripts\API_Systray_Balloon.gml</script>
+        <script>scripts\API_Systray_Balloon_Error.gml</script>
+        <script>scripts\API_Systray_Balloon_Info.gml</script>
+        <script>scripts\API_Systray_Balloon_Warning.gml</script>
+        <script>scripts\API_Control_SetBackgroundColor.gml</script>
+        <script>scripts\API_Control_SetTextColor.gml</script>
+        <script>scripts\API_Control_SetTransparent.gml</script>
+      </scripts>
+      <scripts name="GMGamma">
+        <script>scripts\GmGamma_init.gml</script>
+        <script>scripts\GmGamma_set.gml</script>
+        <script>scripts\GmGamma_reset.gml</script>
+        <script>scripts\GmGamma_end.gml</script>
+      </scripts>
+      <scripts name="PLATINUMENGINE">
+        <script>scripts\plt_init.gml</script>
+        <script>scripts\plt_multiply.gml</script>
+      </scripts>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt0</font>
     <font>fonts\fnt1</font>
     <font>fonts\fntText</font>
     <font>fonts\fntLetters</font>
+    <font>fonts\fntInfra</font>
   </fonts>
   <objects name="objects">
+    <object>objects\par_player</object>
     <object>objects\oPlayer</object>
     <object>objects\oPlayerGhost</object>
-    <object>objects\par_player</object>
     <objects name="Walls">
       <objects name="Solid">
         <object>objects\oWall1</object>
+        <object>objects\oWall6</object>
         <object>objects\sWall1Red</object>
         <object>objects\oWall5</object>
         <object>objects\oWall3</object>
@@ -221,6 +593,8 @@
       <object>objects\par_sign</object>
       <object>objects\oMedpack</object>
       <object>objects\oManapack</object>
+      <object>objects\oHpPotion</object>
+      <object>objects\oMpPotion</object>
     </objects>
     <objects name="Controllers">
       <object>objects\oRoomTransition</object>
@@ -232,13 +606,20 @@
       <object>objects\oMessageBox</object>
       <object>objects\oSetings</object>
       <object>objects\oCutscene</object>
+      <object>objects\oChapter</object>
+      <object>objects\oInventory</object>
       <object>objects\oVariableController</object>
+      <object>objects\oAlphaSettings</object>
+      <object>objects\oLogo</object>
     </objects>
     <objects name="Decorations">
       <object>objects\oFlower1</object>
       <object>objects\oFlower1IF</object>
       <object>objects\oBulletin</object>
+      <object>objects\oDart</object>
+      <object>objects\object68</object>
       <object>objects\oShadow1</object>
+      <object>objects\oEmptyPotion</object>
     </objects>
     <objects name="Interactable">
       <objects name="Levers">
@@ -249,28 +630,24 @@
         <object>objects\oLever5</object>
       </objects>
       <object>objects\oCheckPoint</object>
+      <object>objects\oLetter</object>
     </objects>
     <objects name="NPC">
       <object>objects\oMerchant</object>
+      <object>objects\oHuman1</object>
+      <object>objects\oHuman2</object>
     </objects>
-    <object>objects\oLetter</object>
-    <object>objects\oInventory</object>
-    <object>objects\oHpPotion</object>
-    <object>objects\oMpPotion</object>
-    <object>objects\oEmptyPotion</object>
-    <object>objects\object68</object>
-    <object>objects\oDart</object>
-    <object>objects\oHuman1</object>
-    <object>objects\oHuman2</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\tmlHuman1</timeline>
   </timelines>
   <rooms name="rooms">
-    <room>rooms\mapIntro</room>
-    <room>rooms\mapLevel2</room>
-    <room>rooms\mapTutorial</room>
     <room>rooms\mapLevel1</room>
+    <room>rooms\mapLevel3</room>
+    <room>rooms\mapTutorial</room>
+    <room>rooms\mapLevel2</room>
+    <room>rooms\mapIntro</room>
+    <room>rooms\mapAlphaSettings</room>
     <room>rooms\mapMainMenu</room>
     <room>rooms\mapLogo</room>
   </rooms>

@@ -1,0 +1,9 @@
+    external_call(global.external_api_datetime_setvalue,0,Datetime_Year);
+    external_call(global.external_api_datetime_setvalue,1,Datetime_Month);
+    external_call(global.external_api_datetime_setvalue,2,Datetime_DayOfWeek);
+    external_call(global.external_api_datetime_setvalue,3,Datetime_Day);
+    external_call(global.external_api_datetime_setvalue,4,Datetime_Hour);
+    external_call(global.external_api_datetime_setvalue,5,Datetime_Minute);
+    external_call(global.external_api_datetime_setvalue,6,Datetime_Second);
+    external_call(global.external_api_datetime_setvalue,7,Datetime_Milliseconds);
+    external_call(global.external_api_datetime_writevalues,argument0);

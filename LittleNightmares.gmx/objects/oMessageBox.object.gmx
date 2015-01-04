@@ -169,7 +169,7 @@ if (tex_alpha = 1)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite_ext(background, 0, 640, 360,1,1,0,c_white,1);
+            <string>draw_sprite_ext(background, 0, view_xview+640, view_yview+360,1,1,0,c_white,1);
 
 draw_sprite_ext(sBackEffect,1,view_xview,view_yview,1,1,0,c_white,bac_alpha);
 draw_sprite_ext(sprite_index,-1,x,y,image_xscale,image_yscale,0,c_white,spr_alpha);
