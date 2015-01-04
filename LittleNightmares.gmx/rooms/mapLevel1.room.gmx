@@ -29,7 +29,7 @@ global.map_type = "wonderland"</code>
     <showViews>0</showViews>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
-    <page>3</page>
+    <page>0</page>
     <xoffset>3179</xoffset>
     <yoffset>-37</yoffset>
   </makerSettings>
@@ -1573,7 +1573,7 @@ global.map_type = "wonderland"</code>
     <instance objName="oWall1" x="3360" y="448" name="inst_5F6F36F2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWall1" x="3392" y="448" name="inst_6CB86468" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWall1" x="3424" y="448" name="inst_1FB84C0B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oWall1" x="3456" y="448" name="inst_79F6E3F7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSpikeWall" x="3456" y="416" name="inst_0DC7D040" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWall1" x="3456" y="480" name="inst_AA09F398" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWall1" x="3456" y="672" name="inst_6DB66F4D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oIn1use" x="3680" y="288" name="inst_96623356" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -1590,6 +1590,25 @@ global.map_type = "wonderland"</code>
     <instance objName="oDart" x="1376" y="1168" name="inst_69A1BBD2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
     <instance objName="oDart" x="480" y="704" name="inst_670E4C5E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="30"/>
     <instance objName="oDart" x="416" y="592" name="inst_28413F19" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSpikeWall" x="3488" y="416" name="inst_9BB0324F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSpikeWall" x="3456" y="128" name="inst_41A26628" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSpikeWall" x="3456" y="160" name="inst_4E4860EF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSpikeWall" x="3456" y="192" name="inst_2FC0A83A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSpikeWall" x="3456" y="224" name="inst_21DA3D80" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSpikeWall" x="3456" y="256" name="inst_C2A9C357" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSpikeWall" x="3456" y="384" name="inst_221825CD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSpikeWall" x="3456" y="352" name="inst_3C562FE8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSpikeWall" x="3456" y="288" name="inst_79547E48" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSpikeWall" x="3456" y="320" name="inst_38E3A26A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSpikeWall" x="3488" y="128" name="inst_7DA89B5E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSpikeWall" x="3488" y="160" name="inst_70E0CAA5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSpikeWall" x="3488" y="192" name="inst_3A82F3F1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSpikeWall" x="3488" y="224" name="inst_552DF399" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSpikeWall" x="3488" y="256" name="inst_77A53D07" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSpikeWall" x="3488" y="288" name="inst_48057075" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSpikeWall" x="3488" y="320" name="inst_63F834DA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSpikeWall" x="3488" y="352" name="inst_B2428929" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSpikeWall" x="3488" y="384" name="inst_6C3F533B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bcgTilesetCave" x="192" y="192" w="64" h="64" xo="64" yo="64" id="10000021" name="inst_C33F2E11" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
