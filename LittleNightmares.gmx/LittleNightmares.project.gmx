@@ -532,6 +532,7 @@
         <object>objects\oWall6</object>
         <object>objects\sWall1Red</object>
         <object>objects\oWall5</object>
+        <object>objects\oWall3NoGhost</object>
         <object>objects\oWall3</object>
         <object>objects\oWall2</object>
         <object>objects\oWall4</object>
@@ -642,13 +643,14 @@
     <timeline>timelines\tmlHuman1</timeline>
   </timelines>
   <rooms name="rooms">
+    <room>rooms\mapMainMenu</room>
     <room>rooms\mapLevel1</room>
+    <room>rooms\mapLevel4</room>
     <room>rooms\mapLevel3</room>
     <room>rooms\mapTutorial</room>
     <room>rooms\mapLevel2</room>
     <room>rooms\mapIntro</room>
     <room>rooms\mapAlphaSettings</room>
-    <room>rooms\mapMainMenu</room>
     <room>rooms\mapLogo</room>
   </rooms>
   <help>

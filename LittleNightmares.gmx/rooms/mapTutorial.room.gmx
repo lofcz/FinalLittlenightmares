@@ -20,8 +20,8 @@ global.map_type = "real"</code>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1024</w>
-    <h>600</h>
+    <w>1936</w>
+    <h>1056</h>
     <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
@@ -31,8 +31,8 @@ global.map_type = "real"</code>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
     <page>0</page>
-    <xoffset>1726</xoffset>
-    <yoffset>273</yoffset>
+    <xoffset>1016</xoffset>
+    <yoffset>240</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="background11" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -57,9 +57,9 @@ global.map_type = "real"</code>
   <instances>
     <instance objName="oIn1use" x="1888" y="352" name="inst_266987AD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oBulletin" x="1792" y="576" name="inst_05A90C00" locked="0" code="text = &quot;Drž se cesty vyznačené šipkami&quot;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oBulletin" x="1792" y="384" name="inst_B5829455" locked="0" code="text = &quot;Alici ovládáš pomocí kláves WSAD&quot;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBulletin" x="1792" y="384" name="inst_B5829455" locked="0" code="text = &quot;Alici ovládáš pomocí kláves WSAD&quot;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oPlayer" x="1920" y="352" name="inst_E3EBFBC3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oBulletin" x="1760" y="832" name="inst_203A69CD" locked="0" code="text = &quot;Právě jsi našel klíč, seber ho tím, že k němu přejdeš. Klíč se umístí do inventáře, který vidíš v pravém dolním rohu obrazovky.&quot;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBulletin" x="1760" y="832" name="inst_203A69CD" locked="0" code="text = &quot;Právě jsi našel klíč, seber ho tím, že k němu přejdeš. Klíč se umístí do inventáře, který vidíš v pravém dolním rohu obrazovky.&quot;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oKey" x="1760" y="896" name="inst_4731271C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWall1" x="1728" y="1024" name="inst_CAE785EE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWall1" x="1664" y="1024" name="inst_DC6B4D37" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

@@ -19,8 +19,8 @@ global.map_type = "wonderland"</code>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1456</w>
-    <h>876</h>
+    <w>1936</w>
+    <h>1056</h>
     <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
@@ -30,8 +30,8 @@ global.map_type = "wonderland"</code>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
     <page>0</page>
-    <xoffset>3179</xoffset>
-    <yoffset>-37</yoffset>
+    <xoffset>12</xoffset>
+    <yoffset>-139</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
