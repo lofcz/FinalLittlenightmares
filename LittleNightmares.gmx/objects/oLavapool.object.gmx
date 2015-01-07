@@ -7,7 +7,98 @@
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
-  <events/>
+  <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//**************
+dmg1 = 1 // DPS při vyplé vizi
+slow1 = oPlayer.rychlost-2 // Slow při vyplé vizi
+
+dmg2 = 0.5 // DPS při zaplé vizi
+slow2 = oPlayer.rychlost // Slow při zaplé vizi
+//**************
+
+
+image_speed = 0
+contact = 0
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (distance_to_object(oPlayer) = 0)
+   {
+    if (oPlayer.spell_on = 0 || oPlayer.vision_selected != "vision_green") // klasa
+       {
+       if (contact = 0)
+           {
+            back_spd = oPlayer.rychlost
+           }
+        contact = 1
+        oPlayer.rychlost = slow1
+        oPlayer.hp -= dmg1 
+       }
+     if (oPlayer.spell_on = 1 &amp;&amp; oPlayer.vision_selected = "vision_green") // při zelené vizi
+       {
+       if (contact = 0)
+           {
+            back_spd = oPlayer.rychlost
+           }
+
+        contact = 1
+        oPlayer.rychlost = slow2
+        oPlayer.hp -= dmg2
+       }
+
+   
+   }
+else 
+     {
+      if (contact = 1)
+         {
+          contact = 0
+          oPlayer.rychlost = back_spd
+         }
+     
+     }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+  </events>
   <PhysicsObject>0</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
   <PhysicsObjectShape>0</PhysicsObjectShape>
