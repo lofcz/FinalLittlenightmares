@@ -28,6 +28,8 @@
             <string>text_alpha = 0;
 color = c_white
 green = 100
+
+image_speed = 0;
 </string>
           </argument>
         </arguments>
@@ -116,7 +118,7 @@ else
           <argument>
             <kind>1</kind>
             <string>draw_set_font(fntText)
-draw_sprite_ext(sprite_index,0,x,y,1,1,image_angle,color,image_alpha)
+draw_sprite_ext(sprite_index,image_index,x,y,1,1,image_angle,color,image_alpha)
 draw_set_colour(c_white);
 draw_set_alpha(text_alpha);
 if (distance_to_object(par_player) &lt; 30)
