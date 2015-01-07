@@ -612,6 +612,7 @@
       <object>objects\oCoinIF</object>
       <object>objects\oKey</object>
       <object>objects\oManaOrb</object>
+      <object>objects\oManaOrb150</object>
       <object>objects\oMagicSign</object>
       <object>objects\oMagicSign2</object>
       <object>objects\par_sign</object>
