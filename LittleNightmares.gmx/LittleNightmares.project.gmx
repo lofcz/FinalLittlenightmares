@@ -214,7 +214,6 @@
     <sprite>sprites\sprite74</sprite>
     <sprite>sprites\sAlphasettings</sprite>
     <sprite>sprites\sLight1</sprite>
-    <sprite>sprites\Cedulka__elezo_</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Tilesets">
