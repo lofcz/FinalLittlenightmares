@@ -252,7 +252,6 @@
       <script>scripts\scrEffectManaOrb.gml</script>
       <script>scripts\scrEffectKey.gml</script>
       <script>scripts\scrEffectHeal.gml</script>
-      <script>scripts\scrEffectLava.gml</script>
     </scripts>
     <scripts name="Functions">
       <script>scripts\scrRoomTransition.gml</script>
@@ -668,11 +667,11 @@
     <timeline>timelines\tmlHuman1</timeline>
   </timelines>
   <rooms name="rooms">
-    <room>rooms\mapLevel1</room>
     <room>rooms\mapLevel4</room>
     <room>rooms\mapMainMenu</room>
     <room>rooms\mapIntro</room>
     <room>rooms\mapLevel2</room>
+    <room>rooms\mapLevel1</room>
     <room>rooms\mapLevel5</room>
     <room>rooms\room9</room>
     <room>rooms\mapLevel3</room>
