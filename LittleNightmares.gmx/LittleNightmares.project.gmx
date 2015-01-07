@@ -153,6 +153,7 @@
       <sprite>sprites\sDoor412</sprite>
       <sprite>sprites\sDoor14</sprite>
       <sprite>sprites\sDoor14Flip</sprite>
+      <sprite>sprites\sprite79</sprite>
       <sprite>sprites\sprite75</sprite>
     </sprites>
     <sprites name="Items">
@@ -211,6 +212,7 @@
     <sprite>sprites\sprite73</sprite>
     <sprite>sprites\sprite74</sprite>
     <sprite>sprites\sAlphasettings</sprite>
+    <sprite>sprites\sLight1</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Tilesets">
@@ -233,6 +235,7 @@
     <background>background\background12</background>
     <background>background\background13</background>
     <background>background\background14</background>
+    <background>background\background16</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -255,6 +258,19 @@
       <script>scripts\scrNullSpecialPoints.gml</script>
       <script>scripts\scrMessageBox.gml</script>
       <script>scripts\scrMulticoloredText.gml</script>
+      <scripts name="Lightining)">
+        <script>scripts\xg_start.gml</script>
+        <script>scripts\xg_set_region.gml</script>
+        <script>scripts\xg_apply_lighting.gml</script>
+        <script>scripts\xg_update.gml</script>
+        <script>scripts\xg_add_diffuse.gml</script>
+        <script>scripts\xg_add_heightmap.gml</script>
+        <script>scripts\xg_add_end.gml</script>
+        <script>scripts\xg_add_sprite.gml</script>
+        <script>scripts\xg_add_background.gml</script>
+        <script>scripts\xg_add_light_sprite.gml</script>
+        <script>scripts\xg_add_light_background.gml</script>
+      </scripts>
     </scripts>
     <scripts name="Inventory">
       <script>scripts\inventory_item_add.gml</script>
@@ -516,6 +532,9 @@
       </scripts>
     </scripts>
   </scripts>
+  <shaders name="shaders">
+    <shader type="GLSLES">shaders\shaderLight.shader</shader>
+  </shaders>
   <fonts name="fonts">
     <font>fonts\fnt0</font>
     <font>fonts\fnt1</font>
@@ -531,6 +550,7 @@
       <objects name="Solid">
         <object>objects\oWall1</object>
         <object>objects\oWall6</object>
+        <object>objects\oWall7</object>
         <object>objects\sWall1Red</object>
         <object>objects\oWall5</object>
         <object>objects\oWall3NoGhost</object>
@@ -640,20 +660,23 @@
       <object>objects\oHuman1</object>
       <object>objects\oHuman2</object>
     </objects>
+    <object>objects\oLavapool</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\tmlHuman1</timeline>
   </timelines>
   <rooms name="rooms">
-    <room>rooms\mapLevel4</room>
     <room>rooms\mapMainMenu</room>
+    <room>rooms\mapLogo</room>
+    <room>rooms\mapIntro</room>
+    <room>rooms\mapLevel2</room>
     <room>rooms\mapLevel1</room>
+    <room>rooms\mapLevel5</room>
+    <room>rooms\mapLevel4</room>
+    <room>rooms\room9</room>
     <room>rooms\mapLevel3</room>
     <room>rooms\mapTutorial</room>
-    <room>rooms\mapLevel2</room>
-    <room>rooms\mapIntro</room>
     <room>rooms\mapAlphaSettings</room>
-    <room>rooms\mapLogo</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
