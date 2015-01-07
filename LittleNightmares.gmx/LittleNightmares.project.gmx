@@ -680,6 +680,9 @@
     <room>rooms\mapAlphaSettings</room>
     <room>rooms\mapLogo</room>
   </rooms>
+  <constants number="1">
+    <constant name="zelezny_skin">1</constant>
+  </constants>
   <help>
     <rtf>help.rtf</rtf>
   </help>
