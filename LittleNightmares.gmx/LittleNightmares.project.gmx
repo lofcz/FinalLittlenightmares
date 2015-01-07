@@ -152,6 +152,7 @@
       <sprite>sprites\sDoor41</sprite>
       <sprite>sprites\sDoor412</sprite>
       <sprite>sprites\sDoor14</sprite>
+      <sprite>sprites\sDoor14Flip</sprite>
       <sprite>sprites\sprite75</sprite>
     </sprites>
     <sprites name="Items">
@@ -548,6 +549,7 @@
         <objects name="NoKey">
           <object>objects\oDoor41NOKEY</object>
           <object>objects\oDoor14NOKEY</object>
+          <object>objects\oDoor14FlipNOKEY</object>
         </objects>
         <objects name="Puzzle">
           <object>objects\oDoor14PUZZLE</object>
@@ -643,9 +645,9 @@
     <timeline>timelines\tmlHuman1</timeline>
   </timelines>
   <rooms name="rooms">
+    <room>rooms\mapLevel4</room>
     <room>rooms\mapMainMenu</room>
     <room>rooms\mapLevel1</room>
-    <room>rooms\mapLevel4</room>
     <room>rooms\mapLevel3</room>
     <room>rooms\mapTutorial</room>
     <room>rooms\mapLevel2</room>

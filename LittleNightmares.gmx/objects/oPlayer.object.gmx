@@ -134,6 +134,7 @@ if (room = mapTutorial) {global.world_type = "real"}
 if (room = mapLevel1) {global.world_type = "wonderland"}
 if (room = mapLevel2) {global.world_type = "wonderland"}
 if (room = mapLevel3) {global.world_type = "wonderland"}
+if (room = mapLevel4) {global.world_type = "wonderland"}
 
 
 
