@@ -18,8 +18,8 @@ global.map_type = "wonderland"</code>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1456</w>
-    <h>876</h>
+    <w>1936</w>
+    <h>1056</h>
     <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
@@ -29,8 +29,8 @@ global.map_type = "wonderland"</code>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
     <page>0</page>
-    <xoffset>1339</xoffset>
-    <yoffset>1155</yoffset>
+    <xoffset>6740</xoffset>
+    <yoffset>6027</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="background9" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -493,6 +493,10 @@ global.map_type = "wonderland"</code>
     <instance objName="oWall3" x="3104" y="1344" name="inst_3ADD8E95" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oManaOrb150" x="3060" y="1390" name="inst_FE29072D" locked="0" code="" scaleX="1.82000005245209" scaleY="1.63999998569489" colour="4294967295" rotation="0"/>
     <instance objName="oDoor14FlipNOKEY" x="1312" y="736" name="inst_AFB3DB11" locked="0" code="" scaleX="1" scaleY="1.3400000333786" colour="4294967295" rotation="0"/>
+    <instance objName="oWall3" x="1888" y="1680" name="inst_AF4B1614" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oWall3" x="1888" y="1664" name="inst_0068B9BE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oWall3" x="1888" y="1760" name="inst_709FF1C6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oWall3" x="1888" y="1744" name="inst_6F35A1A7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
