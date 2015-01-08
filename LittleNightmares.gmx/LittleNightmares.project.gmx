@@ -663,14 +663,13 @@
       <object>objects\oHuman2</object>
     </objects>
     <object>objects\oLavapool</object>
+    <object>objects\oChest</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\tmlHuman1</timeline>
   </timelines>
   <rooms name="rooms">
     <room>rooms\mapLevel4</room>
-    <room>rooms\mapMainMenu</room>
-    <room>rooms\mapIntro</room>
     <room>rooms\mapLevel2</room>
     <room>rooms\mapLevel1</room>
     <room>rooms\mapLevel5</room>
