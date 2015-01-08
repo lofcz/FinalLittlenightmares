@@ -27,6 +27,9 @@
             <kind>1</kind>
             <string>//show_message(plt_multiply(3,6))
 /// Tvorba globálních objektů
+
+//view_angle = 270;
+
 if (instance_number(oVariableController) = 0)
    {
     instance_create(x,y,oVariableController)
@@ -825,6 +828,8 @@ if (keyboard_check_pressed(ord("P")))
             <kind>1</kind>
             <string>draw_self()
 
+//draw_set_color(c_white);
+//d3d_set_projection_ortho(view_xview[0],view_yview[0],view_xview[0]+640,view_yview[0]+480,0); 
 
 </string>
           </argument>
