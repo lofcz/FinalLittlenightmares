@@ -216,6 +216,7 @@
     <sprite>sprites\sLight1</sprite>
     <sprite>sprites\Chest_otevrena</sprite>
     <sprite>sprites\Chest_zavrena</sprite>
+    <sprite>sprites\sprite84</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Tilesets">
