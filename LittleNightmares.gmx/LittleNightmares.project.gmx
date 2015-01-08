@@ -216,6 +216,7 @@
     <sprite>sprites\sAlphasettings</sprite>
     <sprite>sprites\sLight1</sprite>
     <sprite>sprites\sChest_otevrena</sprite>
+    <sprite>sprites\sprite84</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Tilesets">
