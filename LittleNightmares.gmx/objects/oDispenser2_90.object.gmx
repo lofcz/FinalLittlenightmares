@@ -78,10 +78,14 @@ i.direction = 360;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (oPlayer.spell_on = 0 &amp;&amp; alarm[0] &gt; 50)
+            <string>if (oPlayer.spell_on = 1 &amp;&amp; oPlayer.vision_selected = "vision_green")
     {
-   alarm[0] = random_range(30,50)
+    alarm[0] = random_range(200,300)
     }
+else { alarm[0] = random_range(10,30)}
+i = instance_create(x,y+16,oBolt)
+i.speed = random_range(15,19)
+i.direction = 360;
 </string>
           </argument>
         </arguments>
