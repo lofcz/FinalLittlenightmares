@@ -217,6 +217,12 @@
     <sprite>sprites\sLight1</sprite>
     <sprite>sprites\sChest_otevrena</sprite>
     <sprite>sprites\sprite84</sprite>
+    <sprite>sprites\sprite85</sprite>
+    <sprite>sprites\sprite86</sprite>
+    <sprite>sprites\sprite87</sprite>
+    <sprite>sprites\sprite88</sprite>
+    <sprite>sprites\sprite89</sprite>
+    <sprite>sprites\sprite90</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Tilesets">
@@ -240,6 +246,7 @@
     <background>background\background13</background>
     <background>background\background14</background>
     <background>background\background16</background>
+    <background>background\background17</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -535,6 +542,7 @@
         <script>scripts\plt_init.gml</script>
         <script>scripts\plt_multiply.gml</script>
       </scripts>
+      <script>scripts\scrTransitionSpiral.gml</script>
     </scripts>
   </scripts>
   <shaders name="shaders">
@@ -554,6 +562,11 @@
     <objects name="Walls">
       <objects name="Solid">
         <object>objects\oWall1</object>
+        <object>objects\oWallHalf1_1</object>
+        <object>objects\oWallHalf1_2</object>
+        <object>objects\oWallHalf1_3</object>
+        <object>objects\oWallHalf1_4</object>
+        <object>objects\oWallHalf1_5</object>
         <object>objects\oWall6</object>
         <object>objects\oWall7</object>
         <object>objects\oWall1Red</object>
@@ -674,11 +687,11 @@
     <timeline>timelines\tmlHuman1</timeline>
   </timelines>
   <rooms name="rooms">
+    <room>rooms\mapLevel1</room>
+    <room>rooms\room9</room>
     <room>rooms\mapLevel4</room>
     <room>rooms\mapLevel2</room>
-    <room>rooms\mapLevel1</room>
     <room>rooms\mapLevel5</room>
-    <room>rooms\room9</room>
     <room>rooms\mapLevel3</room>
     <room>rooms\mapTutorial</room>
     <room>rooms\mapAlphaSettings</room>
