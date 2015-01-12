@@ -139,6 +139,11 @@
       <sprite>sprites\sDispenser2</sprite>
       <sprite>sprites\sDispenser2_90</sprite>
       <sprite>sprites\sWall2</sprite>
+      <sprite>sprites\sWall3</sprite>
+      <sprite>sprites\sprite91</sprite>
+      <sprite>sprites\sprite92</sprite>
+      <sprite>sprites\sprite93</sprite>
+      <sprite>sprites\sprite94</sprite>
       <sprite>sprites\sWall1</sprite>
       <sprite>sprites\sWall5</sprite>
       <sprite>sprites\sWall4</sprite>
@@ -186,7 +191,6 @@
     <sprite>sprites\sSetings</sprite>
     <sprite>sprites\sprite27</sprite>
     <sprite>sprites\sNextLevel</sprite>
-    <sprite>sprites\sWall3</sprite>
     <sprite>sprites\sprite81</sprite>
     <sprite>sprites\sBulletin</sprite>
     <sprite>sprites\sLever</sprite>
@@ -557,145 +561,171 @@
   </fonts>
   <objects name="objects">
     <object>objects\par_player</object>
-    <object>objects\oPlayer</object>
-    <object>objects\oPlayerGhost</object>
-    <objects name="Walls">
-      <objects name="Solid">
-        <object>objects\oWall1</object>
-        <object>objects\oWallHalf1_1</object>
-        <object>objects\oWallHalf1_2</object>
-        <object>objects\oWallHalf1_3</object>
-        <object>objects\oWallHalf1_4</object>
-        <object>objects\oWallHalf1_5</object>
-        <object>objects\oWall6</object>
-        <object>objects\oWall7</object>
-        <object>objects\oWall1Red</object>
-        <object>objects\oWall5</object>
-        <object>objects\oWall3Red</object>
-        <object>objects\oWall3</object>
-        <object>objects\oWall2</object>
-        <object>objects\oWall4</object>
-        <object>objects\oCrate</object>
-        <object>objects\oSpikeWall</object>
-      </objects>
-      <objects name="Doors">
-        <objects name="Key">
-          <object>objects\oDoor41</object>
-          <object>objects\oDoor412</object>
-          <object>objects\oDoor14</object>
+    <objects name="PERSPECTIVE TOP DOWN">
+      <object>objects\oPlayer</object>
+      <object>objects\oPlayerGhost</object>
+      <objects name="Walls">
+        <objects name="Solid">
+          <object>objects\oWall1</object>
+          <objects name="Halfwalls">
+            <objects name="1">
+              <object>objects\oWallHalf1_3</object>
+              <object>objects\oWallHalf1_1</object>
+              <object>objects\oWallHalf1_2</object>
+              <object>objects\oWallHalf1_5</object>
+              <object>objects\oWallHalf1_4</object>
+            </objects>
+            <objects name="2">
+              <object>objects\oHalfWall2_1</object>
+              <object>objects\oHalfWall2_2</object>
+              <object>objects\oHalfWall2_3</object>
+              <object>objects\oHalfWall2_4</object>
+            </objects>
+          </objects>
+          <object>objects\oWall6</object>
+          <object>objects\oWall7</object>
+          <object>objects\oWall1Red</object>
+          <object>objects\oWall5</object>
+          <object>objects\oWall3Red</object>
+          <object>objects\oWall3</object>
+          <object>objects\oWall2</object>
+          <object>objects\oWall4</object>
+          <object>objects\oCrate</object>
+          <object>objects\oSpikeWall</object>
+          <object>objects\oLavapool</object>
         </objects>
-        <objects name="NoKey">
-          <object>objects\oDoor41NOKEY</object>
-          <object>objects\oDoor14NOKEY</object>
-          <object>objects\oDoor14FlipNOKEY</object>
+        <objects name="Doors">
+          <objects name="Key">
+            <object>objects\oDoor41</object>
+            <object>objects\oDoor412</object>
+            <object>objects\oDoor14</object>
+          </objects>
+          <objects name="NoKey">
+            <object>objects\oDoor41NOKEY</object>
+            <object>objects\oDoor14NOKEY</object>
+            <object>objects\oDoor14FlipNOKEY</object>
+          </objects>
+          <objects name="Puzzle">
+            <object>objects\oDoor14PUZZLE</object>
+          </objects>
+          <objects name="Kytky">
+            <object>objects\oDoor14KYTKY</object>
+          </objects>
+          <objects name="Coins">
+            <object>objects\oDoor14COINS</object>
+          </objects>
         </objects>
-        <objects name="Puzzle">
-          <object>objects\oDoor14PUZZLE</object>
+        <objects name="Traps">
+          <object>objects\oDispenser</object>
+          <object>objects\oDispenser2</object>
+          <object>objects\oDispenser2_90</object>
         </objects>
-        <objects name="Kytky">
-          <object>objects\oDoor14KYTKY</object>
-        </objects>
-        <objects name="Coins">
-          <object>objects\oDoor14COINS</object>
+        <objects name="Light Control">
+          <object>objects\oIn</object>
+          <object>objects\oIn1use</object>
+          <object>objects\oOut</object>
         </objects>
       </objects>
-      <objects name="Traps">
-        <object>objects\oDispenser</object>
-        <object>objects\oDispenser2</object>
-        <object>objects\oDispenser2_90</object>
+      <objects name="Buttons">
+        <object>objects\oContinue</object>
+        <object>objects\oNewGame</object>
+        <object>objects\oCredits</object>
+        <object>objects\oEndGame</object>
+        <object>objects\oOptions</object>
+        <object>objects\oLittlenightmares</object>
       </objects>
-      <objects name="Light Control">
-        <object>objects\oIn</object>
-        <object>objects\oIn1use</object>
-        <object>objects\oOut</object>
+      <objects name="Misc">
+        <object>objects\oArrow</object>
+        <object>objects\oBolt</object>
+        <object>objects\oSpellChoose</object>
+        <object>objects\oNextLevel</object>
+      </objects>
+      <objects name="Items">
+        <object>objects\oCoin</object>
+        <object>objects\oCoinIF</object>
+        <object>objects\oKey</object>
+        <object>objects\oManaOrb</object>
+        <object>objects\oManaOrb150</object>
+        <object>objects\oMagicSign</object>
+        <object>objects\oMagicSign2</object>
+        <object>objects\par_sign</object>
+        <object>objects\oMedpack</object>
+        <object>objects\oManapack</object>
+        <object>objects\oHpPotion</object>
+        <object>objects\oMpPotion</object>
+      </objects>
+      <objects name="Decorations">
+        <object>objects\oFlower1</object>
+        <object>objects\oFlower1IF</object>
+        <object>objects\oBulletin</object>
+        <object>objects\oDart</object>
+        <object>objects\object68</object>
+        <object>objects\oShadow1</object>
+        <object>objects\oEmptyPotion</object>
+      </objects>
+      <objects name="Controllers">
+        <object>objects\oRoomTransition</object>
+        <object>objects\oDeathTransition</object>
+        <object>objects\oOptimalizace</object>
+        <object>objects\par_item</object>
+        <object>objects\par_wall</object>
+        <object>objects\oLight</object>
+        <object>objects\o3D</object>
+        <object>objects\oMessageBox</object>
+        <object>objects\oSetings</object>
+        <object>objects\oCutscene</object>
+        <object>objects\oChapter</object>
+        <object>objects\oInventory</object>
+        <object>objects\oVariableController</object>
+        <object>objects\oAlphaSettings</object>
+        <object>objects\oLogo</object>
+      </objects>
+      <objects name="Interactable">
+        <objects name="Levers">
+          <object>objects\oLever1</object>
+          <object>objects\oLever2</object>
+          <object>objects\oLever3</object>
+          <object>objects\oLever4</object>
+          <object>objects\oLever5</object>
+        </objects>
+        <object>objects\oCheckPoint</object>
+        <object>objects\oLetter</object>
+        <object>objects\oChest</object>
+      </objects>
+      <objects name="NPC">
+        <object>objects\oMerchant</object>
+        <object>objects\oHuman1</object>
+        <object>objects\oHuman2</object>
       </objects>
     </objects>
-    <objects name="Buttons">
-      <object>objects\oContinue</object>
-      <object>objects\oNewGame</object>
-      <object>objects\oCredits</object>
-      <object>objects\oEndGame</object>
-      <object>objects\oOptions</object>
-      <object>objects\oLittlenightmares</object>
-    </objects>
-    <objects name="Misc">
-      <object>objects\oArrow</object>
-      <object>objects\oBolt</object>
-      <object>objects\oSpellChoose</object>
-      <object>objects\oNextLevel</object>
-    </objects>
-    <objects name="Items">
-      <object>objects\oCoin</object>
-      <object>objects\oCoinIF</object>
-      <object>objects\oKey</object>
-      <object>objects\oManaOrb</object>
-      <object>objects\oManaOrb150</object>
-      <object>objects\oMagicSign</object>
-      <object>objects\oMagicSign2</object>
-      <object>objects\par_sign</object>
-      <object>objects\oMedpack</object>
-      <object>objects\oManapack</object>
-      <object>objects\oHpPotion</object>
-      <object>objects\oMpPotion</object>
-    </objects>
-    <objects name="Controllers">
-      <object>objects\oRoomTransition</object>
-      <object>objects\oDeathTransition</object>
-      <object>objects\oOptimalizace</object>
-      <object>objects\par_item</object>
-      <object>objects\par_wall</object>
-      <object>objects\oLight</object>
-      <object>objects\oMessageBox</object>
-      <object>objects\oSetings</object>
-      <object>objects\oCutscene</object>
-      <object>objects\oChapter</object>
-      <object>objects\oInventory</object>
-      <object>objects\oVariableController</object>
-      <object>objects\oAlphaSettings</object>
-      <object>objects\oLogo</object>
-    </objects>
-    <objects name="Decorations">
-      <object>objects\oFlower1</object>
-      <object>objects\oFlower1IF</object>
-      <object>objects\oBulletin</object>
-      <object>objects\oDart</object>
-      <object>objects\object68</object>
-      <object>objects\oShadow1</object>
-      <object>objects\oEmptyPotion</object>
-    </objects>
-    <objects name="Interactable">
-      <objects name="Levers">
-        <object>objects\oLever1</object>
-        <object>objects\oLever2</object>
-        <object>objects\oLever3</object>
-        <object>objects\oLever4</object>
-        <object>objects\oLever5</object>
+    <objects name="PERSPECTIVE PLATFORM">
+      <object>objects\platform_oPlayer</object>
+      <objects name="Walls">
+        <object>objects\platform_oWall1</object>
       </objects>
-      <object>objects\oCheckPoint</object>
-      <object>objects\oLetter</object>
     </objects>
-    <objects name="NPC">
-      <object>objects\oMerchant</object>
-      <object>objects\oHuman1</object>
-      <object>objects\oHuman2</object>
-    </objects>
-    <object>objects\oLavapool</object>
-    <object>objects\oChest</object>
-    <object>objects\o3D</object>
+    <object>objects\object94</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\tmlHuman1</timeline>
   </timelines>
   <rooms name="rooms">
-    <room>rooms\mapLevel1</room>
-    <room>rooms\room9</room>
-    <room>rooms\mapLevel4</room>
-    <room>rooms\mapLevel2</room>
-    <room>rooms\mapLevel5</room>
-    <room>rooms\mapLevel3</room>
-    <room>rooms\mapTutorial</room>
-    <room>rooms\mapAlphaSettings</room>
-    <room>rooms\mapLogo</room>
+    <room>rooms\platform_mapLevel1</room>
+    <room>rooms\mapMainMenu</room>
+    <rooms name="Intro">
+      <room>rooms\mapTutorial</room>
+      <room>rooms\mapAlphaSettings</room>
+      <room>rooms\mapLogo</room>
+    </rooms>
+    <rooms name="Levels">
+      <rooms name="Perspective top down">
+        <room>rooms\mapLevel5</room>
+        <room>rooms\mapLevel2</room>
+        <room>rooms\mapLevel4</room>
+        <room>rooms\mapLevel1</room>
+        <room>rooms\mapLevel3</room>
+      </rooms>
+    </rooms>
   </rooms>
   <constants number="1">
     <constant name="zelezny_skin">1</constant>
