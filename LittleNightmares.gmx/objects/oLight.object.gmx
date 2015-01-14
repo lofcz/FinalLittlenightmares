@@ -32,7 +32,7 @@ shadow_f= 100;
 shadow = 0;
 ww_minus = 0;
 object = oPlayer
-show_message(instance_number(object))
+//show_message(instance_number(object))
 
 </string>
           </argument>

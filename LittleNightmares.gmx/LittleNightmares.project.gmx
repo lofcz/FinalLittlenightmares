@@ -150,6 +150,7 @@
       <sprite>sprites\sWallGhostBlock</sprite>
       <sprite>sprites\sprite30</sprite>
       <sprite>sprites\sCrate</sprite>
+      <sprite>sprites\sCrateRED</sprite>
       <sprite>sprites\sprite9</sprite>
       <sprite>sprites\sIn1use</sprite>
       <sprite>sprites\sprite10</sprite>
@@ -253,7 +254,9 @@
     <background>background\background17</background>
     <background>background\background18</background>
   </backgrounds>
-  <paths name="paths"/>
+  <paths name="paths">
+    <path>paths\pthCutscene</path>
+  </paths>
   <scripts name="scripts">
     <scripts name="Particle effects">
       <script>scripts\scrEffectArrow.gml</script>
@@ -589,6 +592,7 @@
           <object>objects\oWall6</object>
           <object>objects\oWall7</object>
           <object>objects\oWall1Red</object>
+          <object>objects\oCrateRED</object>
           <object>objects\oWall5</object>
           <object>objects\oWall3Red</object>
           <object>objects\oWall3</object>
@@ -683,6 +687,7 @@
         <object>objects\oVariableController</object>
         <object>objects\oAlphaSettings</object>
         <object>objects\oLogo</object>
+        <object>objects\oPlayerCutscene</object>
       </objects>
       <objects name="Interactable">
         <objects name="Levers">
@@ -731,6 +736,9 @@
         <room>rooms\mapLevel4</room>
         <room>rooms\mapLevel3</room>
       </rooms>
+    </rooms>
+    <rooms name="Cutscenes">
+      <room>rooms\mapCutscene1</room>
     </rooms>
   </rooms>
   <constants number="1">
