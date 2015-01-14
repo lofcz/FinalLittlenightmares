@@ -251,6 +251,7 @@
     <background>background\background14</background>
     <background>background\background16</background>
     <background>background\background17</background>
+    <background>background\background18</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -716,6 +717,7 @@
   </timelines>
   <rooms name="rooms">
     <room>rooms\mapLevel1</room>
+    <room>rooms\platform_mapLevel1</room>
     <room>rooms\mapMainMenu</room>
     <rooms name="Intro">
       <room>rooms\mapTutorial</room>
@@ -728,9 +730,6 @@
         <room>rooms\mapLevel2</room>
         <room>rooms\mapLevel4</room>
         <room>rooms\mapLevel3</room>
-      </rooms>
-      <rooms name="Perspective Platform">
-        <room>rooms\platform_mapLevel1</room>
       </rooms>
     </rooms>
   </rooms>

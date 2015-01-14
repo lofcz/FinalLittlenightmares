@@ -26,6 +26,11 @@
           <argument>
             <kind>1</kind>
             <string>activated = 0;
+xc = 1;
+yc = 1;
+pp = 0;
+m = 1
+
 </string>
           </argument>
         </arguments>
@@ -49,6 +54,30 @@
           <argument>
             <kind>1</kind>
             <string>if (activated = 1) {if (image_angle &lt; 90) {image_angle+=5}}
+if (distance_to_object(oPlayer) &lt; 100 &amp;&amp; activated = 0)
+   {
+    pp = 1
+   }
+else {pp =0 xs = 1 ys = 1 m = 1}
+
+if (pp = 1)
+   {
+    if (xs &lt; 1.2 &amp;&amp; m = 1)
+       {
+        xs += 0.01
+        ys = xs
+       }
+       else {m = 2}
+       
+    if (xs &gt; 1 &amp;&amp; m = 2)
+       {
+        xs -= 0.01
+        ys = xs
+       }
+       else {m = 1}
+
+   }
+
 </string>
           </argument>
         </arguments>
@@ -71,10 +100,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if    (   oInventory.item[0] = "key"    || oInventory.item[1] = "key" ||oInventory.item[2] = "key"   )
+            <string>if    (inventory_item("key"))
 {
 if (activated = 0) 
      {
+       scrLog("Dveře odemčeny",c_lime)
+
      activated = 1; 
      if (  oInventory.item[0] = "key" ) {oInventory.item[0] = ""}
      else  if (  oInventory.item[1] = "key" ) {oInventory.item[1] = ""}
@@ -85,12 +116,47 @@ if (activated = 0)
 
 
 }
-else
-    {
-     other.x = other.xprevious // Vrátí hráče na přechozí x-osovou souřadnici
+
+
+other.x = other.xprevious // Vrátí hráče na přechozí x-osovou souřadnici
 other.y = other.yprevious // Vrátí hráče na přechozí y-osovou souřadnici
 
-    }
+
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_self()
+if (distance_to_object(oPlayer) &lt; 100 &amp;&amp; activated = 0)
+   {
+   draw_set_halign(fa_center)
+   draw_set_valign(fa_middle)
+  if (inventory_item("key")) {  draw_text_transformed_colour(oPlayer.x,oPlayer.y-70,"Mám klíč",xs,ys,0,c_white,c_white,c_white,c_white,1) }
+     else { draw_text_transformed_colour(oPlayer.x,oPlayer.y-70,"Dveře jsou zamčené, budu potřebovat klíč.",xs,ys,0,c_white,c_white,c_white,c_white,1) }
+    draw_set_halign(fa_left)
+    draw_set_valign(fa_top)
+   }
+   
+
 
 </string>
           </argument>
