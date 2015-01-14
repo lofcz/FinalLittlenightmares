@@ -290,6 +290,7 @@
     </scripts>
     <scripts name="Inventory">
       <script>scripts\inventory_item_add.gml</script>
+      <script>scripts\inventory_item.gml</script>
     </scripts>
     <scripts name="Dlls">
       <scripts name="GMMovie">
@@ -548,6 +549,8 @@
       </scripts>
       <script>scripts\scrTransitionSpiral.gml</script>
     </scripts>
+    <script>scripts\scrWalk.gml</script>
+    <script>scripts\scrLog.gml</script>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shaderLight.shader</shader>
@@ -702,15 +705,17 @@
       <object>objects\platform_oPlayer</object>
       <objects name="Walls">
         <object>objects\platform_oWall1</object>
+        <object>objects\object98</object>
+        <object>objects\platform_oWall1STANDART</object>
       </objects>
     </objects>
-    <object>objects\object94</object>
+    <object>objects\oLog</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\tmlHuman1</timeline>
   </timelines>
   <rooms name="rooms">
-    <room>rooms\platform_mapLevel1</room>
+    <room>rooms\mapLevel1</room>
     <room>rooms\mapMainMenu</room>
     <rooms name="Intro">
       <room>rooms\mapTutorial</room>
@@ -722,8 +727,10 @@
         <room>rooms\mapLevel5</room>
         <room>rooms\mapLevel2</room>
         <room>rooms\mapLevel4</room>
-        <room>rooms\mapLevel1</room>
         <room>rooms\mapLevel3</room>
+      </rooms>
+      <rooms name="Perspective Platform">
+        <room>rooms\platform_mapLevel1</room>
       </rooms>
     </rooms>
   </rooms>

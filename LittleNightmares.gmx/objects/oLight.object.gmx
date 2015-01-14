@@ -31,7 +31,7 @@ in_room = 0;
 shadow_f= 100;
 shadow = 0;
 ww_minus = 0;
-object = platform_oPlayer
+object = oPlayer
 show_message(instance_number(object))
 
 </string>

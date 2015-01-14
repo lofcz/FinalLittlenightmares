@@ -25,7 +25,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>a = 0 // Zda se blok vykresluje
+            <string>
+
+xx = x;
+yy = y;
+st = 0
+y += 100
+image_alpha = 0
 </string>
           </argument>
         </arguments>
@@ -48,33 +54,17 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (distance_to_object(platform_oPlayer) &lt; 200 &amp;&amp; a = 0) {a = 1}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="platform_oPlayer">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if (a = 1)
+            <string>if (distance_to_object(platform_oPlayer) -200 &lt; 250)
    {
- 
+    if (st = 0) {st = 1}
    }
+   
+if (st = 1) 
+{
+if (y &gt; ystart) {y -= 10}
+if (image_alpha &lt; 1) {image_alpha += 0.1}
+}
+
 </string>
           </argument>
         </arguments>
@@ -97,7 +87,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (a = 1) {draw_self()}
+            <string>draw_self()
 </string>
           </argument>
         </arguments>

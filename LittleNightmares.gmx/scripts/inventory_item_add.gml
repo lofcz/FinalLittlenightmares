@@ -10,4 +10,3 @@ if (oInventory.item[0] = "")
           {
            oInventory.item[2] = argument0
           }
-

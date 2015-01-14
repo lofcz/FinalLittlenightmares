@@ -128,8 +128,17 @@ if (mouse_check_button_pressed(mb_left) &amp;&amp; mouse_x &gt; x+32 &amp;&amp; 
       }
    if (item[0] = "key")
       {
-       draw_sprite(sKey,0,view_xview[0]+928,view_yview[0]+704+32)
+       draw_sprite(sKey,0,view_xview[0]+928+16,view_yview[0]+704+32+16)
       }
+     if (item[1] = "key")
+      {
+       draw_sprite(sKey,0,view_xview[0]+928+16+32,view_yview[0]+704+32+16)
+      }
+     if (item[2] = "key")
+      {
+       draw_sprite(sKey,0,view_xview[0]+928+16+64,view_yview[0]+704+32+16)
+      }
+
       
       
       
