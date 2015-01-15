@@ -231,6 +231,7 @@
     <sprite>sprites\sprite89</sprite>
     <sprite>sprites\sprite103</sprite>
     <sprite>sprites\sprite90</sprite>
+    <sprite>sprites\sprite104</sprite>
     <sprite>sprites\sGUI</sprite>
     <sprite>sprites\sGUIBars</sprite>
     <sprite>sprites\sGUIArms</sprite>
@@ -593,6 +594,12 @@
               <object>objects\oHalfWall2_2</object>
               <object>objects\oHalfWall2_3</object>
               <object>objects\oHalfWall2_4</object>
+            </objects>
+            <objects name="1red">
+              <object>objects\oWallHalf1_1RED</object>
+              <object>objects\oWallHalf1_2RED</object>
+              <object>objects\oWallHalf1_3RED</object>
+              <object>objects\oWallHalf1_4RED</object>
             </objects>
           </objects>
           <object>objects\oWall6</object>
