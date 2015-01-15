@@ -225,9 +225,15 @@
     <sprite>sprites\sprite85</sprite>
     <sprite>sprites\sprite86</sprite>
     <sprite>sprites\sprite87</sprite>
+    <sprite>sprites\sprite101</sprite>
     <sprite>sprites\sprite88</sprite>
+    <sprite>sprites\sprite102</sprite>
     <sprite>sprites\sprite89</sprite>
+    <sprite>sprites\sprite103</sprite>
     <sprite>sprites\sprite90</sprite>
+    <sprite>sprites\sGUI</sprite>
+    <sprite>sprites\sGUIBars</sprite>
+    <sprite>sprites\sGUIArms</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Tilesets">

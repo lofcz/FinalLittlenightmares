@@ -32,8 +32,12 @@ shadow_f= 100;
 shadow = 0;
 ww_minus = 0;
 object = oPlayer
+vis = ""
 //show_message(instance_number(object))
 
+
+gui_xs = 0.75
+gui_ys = 0.75
 </string>
           </argument>
         </arguments>
@@ -56,7 +60,9 @@ object = oPlayer
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>if (mouse_check_button_pressed(mb_left)) {gui_xs -= 0.05 gui_ys = gui_xs}
+if (mouse_check_button_pressed(mb_right)) {gui_xs += 0.05 gui_ys = gui_xs}
+
     x = object.x;
     y = object.y;
     
@@ -135,7 +141,33 @@ draw_set_font(fntText)
 
 if (instance_number(oCutscene) = 0 &amp;&amp; global.world_type = "wonderland")
    {    
-   
+      draw_sprite_ext(sGUI,0,view_xview+5,view_yview+610,gui_xs,gui_ys,0,c_white,1)   // +60
+      // hp
+      draw_sprite_ext(sGUIBars,1,view_xview+5+137,view_yview+550+72,gui_xs,gui_ys,0,c_white,1)
+      draw_sprite_part_ext(sGUIBars,0,0,0,199*(oPlayer.hp/oPlayer.max_hp),49,view_xview+5+137,view_yview+550+72,gui_xs,gui_ys,c_white,1);
+      // mp
+         draw_sprite_ext(sGUIBars,3,view_xview+5+123,view_yview+658+15,gui_xs,gui_ys,0,c_white,1)
+      draw_sprite_part_ext(sGUIBars,2,0,0,199*(oPlayer.mana/oPlayer.max_mana),49,view_xview+5+123,view_yview+658+15,gui_xs,gui_ys,c_white,1);
+      // fear
+      
+      
+      // lightinig
+      if (vis = "Červená")
+         {
+            draw_sprite_ext(sGUI,6,view_xview+5,view_yview+610,gui_xs,gui_ys,0,c_white,1)   
+         }
+       if (vis = "Zelená")
+         {
+            draw_sprite_ext(sGUI,4,view_xview+5,view_yview+610,gui_xs,gui_ys,0,c_white,1)   
+         }
+           if (vis = "Modrá")
+         {
+            draw_sprite_ext(sGUI,5,view_xview+5,view_yview+610,gui_xs,gui_ys,0,c_white,1)   
+         }
+
+
+
+
     if (object.spell_on = 1 &amp;&amp; object.vision_selected = "vision_red")
         {
         draw_sprite_ext(sBackEffect,0,view_xview,view_yview,1,1,0,c_white,spell_alpha)
@@ -151,7 +183,7 @@ if (instance_number(oCutscene) = 0 &amp;&amp; global.world_type = "wonderland")
         draw_sprite_ext(sBackEffect,3,view_xview,view_yview,1,1,0,c_white,spell_alpha)
         
         }
-       hpp = (object.hp / object.max_hp)
+   /*    hpp = (object.hp / object.max_hp)
        hpp *= 100;
       draw_set_color(c_black)
       draw_rectangle_color(view_xview+5,view_yview+719,view_xview+201,view_yview+731,c_black,c_black,c_black,c_black,1)
@@ -170,7 +202,7 @@ if (instance_number(oCutscene) = 0 &amp;&amp; global.world_type = "wonderland")
       draw_set_colour(c_white)
       draw_text(view_xview+201,view_yview+730," Mana: "+string(round(manap))+string("%"))
       draw_set_colour(c_black)
-
+*/
     if (object.vision_selected="vision_red")
         {
         vis = "Červená"
@@ -183,11 +215,12 @@ if (instance_number(oCutscene) = 0 &amp;&amp; global.world_type = "wonderland")
         {
         vis = "Modrá"
         }  
+        /*
     draw_set_colour(c_white)
     draw_text(view_xview+5,view_yview+690,"Zvolená vize: "+string(vis))
     draw_text(view_xview+5,view_yview+670,"Mince: "+string(object.gold))
     draw_set_color(c_black)
-    
+                              */
     }
 </string>
           </argument>

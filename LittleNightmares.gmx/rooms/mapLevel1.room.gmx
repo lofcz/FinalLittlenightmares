@@ -26,12 +26,12 @@ global.map_type = "wonderland"</code>
     <showTiles>-1</showTiles>
     <showBackgrounds>-1</showBackgrounds>
     <showForegrounds>-1</showForegrounds>
-    <showViews>0</showViews>
+    <showViews>-1</showViews>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>0</deleteUnderlyingTiles>
-    <page>0</page>
-    <xoffset>-54</xoffset>
-    <yoffset>-172</yoffset>
+    <page>1</page>
+    <xoffset>1310</xoffset>
+    <yoffset>0</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="bcgMainMenu" x="0" y="0" htiled="-1" vtiled="-1" hspeed="1" vspeed="0" stretch="0"/>
