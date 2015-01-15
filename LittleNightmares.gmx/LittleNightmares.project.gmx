@@ -228,6 +228,7 @@
     <sprite>sprites\sprite88</sprite>
     <sprite>sprites\sprite89</sprite>
     <sprite>sprites\sprite90</sprite>
+    <sprite>sprites\sprite96</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Tilesets">
