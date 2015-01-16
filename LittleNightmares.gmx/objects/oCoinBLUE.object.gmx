@@ -100,7 +100,7 @@ if (m = 1)
             <string>if (a = 1)
 {
 oPlayer.gold ++; // Přidá hráči 1 zlato (ekvivalence zápisu oPlayer.gold += 1 nebo oPlayer.gold = oPlayer.gold + 1
-scrEffectCoin() // Vytvoří částicový efekt
+scrEffectCoin2Blue() // Vytvoří částicový efekt
 sound_play(sndCoin) // Přehraje zvuk
 instance_destroy() // Zničí se
 }

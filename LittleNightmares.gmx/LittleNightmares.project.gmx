@@ -276,6 +276,7 @@
       <script>scripts\scrEffectFireball.gml</script>
       <script>scripts\scrEffectMagicSign.gml</script>
       <script>scripts\scrEffectCoin.gml</script>
+      <script>scripts\scrEffectCoin2Blue.gml</script>
       <script>scripts\scrEffectCoin2.gml</script>
       <script>scripts\scrEffectInventoryAdd.gml</script>
       <script>scripts\scrEffectNextLevel.gml</script>
@@ -766,7 +767,8 @@
       <room>rooms\mapCutscene1</room>
     </rooms>
   </rooms>
-  <constants number="1">
+  <constants number="2">
+    <constant name="c_dkblue">make_colour_rgb(20,20,255)</constant>
     <constant name="zelezny_skin">1</constant>
   </constants>
   <help>

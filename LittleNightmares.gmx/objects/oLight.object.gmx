@@ -60,8 +60,8 @@ gui_ys = 0.75
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//if (mouse_check_button_pressed(mb_left)) {gui_xs -= 0.05 gui_ys = gui_xs}
-//if (mouse_check_button_pressed(mb_right)) {gui_xs += 0.05 gui_ys = gui_xs}
+            <string>if (mouse_check_button_pressed(mb_left)) {gui_xs -= 0.05 gui_ys = gui_xs}
+if (mouse_check_button_pressed(mb_right)) {gui_xs += 0.05 gui_ys = gui_xs}
 
     x = object.x;
     y = object.y;
@@ -159,7 +159,7 @@ if (instance_number(oCutscene) = 0 &amp;&amp; global.world_type = "wonderland")
        
        draw_text(view_xview+8+115,view_yview+560+74,round(oPlayer.hp))
        draw_text(view_xview+13+95,view_yview+620+68,round(oPlayer.mana))
-         draw_text(view_xview+13+114,view_yview+650+68,round(oPlayer.mana))
+         draw_text(view_xview+120,view_yview+740,round(oPlayer.sanity))
 
        draw_set_color(c_black)
        draw_set_colour(c_green)
@@ -168,7 +168,9 @@ if (instance_number(oCutscene) = 0 &amp;&amp; global.world_type = "wonderland")
        draw_set_colour(c_blue)
 
         draw_text(view_xview+14+95,view_yview+620+68,round(oPlayer.mana))
-
+        draw_set_color(c_fuchsia)
+        
+            draw_text(view_xview+120,view_yview+740,round(oPlayer.sanity))
       draw_set_color(c_black)
       
       
