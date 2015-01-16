@@ -148,9 +148,34 @@ if (instance_number(oCutscene) = 0 &amp;&amp; global.world_type = "wonderland")
       // mp
          draw_sprite_ext(sGUIBars,3,view_xview+5+123,view_yview+658+15,gui_xs,gui_ys,0,c_white,1)
       draw_sprite_part_ext(sGUIBars,2,0,0,199*(oPlayer.mana/oPlayer.max_mana),49,view_xview+5+123,view_yview+658+15,gui_xs,gui_ys,c_white,1);
-      // fear
+      // sanity
+           draw_sprite_ext(sGUIBars,5,view_xview+5+138,view_yview+711+15,gui_xs,gui_ys,0,c_white,1)
+      draw_sprite_part_ext(sGUIBars,4,0,0,199*(oPlayer.sanity/oPlayer.max_sanity),49,view_xview+5+138,view_yview+711+15,gui_xs,gui_ys,c_white,1);
+
+       // Text:
+         draw_set_halign(fa_center)
+         draw_set_valign(fa_middle)
+
+       
+       draw_text(view_xview+8+115,view_yview+560+74,round(oPlayer.hp))
+       draw_text(view_xview+13+95,view_yview+620+68,round(oPlayer.mana))
+         draw_text(view_xview+13+114,view_yview+650+68,round(oPlayer.mana))
+
+       draw_set_color(c_black)
+       draw_set_colour(c_green)
+       
+      draw_text(view_xview+8+116,view_yview+560+74,oPlayer.hp)
+       draw_set_colour(c_blue)
+
+        draw_text(view_xview+14+95,view_yview+620+68,round(oPlayer.mana))
+
+      draw_set_color(c_black)
       
       
+        draw_set_halign(fa_left)
+        draw_set_valign(fa_top)
+
+
       // lightinig
       if (vis = "Červená")
          {

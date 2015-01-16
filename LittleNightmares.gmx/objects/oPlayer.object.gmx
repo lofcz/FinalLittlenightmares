@@ -83,7 +83,9 @@ key = 0; // Zda má hráč klíč (1,0)
 in_shadow = 0 // Zda je hráč ve stínu (tzn. snížená viditelnost)
 ghost = 0 // Zda má hráč vyvolaného ducha
 can_move2 = 1 // Určuje zda se hráč může pohybovat
-hp_temp = 100
+hp_temp = 100;
+sanity = 100;
+max_sanity = 100;
 
 </string>
           </argument>

@@ -19,8 +19,8 @@ global.map_type = "wonderland"</code>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1936</w>
-    <h>1056</h>
+    <w>1456</w>
+    <h>876</h>
     <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
@@ -30,8 +30,8 @@ global.map_type = "wonderland"</code>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>0</deleteUnderlyingTiles>
     <page>0</page>
-    <xoffset>-73</xoffset>
-    <yoffset>771</yoffset>
+    <xoffset>24</xoffset>
+    <yoffset>-24</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="bcgMainMenu" x="0" y="0" htiled="-1" vtiled="-1" hspeed="1" vspeed="0" stretch="0"/>
@@ -63,8 +63,8 @@ global.map_type = "wonderland"</code>
     <instance objName="oDart" x="416" y="432" name="inst_FCADE0EF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oPlayer" x="3712" y="288" name="inst_C188D395" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oDart" x="848" y="896" name="inst_10794F59" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="60"/>
-    <instance objName="oCoin" x="2656" y="1152" name="inst_5AC720E6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oCoin" x="2944" y="1152" name="inst_69D51B91" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oWall1Red" x="512" y="1376" name="inst_6AA138D8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oWall1Red" x="480" y="1376" name="inst_07306542" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oDart" x="560" y="768" name="inst_272E00CB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="60"/>
     <instance objName="oDart" x="688" y="816" name="inst_C862699A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="60"/>
     <instance objName="oWall1" x="3360" y="448" name="inst_5F6F36F2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -1190,8 +1190,12 @@ global.map_type = "wonderland"</code>
     <instance objName="oWall1Red" x="416" y="1344" name="inst_AABF6EDA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWall1Red" x="416" y="1376" name="inst_CB75A519" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWall1Red" x="448" y="1376" name="inst_B0308950" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oWall1Red" x="480" y="1376" name="inst_07306542" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oWall1Red" x="512" y="1376" name="inst_6AA138D8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oCoinBLUE" x="2656" y="1152" name="inst_60745FCD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oCoinBLUE" x="2944" y="1152" name="inst_75B744CA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oCoinBLUE" x="3232" y="512" name="inst_25785225" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oCoinBLUE" x="3232" y="672" name="inst_F7413F2C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oCoinBLUE" x="3392" y="672" name="inst_3A303593" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oCoinBLUE" x="3392" y="512" name="inst_00361C61" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bcgTilesetCave" x="128" y="320" w="64" h="64" xo="64" yo="64" id="10000024" name="inst_769C3EC3" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
