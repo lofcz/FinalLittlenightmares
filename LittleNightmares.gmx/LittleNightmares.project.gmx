@@ -120,6 +120,7 @@
   <sprites name="sprites">
     <sprites name="Player">
       <sprite>sprites\sPlayer</sprite>
+      <sprite>sprites\sprite110</sprite>
       <sprite>sprites\sprite71</sprite>
       <sprite>sprites\sPlayerGgost</sprite>
       <sprite>sprites\sPlayer3</sprite>
@@ -241,6 +242,7 @@
     <sprite>sprites\sGUIArms</sprite>
     <sprite>sprites\sprite107</sprite>
     <sprite>sprites\sprite108</sprite>
+    <sprite>sprites\sprite109</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Tilesets">
