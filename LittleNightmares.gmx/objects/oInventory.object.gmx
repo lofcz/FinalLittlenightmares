@@ -139,7 +139,20 @@ if (mouse_check_button_pressed(mb_left) &amp;&amp; mouse_x &gt; x+32 &amp;&amp; 
        draw_sprite(sKey,0,view_xview[0]+928+16+64,view_yview[0]+704+32+16)
       }
 
-      
+    if (item[0] = "key2")
+      {
+       draw_sprite(sKey2,0,view_xview[0]+928+16,view_yview[0]+704+32+16)
+      }
+     if (item[1] = "key2")
+      {
+       draw_sprite(sKey2,0,view_xview[0]+928+16+32,view_yview[0]+704+32+16)
+      }
+     if (item[2] = "key2")
+      {
+       draw_sprite(sKey2,0,view_xview[0]+928+16+64,view_yview[0]+704+32+16)
+      }
+
+     
       
       
       
