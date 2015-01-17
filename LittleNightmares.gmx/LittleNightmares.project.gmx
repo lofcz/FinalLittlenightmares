@@ -271,6 +271,7 @@
   </backgrounds>
   <paths name="paths">
     <path>paths\pthCutscene</path>
+    <path>paths\pthEnemy1</path>
   </paths>
   <scripts name="scripts">
     <scripts name="Particle effects">
@@ -587,6 +588,7 @@
     <object>objects\par_player</object>
     <objects name="PERSPECTIVE TOP DOWN">
       <object>objects\oPlayer</object>
+      <object>objects\oEnemy1</object>
       <object>objects\oPlayerGhost</object>
       <objects name="Walls">
         <objects name="Solid">
@@ -734,7 +736,6 @@
         <object>objects\oHuman1</object>
         <object>objects\oHuman2</object>
       </objects>
-      <object>objects\oEnemy1</object>
     </objects>
     <objects name="PERSPECTIVE PLATFORM">
       <object>objects\platform_oPlayer</object>
