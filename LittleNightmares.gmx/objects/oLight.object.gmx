@@ -38,6 +38,8 @@ vis = ""
 
 gui_xs = 0.75
 gui_ys = 0.75
+
+
 </string>
           </argument>
         </arguments>
@@ -60,8 +62,8 @@ gui_ys = 0.75
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (mouse_check_button_pressed(mb_left)) {gui_xs -= 0.05 gui_ys = gui_xs}
-if (mouse_check_button_pressed(mb_right)) {gui_xs += 0.05 gui_ys = gui_xs}
+            <string>//if (mouse_check_button_pressed(mb_left)) {gui_xs -= 0.05 gui_ys = gui_xs}
+//if (mouse_check_button_pressed(mb_right)) {gui_xs += 0.05 gui_ys = gui_xs}
 
     x = object.x;
     y = object.y;

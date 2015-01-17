@@ -3,7 +3,7 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="10" name="datafiles">
+  <datafiles number="11" name="datafiles">
     <datafile>
       <name>intro2.avi</name>
       <exists>-1</exists>
@@ -120,7 +120,7 @@
   <sprites name="sprites">
     <sprites name="Player">
       <sprite>sprites\sPlayer</sprite>
-      <sprite>sprites\sprite110</sprite>
+      <sprite>sprites\sEnemy1</sprite>
       <sprite>sprites\sprite71</sprite>
       <sprite>sprites\sPlayerGgost</sprite>
       <sprite>sprites\sPlayer3</sprite>
@@ -294,6 +294,7 @@
       <script>scripts\scrDeathTransition.gml</script>
       <script>scripts\scrNullSpecialPoints.gml</script>
       <script>scripts\scrMessageBox.gml</script>
+      <script>scripts\scrTransitionSpiral.gml</script>
       <script>scripts\scrMulticoloredText.gml</script>
       <scripts name="Lightining)">
         <script>scripts\xg_start.gml</script>
@@ -568,7 +569,6 @@
         <script>scripts\plt_init.gml</script>
         <script>scripts\plt_multiply.gml</script>
       </scripts>
-      <script>scripts\scrTransitionSpiral.gml</script>
     </scripts>
     <script>scripts\scrWalk.gml</script>
     <script>scripts\scrLog.gml</script>
@@ -734,6 +734,7 @@
         <object>objects\oHuman1</object>
         <object>objects\oHuman2</object>
       </objects>
+      <object>objects\oEnemy1</object>
     </objects>
     <objects name="PERSPECTIVE PLATFORM">
       <object>objects\platform_oPlayer</object>
@@ -744,6 +745,7 @@
       </objects>
     </objects>
     <object>objects\oLog</object>
+    <object>objects\oAStar</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\tmlHuman1</timeline>
@@ -769,7 +771,8 @@
       <room>rooms\mapCutscene1</room>
     </rooms>
   </rooms>
-  <constants number="2">
+  <constants number="3">
+    <constant name="c_dkred">make_colour_rgb(145,38,38)</constant>
     <constant name="c_dkblue">make_colour_rgb(20,20,255)</constant>
     <constant name="zelezny_skin">1</constant>
   </constants>
