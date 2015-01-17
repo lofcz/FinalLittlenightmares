@@ -167,6 +167,7 @@
     <sprites name="Items">
       <sprite>sprites\sCoin</sprite>
       <sprite>sprites\sCoinBLUE</sprite>
+      <sprite>sprites\sCoinGREEN</sprite>
       <sprite>sprites\sCoinGhost</sprite>
       <sprite>sprites\sCoinIF</sprite>
       <sprite>sprites\sKey</sprite>
@@ -280,6 +281,7 @@
       <script>scripts\scrEffectMagicSign.gml</script>
       <script>scripts\scrEffectCoin.gml</script>
       <script>scripts\scrEffectCoin2Blue.gml</script>
+      <script>scripts\scrEffectCoin2Green.gml</script>
       <script>scripts\scrEffectCoin2.gml</script>
       <script>scripts\scrEffectInventoryAdd.gml</script>
       <script>scripts\scrEffectNextLevel.gml</script>
@@ -679,6 +681,7 @@
       <objects name="Items">
         <object>objects\oCoin</object>
         <object>objects\oCoinBLUE</object>
+        <object>objects\oCoinGREEN</object>
         <object>objects\oCoinIF</object>
         <object>objects\oKey</object>
         <object>objects\oKey2</object>
@@ -752,6 +755,7 @@
     <timeline>timelines\tmlHuman1</timeline>
   </timelines>
   <rooms name="rooms">
+    <room>rooms\mapLevel3</room>
     <room>rooms\mapLevel2</room>
     <room>rooms\mapLevel1</room>
     <room>rooms\platform_mapLevel1</room>
@@ -765,14 +769,14 @@
       <rooms name="Perspective top down">
         <room>rooms\mapLevel5</room>
         <room>rooms\mapLevel4</room>
-        <room>rooms\mapLevel3</room>
       </rooms>
     </rooms>
     <rooms name="Cutscenes">
       <room>rooms\mapCutscene1</room>
     </rooms>
   </rooms>
-  <constants number="3">
+  <constants number="4">
+    <constant name="c_dkgreen">make_colour_rgb(0,250,20)</constant>
     <constant name="c_dkred">make_colour_rgb(145,38,38)</constant>
     <constant name="c_dkblue">make_colour_rgb(20,20,255)</constant>
     <constant name="zelezny_skin">1</constant>
