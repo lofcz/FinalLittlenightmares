@@ -138,19 +138,19 @@ if (direction = 0 || direction = 360)
    {
     dir = "d"
    }
-if (direction = 270)
+else if (direction = 270)
    {
     dir = "s"
    }
-if (direction = 180)
+else if (direction = 180)
    {
     dir = "a"
    }
-if (direction = 90)
+else if (direction = 90)
    {
     dir = "w"
    }
-
+else {dir = ""}
    if (path_speed = 0) {image_speed = 0}   else {image_speed = 0.4}
 if (dir = "w")
     {
@@ -182,6 +182,31 @@ if (dir = "d")
             
      }
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Agrese
+if (distance_to_object(oPlayer) &lt; r)
+   {
+   
+   }             
 </string>
           </argument>
         </arguments>

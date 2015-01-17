@@ -22,7 +22,7 @@ global.map_type = "wonderland"</code>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1452</w>
+    <w>1456</w>
     <h>876</h>
     <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
@@ -32,9 +32,9 @@ global.map_type = "wonderland"</code>
     <showViews>0</showViews>
     <deleteUnderlyingObj>-1</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
-    <page>0</page>
-    <xoffset>1819</xoffset>
-    <yoffset>2338</yoffset>
+    <page>2</page>
+    <xoffset>853</xoffset>
+    <yoffset>820</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="background4" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -779,6 +779,12 @@ global.map_type = "wonderland"</code>
     <tile bgName="background10" x="1664" y="1376" w="128" h="128" xo="0" yo="0" id="10005260" name="inst_673C5C5A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="background10" x="1600" y="1440" w="128" h="128" xo="0" yo="0" id="10005261" name="inst_B2B8752F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="background10" x="1600" y="1344" w="128" h="128" xo="0" yo="0" id="10005262" name="inst_93FC418A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background10" x="1664" y="2304" w="32" h="32" xo="0" yo="0" id="10005263" name="inst_56FF4357" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background10" x="1696" y="2304" w="32" h="32" xo="0" yo="0" id="10005264" name="inst_206454FE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background10" x="1728" y="2304" w="32" h="32" xo="0" yo="0" id="10005265" name="inst_722CDA80" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background10" x="1760" y="2304" w="32" h="32" xo="0" yo="0" id="10005266" name="inst_B7D2F6E9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background10" x="1792" y="2304" w="32" h="32" xo="0" yo="0" id="10005267" name="inst_CB75B9C2" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background10" x="1824" y="2304" w="32" h="32" xo="0" yo="0" id="10005268" name="inst_38B593CA" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
