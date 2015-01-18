@@ -324,7 +324,6 @@
     </sprites>
     <sprites name="Items">
       <sprite>sprites\sCoin</sprite>
-      <sprite>sprites\sCoinGreen</sprite>
       <sprite>sprites\sCoinBLUE</sprite>
       <sprite>sprites\sCoinGhost</sprite>
       <sprite>sprites\sCoinIF</sprite>
@@ -443,7 +442,6 @@
       <script>scripts\scrEffectMagicSign.gml</script>
       <script>scripts\scrEffectCoin.gml</script>
       <script>scripts\scrEffectCoin2Blue.gml</script>
-      <script>scripts\scrEffectCoinGreen.gml</script>
       <script>scripts\scrEffectCoin2.gml</script>
       <script>scripts\scrEffectInventoryAdd.gml</script>
       <script>scripts\scrEffectNextLevel.gml</script>
@@ -877,7 +875,6 @@
       <objects name="Items">
         <object>objects\oCoin</object>
         <object>objects\oCoinBLUE</object>
-        <object>objects\oCoinGreen</object>
         <object>objects\oCoinIF</object>
         <object>objects\oKey</object>
         <object>objects\oKey2</object>
