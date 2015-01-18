@@ -31,6 +31,18 @@ item[0] = ""
 item[1] = ""
 item[2] = ""
 
+
+item_spr[0] = ""
+item_spr[1] = ""
+item_spr[2] = ""
+
+item_popis[0] = ""
+item_popis[1] = ""
+item_popis[2] = ""
+
+
+
+
 elik_hp = 0;
 elik_mp = 0;
 elik_fear = 0;
@@ -126,9 +138,9 @@ if (mouse_check_button_pressed(mb_left) &amp;&amp; mouse_x &gt; x+32 &amp;&amp; 
        draw_set_font(fntText)
        
       }
-   if (item[0] = "key")
+   if (item[0] != "")
       {
-       draw_sprite(sKey,0,view_xview[0]+928+16,view_yview[0]+704+32+16)
+       draw_sprite(item_spr[0],0,view_xview[0]+928+16,view_yview[0]+704+32+16)
       }
      if (item[1] = "key")
       {

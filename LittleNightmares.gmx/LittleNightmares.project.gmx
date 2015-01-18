@@ -763,6 +763,7 @@
     <script>scripts\scrWalk.gml</script>
     <script>scripts\scrLog.gml</script>
     <script>scripts\fx.gml</script>
+    <script>scripts\inventory_delete.gml</script>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shaderLight.shader</shader>

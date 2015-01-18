@@ -62,8 +62,7 @@ m = 1
     move_towards_point(view_xview[0]+928+16,view_yview[0]+704+16+32,sp)
     if (distance_to_point(view_xview[0]+928+16,view_yview[0]+704+16+32) &lt; 5)
        {
-       inventory_item_add("key2")
-       oPlayer.key2 = 1;
+         inventory_item_add("key2",sKey2,"Klíč vyrobený ze stříbra.")
     
        sound_play(sndCoin) // Přehraje zvuk
 

@@ -1,36 +1,21 @@
-//Call:     inventory_delete(itemID,quantity)
-//Info:     Delete the first item in the inventory with number itemID.
-//          quantity is the number of that item you want to delete.
-//Event:    Any
-//Returns:  Whether the item you want to delete existed
-//          in the inventory. (If you want to delete 10 items for example,
-//          but you only have 3 in the inventory, none will be deleted and
-//          it will return 0)
-var itemno,number;
-itemno=argument0
-number=argument1
-slots_number = oInventory.slots_number;
-if (inventory_number(itemno)<number) {return (0)}
-if (item_stackable(itemno)=1) {
-    var a,deleteno;
-    for (a=1 a<=slots_number a+=1) {
-        if (global.inv_item[a,0]=itemno) {deleteno=a a=slots_number+1}
-    }
-    global.inv_item[deleteno,1]-=number
-    if (global.inv_item[deleteno,1]<=0) {
-        global.inv_item[deleteno,0]=0
-        global.inv_item[deleteno,1]=0
-    }
-} else {
-    var a,deleted;
-    deleted=0
-    for (a=1 a<=slots_number a+=1) {
-        if (global.inv_item[a,0]=itemno) {
-            global.inv_item[a,0]=0
-            global.inv_item[a,1]=0
-            deleted+=1
-        }
-        if (deleted=number) {a=slots_number+1}
-    }
-}
-return (1)
+/// inventory_delete(item,number)
+
+item = argument0
+number = argument1
+
+if (number > 1)
+   {
+   repeat(number)
+      {
+      if (  oInventory.item[0] = item ) {oInventory.item[0] = "" oInventory.item_spr[0] = "" oInventory.item_popis[0] = ""}
+      else  if (  oInventory.item[1] = item ) {oInventory.item[1] = "" oInventory.item_spr[1] = "" oInventory.item_popis[1] = ""}
+      else  if (  oInventory.item[2] = item ) {oInventory.item[2] = "" oInventory.item_spr[2] = "" oInventory.item_popis[2] = ""}
+       }
+   }
+else if (number = 1)
+     {
+     if (  oInventory.item[0] = item ) {oInventory.item[0] = "" oInventory.item_spr[0] = "" oInventory.item_popis[0] = ""}
+      else  if (  oInventory.item[1] = item ) {oInventory.item[1] = "" oInventory.item_spr[1] = "" oInventory.item_popis[1] = ""}
+      else  if (  oInventory.item[2] = item ) {oInventory.item[2] = "" oInventory.item_spr[2] = "" oInventory.item_popis[2] = ""}
+     
+     }
