@@ -875,6 +875,7 @@
       <objects name="Items">
         <object>objects\oCoin</object>
         <object>objects\oCoinBLUE</object>
+        <object>objects\oCoinGREEN</object>
         <object>objects\oCoinIF</object>
         <object>objects\oKey</object>
         <object>objects\oKey2</object>
