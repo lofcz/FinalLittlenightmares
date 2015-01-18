@@ -22,5 +22,6 @@
   <frames>
     <frame index="0">images\sBulletin_0.png</frame>
     <frame index="1">images\sBulletin_1.png</frame>
+    <frame index="2">images\sBulletin_2.png</frame>
   </frames>
 </sprite>
