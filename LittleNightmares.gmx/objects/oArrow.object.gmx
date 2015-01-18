@@ -30,6 +30,11 @@ spd = 0;
 hp = 15
 stick = 0
 alarm[1] = 100;
+dist = 1
+dist -= (distance_to_object(oPlayer)/300)
+if (dist &lt; 0.1) {dist = 0.1}
+fx(oVariableController.sndBolt)
+sga_SetVol(oVariableController.sndBolt,dist)
 </string>
           </argument>
         </arguments>
@@ -106,7 +111,9 @@ alarm[1] = 100;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (stick = 0) {scrEffectArrow()}
+            <string>//sga_SetVol(oVariableController.sndBolt,dist)
+
+if (stick = 0) {scrEffectArrow()}
 if (oPlayer.spell_on = 1 &amp;&amp; oPlayer.vision_selected = "vision_green")
     {
     if (speed &gt; 2)

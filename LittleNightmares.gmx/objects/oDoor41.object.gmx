@@ -77,6 +77,7 @@
 {
 if (activated = 0) 
      {
+      fx(oVariableController.sndDoorUnlocked)
      activated = 1; 
      if (  oInventory.item[0] = "key" ) {oInventory.item[0] = ""}
      else  if (  oInventory.item[1] = "key" ) {oInventory.item[1] = ""}
@@ -87,12 +88,11 @@ if (activated = 0)
 
 
 }
-else
-    {
-     other.x = other.xprevious // Vrátí hráče na přechozí x-osovou souřadnici
+
+other.x = other.xprevious // Vrátí hráče na přechozí x-osovou souřadnici
 other.y = other.yprevious // Vrátí hráče na přechozí y-osovou souřadnici
 
-    }
+    
 </string>
           </argument>
         </arguments>

@@ -102,6 +102,7 @@ if (pp = 1)
 {
 if (activated = 0) 
      {
+     fx(oVariableController.sndDoorUnlocked)
      scrLog("Dveře odemčeny",c_lime)
      activated = 1; 
      if (  oInventory.item[0] = "key" ) {oInventory.item[0] = ""}

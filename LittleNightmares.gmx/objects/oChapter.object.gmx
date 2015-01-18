@@ -46,7 +46,7 @@ spr1_w = 0;
 spr2_w = 0;
 text_scale = 1
 
-reval_speed = 5;
+reval_speed = 10;
 
 
 </string>
@@ -208,11 +208,13 @@ if (a = 1)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (a = 1)
+            <string>draw_rectangle(0,0,room_width,room_height,0)
+draw_sprite(sDarkTexture,0,view_xview,view_yview)
+if (a = 1)
 {
    
    
-   draw_sprite_ext(background, 0, view_xview+640, view_yview+360,1,1,0,c_white,1);
+//   draw_sprite_ext(background, 0, view_xview+640, view_yview+360,1,1,0,c_white,1);
 
 draw_sprite_ext(sBackEffect,1,view_xview,view_yview,1,1,0,c_white,bac_alpha);
 

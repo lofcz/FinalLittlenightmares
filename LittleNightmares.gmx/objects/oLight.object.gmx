@@ -161,8 +161,12 @@ if (instance_number(oCutscene) = 0 &amp;&amp; global.world_type = "wonderland")
        
        draw_text(view_xview+8+115,view_yview+560+74,round(oPlayer.hp))
        draw_text(view_xview+13+95,view_yview+620+68,round(oPlayer.mana))
-         draw_text(view_xview+120,view_yview+740,round(oPlayer.sanity))
-
+       draw_text(view_xview+120,view_yview+740,round(oPlayer.sanity))
+       draw_set_colour(c_yellow)
+       draw_set_font(fntTextBig)
+       draw_text(view_xview+32,view_yview+620+66,round(oPlayer.gold))
+       draw_set_font(fntText)
+       
        draw_set_color(c_black)
        draw_set_colour(c_green)
        
@@ -173,6 +177,11 @@ if (instance_number(oCutscene) = 0 &amp;&amp; global.world_type = "wonderland")
         draw_set_color(c_fuchsia)
         
             draw_text(view_xview+120,view_yview+740,round(oPlayer.sanity))
+        draw_set_color(c_black)
+        draw_set_font(fntTextBig)
+         draw_text(view_xview+32+1,view_yview+620+66,round(oPlayer.gold))
+         draw_set_font(fntText)
+
       draw_set_color(c_black)
       
       

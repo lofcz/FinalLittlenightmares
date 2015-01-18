@@ -3,24 +3,130 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="11" name="datafiles">
-    <datafile>
-      <name>intro2.avi</name>
-      <exists>-1</exists>
-      <size>2315818</size>
-      <exportAction>2</exportAction>
-      <exportDir></exportDir>
-      <overwrite>0</overwrite>
-      <freeData>-1</freeData>
-      <removeEnd>0</removeEnd>
-      <store>0</store>
-      <ConfigOptions>
-        <Config name="Default">
-          <CopyToMask>49402094</CopyToMask>
-        </Config>
-      </ConfigOptions>
-      <filename>intro2.avi</filename>
-    </datafile>
+  <datafiles number="20" name="datafiles">
+    <datafiles number="20" name="Sounds">
+      <datafile>
+        <name>sndBigDoorsClosed.wav</name>
+        <exists>-1</exists>
+        <size>1058488</size>
+        <exportAction>2</exportAction>
+        <exportDir></exportDir>
+        <overwrite>0</overwrite>
+        <freeData>-1</freeData>
+        <removeEnd>0</removeEnd>
+        <store>0</store>
+        <ConfigOptions>
+          <Config name="Default">
+            <CopyToMask>9223372036854775807</CopyToMask>
+          </Config>
+        </ConfigOptions>
+        <filename>sndBigDoorsClosed.wav</filename>
+      </datafile>
+      <datafile>
+        <name>sndDoorUnlocked.wav</name>
+        <exists>-1</exists>
+        <size>219180</size>
+        <exportAction>2</exportAction>
+        <exportDir></exportDir>
+        <overwrite>0</overwrite>
+        <freeData>-1</freeData>
+        <removeEnd>0</removeEnd>
+        <store>0</store>
+        <ConfigOptions>
+          <Config name="Default">
+            <CopyToMask>9223372036854775807</CopyToMask>
+          </Config>
+        </ConfigOptions>
+        <filename>sndDoorUnlocked.wav</filename>
+      </datafile>
+      <datafile>
+        <name>sndOldDoorCreaking.wav</name>
+        <exists>-1</exists>
+        <size>407396</size>
+        <exportAction>2</exportAction>
+        <exportDir></exportDir>
+        <overwrite>0</overwrite>
+        <freeData>-1</freeData>
+        <removeEnd>0</removeEnd>
+        <store>0</store>
+        <ConfigOptions>
+          <Config name="Default">
+            <CopyToMask>9223372036854775807</CopyToMask>
+          </Config>
+        </ConfigOptions>
+        <filename>sndOldDoorCreaking.wav</filename>
+      </datafile>
+      <datafile>
+        <name>sndCloseDoor.wav</name>
+        <exists>-1</exists>
+        <size>294740</size>
+        <exportAction>2</exportAction>
+        <exportDir></exportDir>
+        <overwrite>0</overwrite>
+        <freeData>-1</freeData>
+        <removeEnd>0</removeEnd>
+        <store>0</store>
+        <ConfigOptions>
+          <Config name="Default">
+            <CopyToMask>9223372036854775807</CopyToMask>
+          </Config>
+        </ConfigOptions>
+        <filename>sndCloseDoor.wav</filename>
+      </datafile>
+      <datafile>
+        <name>test.ogg</name>
+        <exists>-1</exists>
+        <size>1002973</size>
+        <exportAction>2</exportAction>
+        <exportDir></exportDir>
+        <overwrite>0</overwrite>
+        <freeData>-1</freeData>
+        <removeEnd>0</removeEnd>
+        <store>0</store>
+        <ConfigOptions>
+          <Config name="Default">
+            <CopyToMask>9223372036854775807</CopyToMask>
+          </Config>
+        </ConfigOptions>
+        <filename>test.ogg</filename>
+      </datafile>
+      <datafile>
+        <name>sndBolt.wav</name>
+        <exists>-1</exists>
+        <size>96792</size>
+        <exportAction>2</exportAction>
+        <exportDir></exportDir>
+        <overwrite>0</overwrite>
+        <freeData>-1</freeData>
+        <removeEnd>0</removeEnd>
+        <store>0</store>
+        <ConfigOptions>
+          <Config name="Default">
+            <CopyToMask>9223372036854775807</CopyToMask>
+          </Config>
+        </ConfigOptions>
+        <filename>sndBolt.wav</filename>
+      </datafile>
+    </datafiles>
+    <datafiles number="20" name="Video">
+      <datafile>
+        <name>intro2.avi</name>
+        <exists>-1</exists>
+        <size>2315818</size>
+        <exportAction>2</exportAction>
+        <exportDir></exportDir>
+        <overwrite>0</overwrite>
+        <freeData>-1</freeData>
+        <removeEnd>0</removeEnd>
+        <store>0</store>
+        <ConfigOptions>
+          <Config name="Default">
+            <CopyToMask>49402094</CopyToMask>
+          </Config>
+        </ConfigOptions>
+        <filename>intro2.avi</filename>
+      </datafile>
+    </datafiles>
     <datafile>
       <name>GMMovie.dll</name>
       <exists>-1</exists>
@@ -106,6 +212,57 @@
       </ConfigOptions>
       <filename>WindowControl.dll</filename>
     </datafile>
+    <datafile>
+      <name>wrap_oal.dll</name>
+      <exists>-1</exists>
+      <size>444952</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>wrap_oal.dll</filename>
+    </datafile>
+    <datafile>
+      <name>OpenAL32.dll</name>
+      <exists>-1</exists>
+      <size>109080</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>OpenAL32.dll</filename>
+    </datafile>
+    <datafile>
+      <name>SGAudio.dll</name>
+      <exists>-1</exists>
+      <size>310272</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>SGAudio.dll</filename>
+    </datafile>
   </datafiles>
   <NewExtensions/>
   <sounds name="sound">
@@ -167,7 +324,6 @@
     <sprites name="Items">
       <sprite>sprites\sCoin</sprite>
       <sprite>sprites\sCoinBLUE</sprite>
-      <sprite>sprites\sCoinGREEN</sprite>
       <sprite>sprites\sCoinGhost</sprite>
       <sprite>sprites\sCoinIF</sprite>
       <sprite>sprites\sKey</sprite>
@@ -191,7 +347,9 @@
     </sprites>
     <sprites name="Chapters">
       <sprite>sprites\sChapter3</sprite>
+      <sprite>sprites\sChapter1</sprite>
       <sprite>sprites\sChapter3_2</sprite>
+      <sprite>sprites\sChapter1_2</sprite>
     </sprites>
     <sprite>sprites\sMessageBox</sprite>
     <sprite>sprites\sSetings</sprite>
@@ -244,6 +402,7 @@
     <sprite>sprites\sprite107</sprite>
     <sprite>sprites\sprite108</sprite>
     <sprite>sprites\sprite109</sprite>
+    <sprite>sprites\sDarkTexture</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Tilesets">
@@ -281,7 +440,6 @@
       <script>scripts\scrEffectMagicSign.gml</script>
       <script>scripts\scrEffectCoin.gml</script>
       <script>scripts\scrEffectCoin2Blue.gml</script>
-      <script>scripts\scrEffectCoin2Green.gml</script>
       <script>scripts\scrEffectCoin2.gml</script>
       <script>scripts\scrEffectInventoryAdd.gml</script>
       <script>scripts\scrEffectNextLevel.gml</script>
@@ -572,9 +730,39 @@
         <script>scripts\plt_init.gml</script>
         <script>scripts\plt_multiply.gml</script>
       </scripts>
+      <scripts name="Sound system">
+        <script>scripts\sga_Init.gml</script>
+        <script>scripts\sga_Free.gml</script>
+        <script>scripts\sga_SetCamPos.gml</script>
+        <script>scripts\sga_SetCamDir.gml</script>
+        <script>scripts\sga_SetGroupVol.gml</script>
+        <script>scripts\sga_GetGroupVol.gml</script>
+        <script>scripts\sga_CreateEmitter.gml</script>
+        <script>scripts\sga_DestroyEmitter.gml</script>
+        <script>scripts\sga_Play.gml</script>
+        <script>scripts\sga_Pause.gml</script>
+        <script>scripts\sga_Stop.gml</script>
+        <script>scripts\sga_Rewind.gml</script>
+        <script>scripts\sga_IsPlaying.gml</script>
+        <script>scripts\sga_SetVol.gml</script>
+        <script>scripts\sga_GetVol.gml</script>
+        <script>scripts\sga_FadeVol.gml</script>
+        <script>scripts\sga_SetType.gml</script>
+        <script>scripts\sga_GetType.gml</script>
+        <script>scripts\sga_SetLooping.gml</script>
+        <script>scripts\sga_Set3DMode.gml</script>
+        <script>scripts\sga_SetDistFactor.gml</script>
+        <script>scripts\sga_SetPosition.gml</script>
+        <script>scripts\sga_TrackPlay.gml</script>
+        <script>scripts\sga_Create3DFX.gml</script>
+        <script>scripts\sga_CreateFX.gml</script>
+        <script>scripts\sga_Play3DFX.gml</script>
+        <script>scripts\sga_PlayFX.gml</script>
+      </scripts>
     </scripts>
     <script>scripts\scrWalk.gml</script>
     <script>scripts\scrLog.gml</script>
+    <script>scripts\fx.gml</script>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shaderLight.shader</shader>
@@ -583,6 +771,7 @@
     <font>fonts\fnt0</font>
     <font>fonts\fnt1</font>
     <font>fonts\fntText</font>
+    <font>fonts\fntTextBig</font>
     <font>fonts\fntLetters</font>
     <font>fonts\fntInfra</font>
   </fonts>
@@ -681,7 +870,6 @@
       <objects name="Items">
         <object>objects\oCoin</object>
         <object>objects\oCoinBLUE</object>
-        <object>objects\oCoinGREEN</object>
         <object>objects\oCoinIF</object>
         <object>objects\oKey</object>
         <object>objects\oKey2</object>
@@ -755,9 +943,9 @@
     <timeline>timelines\tmlHuman1</timeline>
   </timelines>
   <rooms name="rooms">
+    <room>rooms\mapLevel1</room>
     <room>rooms\mapLevel3</room>
     <room>rooms\mapLevel2</room>
-    <room>rooms\mapLevel1</room>
     <room>rooms\platform_mapLevel1</room>
     <room>rooms\mapMainMenu</room>
     <rooms name="Intro">
