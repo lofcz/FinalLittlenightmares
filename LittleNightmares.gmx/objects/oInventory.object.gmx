@@ -51,6 +51,11 @@ text_scale1 = 1;
 text_scale2 = 1;
 text_scale3 = 1;
 
+
+elik_hp_popis = "Léčivý elixír, obnoví 30 bodů zdraví.#(c)"
+elik_mp_popis = "Substance, která obnoví 30 bodů zdraví.   (v)"
+elik_fear_popis = "Flakón obnovující 30 bodů rozumu.  (b)"
+
 </string>
           </argument>
         </arguments>
@@ -177,14 +182,25 @@ if (mouse_check_button_pressed(mb_left) &amp;&amp; mouse_x &gt; x+32 &amp;&amp; 
    if (mouse_x &gt; x &amp;&amp; mouse_x &lt; x + 32 &amp;&amp; mouse_y &gt; y &amp;&amp; mouse_y &lt; y + 32)
       {
        draw_sprite(sprite_index,1,view_xview[0]+928,view_yview[0]+704)
+       
+          draw_sprite(sprite_index,2,view_xview[0]+928,view_yview[0]+704-64)
+          draw_text_ext(view_xview[0]+928,view_yview[0]+704-64,elik_hp_popis,15,96)
+
       }
    if (mouse_x &gt; x+32 &amp;&amp; mouse_x &lt; x + 64 &amp;&amp; mouse_y &gt; y &amp;&amp; mouse_y &lt; y + 32)
       {
        draw_sprite(sprite_index,1,view_xview[0]+928+32,view_yview[0]+704)
+       
+       draw_sprite(sprite_index,2,view_xview[0]+928,view_yview[0]+704-64)
+       draw_text_ext(view_xview[0]+928,view_yview[0]+704-64,elik_mp_popis,15,96)
+
       }
     if (mouse_x &gt; x+64 &amp;&amp; mouse_x &lt; x + 96 &amp;&amp; mouse_y &gt; y &amp;&amp; mouse_y &lt; y + 32)
       {
        draw_sprite(sprite_index,1,view_xview[0]+928+64,view_yview[0]+704)
+         draw_sprite(sprite_index,2,view_xview[0]+928,view_yview[0]+704-64)
+       draw_text_ext(view_xview[0]+928,view_yview[0]+704-64,elik_fear_popis,15,96)
+
       }
     if (mouse_x &gt; x &amp;&amp; mouse_x &lt; x + 32 &amp;&amp; mouse_y &gt; y+32 &amp;&amp; mouse_y &lt; y + 64)
       {

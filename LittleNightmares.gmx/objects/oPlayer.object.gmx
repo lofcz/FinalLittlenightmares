@@ -86,7 +86,8 @@ can_move2 = 1 // Určuje zda se hráč může pohybovat
 hp_temp = 100;
 sanity = 100;
 max_sanity = 100;
-
+letters = 0
+letters_max = instance_number(oLetter)
 </string>
           </argument>
         </arguments>

@@ -96,6 +96,7 @@ m = choose(1,2) // nestatický efekt muhahahahaha
             <string>
 letter = instance_create(x,y,oCutscene)
 letter.str = str
+letter.type = "letter"
 
 oPlayer.speed = 0;
 oPlayer.image_speed = 0;

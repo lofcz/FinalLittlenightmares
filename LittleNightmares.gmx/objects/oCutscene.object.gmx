@@ -57,6 +57,13 @@ tex_alpha = bac_alpha;
           <argument>
             <kind>1</kind>
             <string>oPlayer.can_move = 1
+
+if (type = "letter")
+   {
+   oPlayer.letters += 1
+   scrLog("Dopisů přečteno: "+string(oPlayer.letters)+string("/")+string(oPlayer.letters_max),c_lime)
+
+   }
 </string>
           </argument>
         </arguments>
