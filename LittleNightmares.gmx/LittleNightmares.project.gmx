@@ -324,6 +324,7 @@
     </sprites>
     <sprites name="Items">
       <sprite>sprites\sCoin</sprite>
+      <sprite>sprites\sCoinRed</sprite>
       <sprite>sprites\sCoinBLUE</sprite>
       <sprite>sprites\sCoinGhost</sprite>
       <sprite>sprites\sCoinIF</sprite>
@@ -442,6 +443,7 @@
       <script>scripts\scrEffectMagicSign.gml</script>
       <script>scripts\scrEffectCoin.gml</script>
       <script>scripts\scrEffectCoin2Blue.gml</script>
+      <script>scripts\scrEffectCoin2Red.gml</script>
       <script>scripts\scrEffectCoin2.gml</script>
       <script>scripts\scrEffectInventoryAdd.gml</script>
       <script>scripts\scrEffectNextLevel.gml</script>
@@ -875,6 +877,7 @@
       <objects name="Items">
         <object>objects\oCoin</object>
         <object>objects\oCoinBLUE</object>
+        <object>objects\oCoinRED</object>
         <object>objects\oCoinIF</object>
         <object>objects\oKey</object>
         <object>objects\oKey2</object>
@@ -948,9 +951,9 @@
     <timeline>timelines\tmlHuman1</timeline>
   </timelines>
   <rooms name="rooms">
+    <room>rooms\mapLevel2</room>
     <room>rooms\mapLevel1</room>
     <room>rooms\mapLevel3</room>
-    <room>rooms\mapLevel2</room>
     <room>rooms\platform_mapLevel1</room>
     <room>rooms\mapMainMenu</room>
     <rooms name="Intro">

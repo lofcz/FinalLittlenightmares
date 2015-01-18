@@ -33,7 +33,7 @@ rychlost = 4 // Co dodat?
 //*********************
 
 
-
+mode = 1;
 rs = r
 m = 1
 c_a = 0.2
@@ -205,8 +205,65 @@ if (dir = "d")
             <string>/// Agrese
 if (distance_to_object(oPlayer) &lt; r)
    {
+   if (mode = 1)
+      {
+      path_end()
+      mode = 2
+      
+
+      }
+        
+   } 
    
-   }             
+if (mode = 2)
+   {
+   mode = 3
+       path=path_add();
+
+       mp_grid_path(global.grid,path,x,y,((oPlayer.x div 32) *32),((oPlayer.y div 32) *32),0);
+       path_start(path,7,'',1);
+
+   }
+   /*            
+if (mode = 3) 
+   {
+    //if (oPlayer.x != oPlayer.xprevious || oPlayer.y != oPlayer.yprevious)
+       {
+     
+       path=path_add();
+
+       mp_grid_path(global.grid,path,x,y,((oPlayer.x div 32) *32),((oPlayer.y div 32) *32),0);
+       path_start(path,15,'',1);
+
+       }
+   }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="8">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (distance_to_object(oPlayer) &gt; 50)
+   {
+mode = 1
+
+   }
 </string>
           </argument>
         </arguments>
