@@ -171,7 +171,7 @@ if (mouse_check_button_pressed(mb_left) &amp;&amp; mouse_x &gt; x+32 &amp;&amp; 
       
       
       
-      
+   draw_set_font(fntTextSmall)   
       
       
    if (mouse_x &gt; x &amp;&amp; mouse_x &lt; x + 32 &amp;&amp; mouse_y &gt; y &amp;&amp; mouse_y &lt; y + 32)
@@ -189,17 +189,36 @@ if (mouse_check_button_pressed(mb_left) &amp;&amp; mouse_x &gt; x+32 &amp;&amp; 
     if (mouse_x &gt; x &amp;&amp; mouse_x &lt; x + 32 &amp;&amp; mouse_y &gt; y+32 &amp;&amp; mouse_y &lt; y + 64)
       {
        draw_sprite(sprite_index,1,view_xview[0]+928,view_yview[0]+704+32)
+       
+       if (item[0] != "")
+          {
+          draw_sprite(sprite_index,2,view_xview[0]+928,view_yview[0]+704-64)
+          draw_text_ext(view_xview[0]+928,view_yview[0]+704-64,item_popis[0],15,96)
+          }
       }
     if (mouse_x &gt; x+32 &amp;&amp; mouse_x &lt; x + 64 &amp;&amp; mouse_y &gt; y+32 &amp;&amp; mouse_y &lt; y + 64)
       {
        draw_sprite(sprite_index,1,view_xview[0]+928+32,view_yview[0]+704+32)
+            if (item[1] != "")
+          {
+          draw_sprite(sprite_index,2,view_xview[0]+928+32,view_yview[0]+704-64)
+          draw_text_ext(view_xview[0]+928+32,view_yview[0]+704-64,item_popis[0],15,96)
+          }
+
       }
     if (mouse_x &gt; x+64 &amp;&amp; mouse_x &lt; x + 96 &amp;&amp; mouse_y &gt; y+32 &amp;&amp; mouse_y &lt; y + 64)
       {
        draw_sprite(sprite_index,1,view_xview[0]+928+64,view_yview[0]+704+32)
+        if (item[2] != "")
+          {
+          draw_sprite(sprite_index,2,view_xview[0]+928+64,view_yview[0]+704-64)
+          draw_text_ext(view_xview[0]+928+64,view_yview[0]+704-64,item_popis[0],15,96)
+          }
+
+
       }
 
-
+   draw_set_font(fntText)
    }
 </string>
           </argument>

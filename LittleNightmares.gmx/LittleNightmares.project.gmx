@@ -773,6 +773,7 @@
     <font>fonts\fnt1</font>
     <font>fonts\fntText</font>
     <font>fonts\fntTextBig</font>
+    <font>fonts\fntTextSmall</font>
     <font>fonts\fntLetters</font>
     <font>fonts\fntInfra</font>
   </fonts>
