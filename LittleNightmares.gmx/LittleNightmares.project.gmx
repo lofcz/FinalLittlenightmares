@@ -296,6 +296,7 @@
       <sprite>sprites\sDispenser</sprite>
       <sprite>sprites\sDispenser2</sprite>
       <sprite>sprites\sDispenser2_90</sprite>
+      <sprite>sprites\sDispencer4_4</sprite>
       <sprite>sprites\dispenser3_0</sprite>
       <sprite>sprites\sWall2</sprite>
       <sprite>sprites\sWall3</sprite>
@@ -341,6 +342,7 @@
       <sprite>sprites\sSpellChoose</sprite>
       <sprite>sprites\sBackEffect</sprite>
       <sprite>sprites\sBolt</sprite>
+      <sprite>sprites\sBoltJungle</sprite>
       <sprite>sprites\sEffectPotion</sprite>
     </sprites>
     <sprites name="NPC">
@@ -405,6 +407,7 @@
     <sprite>sprites\sprite109</sprite>
     <sprite>sprites\sDarkTexture</sprite>
     <sprite>sprites\sPreassurePlate</sprite>
+    <sprite>sprites\sGrass1</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Tilesets">
@@ -417,7 +420,8 @@
     </backgrounds>
     <background>background\background3</background>
     <background>background\background4</background>
-    <background>background\background5</background>
+    <background>background\bcg_tileset</background>
+    <background>background\bcg_tilesetONFLY</background>
     <background>background\background6</background>
     <background>background\background7</background>
     <background>background\background8</background>
@@ -438,6 +442,7 @@
   <scripts name="scripts">
     <scripts name="Particle effects">
       <script>scripts\scrEffectArrow.gml</script>
+      <script>scripts\scrEffectJungleBolt.gml</script>
       <script>scripts\scrEffectFireball.gml</script>
       <script>scripts\scrEffectMagicSign.gml</script>
       <script>scripts\scrEffectCoin.gml</script>
@@ -848,6 +853,7 @@
           <object>objects\oDispenser</object>
           <object>objects\oDispenser2</object>
           <object>objects\oDispenser2_90</object>
+          <object>objects\oDispenser4_4</object>
           <object>objects\oDispenser3_90</object>
           <object>objects\oPreassurePlate</object>
         </objects>
@@ -869,6 +875,7 @@
         <object>objects\oArrow</object>
         <object>objects\oFireballTRAP</object>
         <object>objects\oBolt</object>
+        <object>objects\oBoltJungle</object>
         <object>objects\oSpellChoose</object>
         <object>objects\oNextLevel</object>
       </objects>
@@ -949,9 +956,9 @@
     <timeline>timelines\tmlHuman1</timeline>
   </timelines>
   <rooms name="rooms">
-    <room>rooms\mapLevel3</room>
-    <room>rooms\mapLevel1</room>
     <room>rooms\mapLevel2</room>
+    <room>rooms\mapLevel1</room>
+    <room>rooms\mapLevel3</room>
     <room>rooms\platform_mapLevel1</room>
     <room>rooms\mapMainMenu</room>
     <rooms name="Intro">
@@ -969,7 +976,8 @@
       <room>rooms\mapCutscene1</room>
     </rooms>
   </rooms>
-  <constants number="4">
+  <constants number="5">
+    <constant name="jungle_skin">2</constant>
     <constant name="c_dkgreen">make_colour_rgb(0,250,20)</constant>
     <constant name="c_dkred">make_colour_rgb(145,38,38)</constant>
     <constant name="c_dkblue">make_colour_rgb(20,20,255)</constant>
