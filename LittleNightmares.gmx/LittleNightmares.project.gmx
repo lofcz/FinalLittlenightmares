@@ -408,6 +408,8 @@
     <sprite>sprites\sDarkTexture</sprite>
     <sprite>sprites\sPreassurePlate</sprite>
     <sprite>sprites\sGrass1</sprite>
+    <sprite>sprites\sCable1</sprite>
+    <sprite>sprites\sCable1_180</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Tilesets">
@@ -771,6 +773,7 @@
     <script>scripts\scrLog.gml</script>
     <script>scripts\fx.gml</script>
     <script>scripts\inventory_delete.gml</script>
+    <script>scripts\instance_xnearest.gml</script>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shaderLight.shader</shader>
@@ -854,6 +857,7 @@
           <object>objects\oDispenser2</object>
           <object>objects\oDispenser2_90</object>
           <object>objects\oDispenser4_4</object>
+          <object>objects\oDispeser5</object>
           <object>objects\oDispenser3_90</object>
           <object>objects\oPreassurePlate</object>
         </objects>
@@ -951,6 +955,10 @@
     </objects>
     <object>objects\oLog</object>
     <object>objects\oAStar</object>
+    <object>objects\oCable1</object>
+    <object>objects\oCable1_180</object>
+    <object>objects\par_signal</object>
+    <object>objects\par_cable</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\tmlHuman1</timeline>
