@@ -183,6 +183,7 @@ if (dir = "d")
             } 
             
      }
+direction  = ((direction div 90) *90)
 
 </string>
           </argument>
