@@ -75,6 +75,32 @@ m = choose(1,2) // nestatický efekt muhahahahaha
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="platform_oPlayer">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>platform_oPlayer.gold ++; // Přidá hráči 1 zlato (ekvivalence zápisu oPlayer.gold += 1 nebo oPlayer.gold = oPlayer.gold + 1
+scrEffectCoin() // Vytvoří částicový efekt
+sound_play(sndCoin) // Přehraje zvuk
+instance_destroy() // Zničí se
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="4" ename="oPlayer">
       <action>
         <libid>1</libid>

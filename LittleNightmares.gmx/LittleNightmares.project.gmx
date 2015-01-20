@@ -305,6 +305,7 @@
       <sprite>sprites\sprite93</sprite>
       <sprite>sprites\sprite94</sprite>
       <sprite>sprites\sWall1</sprite>
+      <sprite>sprites\sWall1CENTER</sprite>
       <sprite>sprites\sWall5</sprite>
       <sprite>sprites\sWall4</sprite>
       <sprite>sprites\sWallGhostBlock</sprite>
@@ -949,6 +950,7 @@
       <object>objects\platform_oPlayer</object>
       <objects name="Walls">
         <object>objects\platform_oWall1</object>
+        <object>objects\platform_oWall1_BallUp</object>
         <object>objects\object98</object>
         <object>objects\platform_oWall1STANDART</object>
       </objects>
@@ -964,8 +966,8 @@
     <timeline>timelines\tmlHuman1</timeline>
   </timelines>
   <rooms name="rooms">
-    <room>rooms\mapLevel2</room>
     <room>rooms\mapLevel1</room>
+    <room>rooms\mapLevel2</room>
     <room>rooms\mapLevel3</room>
     <room>rooms\platform_mapLevel1</room>
     <room>rooms\mapMainMenu</room>

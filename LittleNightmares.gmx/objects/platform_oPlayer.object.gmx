@@ -89,6 +89,7 @@ ghost = 0 // Zda má hráč vyvolaného ducha
 can_move2 = 1 // Určuje zda se hráč může pohybovat
 hp_temp = 100
 c = 0
+skok = 10;
 movespeed = rychlost
 
 </string>
@@ -365,7 +366,11 @@ if (hp &lt;= 0)
 
   }
 
-
+if (spell_on = 1 &amp;&amp; vision_selected = "vision_green")
+   {
+    skok = 12
+    }
+    else {skok = 10;}
    
    
    
@@ -560,7 +565,7 @@ if (keyboard_check_pressed(ord("P")))
    {
    if jump&gt;0
    {
-   vspeed=-10
+   vspeed=-skok
    jump-=1
        }
        }
