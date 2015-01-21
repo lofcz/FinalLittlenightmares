@@ -110,7 +110,7 @@ if (pulse = 1)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//
+            <string>//draw_self()
 </string>
           </argument>
         </arguments>

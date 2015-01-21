@@ -297,6 +297,7 @@
       <sprite>sprites\sDispenser2</sprite>
       <sprite>sprites\sDispenser2_90</sprite>
       <sprite>sprites\sDispencer4_4</sprite>
+      <sprite>sprites\sDispencer4_4_360</sprite>
       <sprite>sprites\dispenser3_0</sprite>
       <sprite>sprites\sWall2</sprite>
       <sprite>sprites\sWall3</sprite>
@@ -917,6 +918,7 @@
           <object>objects\oDispenser2_90</object>
           <object>objects\oDispenser4_4</object>
           <object>objects\oDispeser5</object>
+          <object>objects\object122</object>
           <object>objects\oDispenser3_90</object>
           <object>objects\oPreassurePlate</object>
         </objects>
@@ -1023,8 +1025,8 @@
     <timeline>timelines\tmlHuman1</timeline>
   </timelines>
   <rooms name="rooms">
-    <room>rooms\mapLevel1</room>
     <room>rooms\mapLevel2</room>
+    <room>rooms\mapLevel1</room>
     <room>rooms\mapLevel3</room>
     <room>rooms\platform_mapLevel1</room>
     <room>rooms\mapMainMenu</room>
