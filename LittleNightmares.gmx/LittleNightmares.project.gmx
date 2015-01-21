@@ -926,9 +926,9 @@
           </objects>
           <objects name="Kytky">
             <object>objects\oDoor14KYTKY</object>
-          </objects>
-          <objects name="Coins">
-            <object>objects\oDoor14COINS</object>
+            <objects name="Coins">
+              <object>objects\oDoor14COINS</object>
+            </objects>
           </objects>
         </objects>
         <objects name="Traps">
@@ -1044,10 +1044,10 @@
     <timeline>timelines\tmlHuman1</timeline>
   </timelines>
   <rooms name="rooms">
+    <room>rooms\platform_mapLevel1</room>
     <room>rooms\mapLevel2</room>
     <room>rooms\mapLevel1</room>
     <room>rooms\mapLevel3</room>
-    <room>rooms\platform_mapLevel1</room>
     <room>rooms\mapMainMenu</room>
     <rooms name="Intro">
       <room>rooms\mapTutorial</room>
