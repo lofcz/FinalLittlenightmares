@@ -19,8 +19,8 @@ global.map_type = "wonderland"</code>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1024</w>
-    <h>600</h>
+    <w>1456</w>
+    <h>876</h>
     <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
@@ -30,8 +30,8 @@ global.map_type = "wonderland"</code>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>0</deleteUnderlyingTiles>
     <page>0</page>
-    <xoffset>849</xoffset>
-    <yoffset>-147</yoffset>
+    <xoffset>2859</xoffset>
+    <yoffset>244</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="bcgMainMenu" x="0" y="0" htiled="-1" vtiled="-1" hspeed="1" vspeed="0" stretch="0"/>
@@ -311,7 +311,7 @@ global.map_type = "wonderland"</code>
     <instance objName="oWall1" x="3392" y="448" name="inst_6CB86468" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWall1" x="4192" y="704" name="inst_6DD5DCCD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWall1" x="64" y="448" name="inst_1F255990" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oLetter" x="3328" y="608" name="inst_A7FDCEB7" locked="0" code="str=&quot;Ahoj Alice, ##jak se máš? Nikdy jsi se mě na to nezeptala, nikdy sis mě nevšímala. Dnes začneš a pokud ne tak zemřeš, drahá Alice.#Koneckonců všichni musíme odejít. Dokonce i já, ale neboj se, než tě opustím máme spoustu času jen pro sebe. ##Stín&quot; ;&#xA;&#xA;&#xA;" scaleX="1.83333337306976" scaleY="1.83333337306976" colour="4294967295" rotation="0"/>
+    <instance objName="oLetter" x="3328" y="576" name="inst_A7FDCEB7" locked="0" code="str=&quot;Ahoj Alice, ##jak se máš? Nikdy jsi se mě na to nezeptala, nikdy sis mě nevšímala. Dnes začneš a pokud ne tak zemřeš, drahá Alice.#Koneckonců všichni musíme odejít. Dokonce i já, ale neboj se, než tě opustím máme spoustu času jen pro sebe. ##Stín&quot; ;&#xA;&#xA;&#xA;" scaleX="1.83000004291534" scaleY="1.83000004291534" colour="4294967295" rotation="0"/>
     <instance objName="oWall1" x="96" y="416" name="inst_6BE44A4A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWall1" x="64" y="640" name="inst_CD8F180A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWall1" x="96" y="640" name="inst_D66E6FA9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
