@@ -470,6 +470,30 @@
     <sprite>sprites\sGrass1</sprite>
     <sprite>sprites\sCable1</sprite>
     <sprite>sprites\sCable1_180</sprite>
+    <sprite>sprites\Wall6_01</sprite>
+    <sprite>sprites\Wall6_02</sprite>
+    <sprite>sprites\Wall6_03</sprite>
+    <sprite>sprites\Wall6_04</sprite>
+    <sprite>sprites\Wall7_01</sprite>
+    <sprite>sprites\Wall7_02</sprite>
+    <sprite>sprites\Wall7_03</sprite>
+    <sprite>sprites\Wall7_04</sprite>
+    <sprite>sprites\Wall3_01</sprite>
+    <sprite>sprites\Wall3_02</sprite>
+    <sprite>sprites\Wall3_03</sprite>
+    <sprite>sprites\Wall3_04</sprite>
+    <sprite>sprites\Wall2_01</sprite>
+    <sprite>sprites\Wall2_02</sprite>
+    <sprite>sprites\Wall2_03</sprite>
+    <sprite>sprites\Wall2_04</sprite>
+    <sprite>sprites\Wall4_01</sprite>
+    <sprite>sprites\Wall4_02</sprite>
+    <sprite>sprites\Wall4_03</sprite>
+    <sprite>sprites\Wall4_04</sprite>
+    <sprite>sprites\WallCrate_01</sprite>
+    <sprite>sprites\WallCrate_02</sprite>
+    <sprite>sprites\WallCrate_03</sprite>
+    <sprite>sprites\WallCrate_04</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Tilesets">
