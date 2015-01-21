@@ -356,8 +356,66 @@
       <sprite>sprites\sChapter1_2</sprite>
     </sprites>
     <sprite>sprites\sMessageBox</sprite>
-    <sprite>sprites\sSetings</sprite>
-    <sprite>sprites\sprite27</sprite>
+    <sprites name="sSetings">
+      <sprite>sprites\sMessageBox</sprite>
+      <sprite>sprites\sSetings</sprite>
+      <sprite>sprites\sprite27</sprite>
+      <sprite>sprites\sNextLevel</sprite>
+      <sprite>sprites\sprite81</sprite>
+      <sprite>sprites\sBulletin</sprite>
+      <sprite>sprites\sLever</sprite>
+      <sprite>sprites\sFlowerSource</sprite>
+      <sprite>sprites\sFlower1</sprite>
+      <sprite>sprites\sFlower1IF</sprite>
+      <sprite>sprites\sprite43</sprite>
+      <sprite>sprites\sCheckPoint</sprite>
+    </sprites>
+    <sprites name="sprite27">
+      <sprites name="Decorations">
+        <sprite>sprites\sDeath</sprite>
+        <sprite>sprites\sprite48</sprite>
+        <sprite>sprites\sCursor</sprite>
+        <sprite>sprites\sShop</sprite>
+        <sprite>sprites\sManaOrb</sprite>
+        <sprite>sprites\sCutscene</sprite>
+        <sprite>sprites\sLetter</sprite>
+      </sprites>
+      <sprites name="Controllers">
+        <sprite>sprites\sInventory</sprite>
+        <sprite>sprites\sPotionsSource</sprite>
+        <sprite>sprites\sHpPotion</sprite>
+        <sprite>sprites\sMpPotion</sprite>
+        <sprite>sprites\sFearPotion</sprite>
+        <sprite>sprites\sEmptyPotion</sprite>
+        <sprite>sprites\sprite67</sprite>
+        <sprite>sprites\sprite68</sprite>
+        <sprite>sprites\sDart</sprite>
+        <sprite>sprites\sprite73</sprite>
+        <sprite>sprites\sprite74</sprite>
+        <sprite>sprites\sAlphasettings</sprite>
+        <sprite>sprites\sLight1</sprite>
+        <sprite>sprites\sChest_otevrena</sprite>
+        <sprite>sprites\sprite84</sprite>
+        <sprite>sprites\sprite85</sprite>
+      </sprites>
+      <sprites name="Interactable">
+        <sprites name="Levers">
+          <sprite>sprites\sprite86</sprite>
+          <sprite>sprites\sprite87</sprite>
+          <sprite>sprites\sprite101</sprite>
+          <sprite>sprites\sprite88</sprite>
+          <sprite>sprites\sprite102</sprite>
+        </sprites>
+        <sprite>sprites\sprite89</sprite>
+        <sprite>sprites\sprite103</sprite>
+        <sprite>sprites\sprite90</sprite>
+      </sprites>
+      <sprites name="NPC">
+        <sprite>sprites\sprite105</sprite>
+        <sprite>sprites\sprite104</sprite>
+        <sprite>sprites\sGUI</sprite>
+      </sprites>
+    </sprites>
     <sprite>sprites\sNextLevel</sprite>
     <sprite>sprites\sprite81</sprite>
     <sprite>sprites\sBulletin</sprite>
@@ -887,7 +945,6 @@
       <objects name="Items">
         <object>objects\oCoin</object>
         <object>objects\oCoinBLUE</object>
-        <object>objects\oCoinGREEN</object>
         <object>objects\oCoinIF</object>
         <object>objects\oKey</object>
         <object>objects\oKey2</object>
