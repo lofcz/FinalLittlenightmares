@@ -275,225 +275,220 @@
     </sounds>
   </sounds>
   <sprites name="sprites">
-    <sprites name="Player">
-      <sprite>sprites\sPlayer</sprite>
-      <sprite>sprites\sEnemy1</sprite>
-      <sprite>sprites\sprite71</sprite>
-      <sprite>sprites\sPlayerGgost</sprite>
-      <sprite>sprites\sPlayer3</sprite>
-      <sprite>sprites\sPlayer2</sprite>
-      <sprite>sprites\sPlayer4</sprite>
+    <sprites name="Actors">
+      <sprites name="Player">
+        <sprite>sprites\sPlayer</sprite>
+        <sprite>sprites\sprite71</sprite>
+        <sprite>sprites\sPlayerGgost</sprite>
+        <sprite>sprites\sPlayer3</sprite>
+        <sprite>sprites\sPlayer2</sprite>
+        <sprite>sprites\sPlayer4</sprite>
+      </sprites>
+      <sprites name="Enemy">
+        <sprite>sprites\sEnemy1</sprite>
+      </sprites>
     </sprites>
-    <sprites name="MainMenu">
-      <sprite>sprites\sNewGame</sprite>
-      <sprite>sprites\sLittleNightmares</sprite>
-      <sprite>sprites\sEndGame</sprite>
-      <sprite>sprites\sOptions</sprite>
-      <sprite>sprites\sContinue</sprite>
-      <sprite>sprites\sCredits</sprite>
-    </sprites>
-    <sprites name="Walls">
-      <sprite>sprites\sDispenser</sprite>
-      <sprite>sprites\sDispenser2</sprite>
-      <sprite>sprites\sDispenser2_90</sprite>
-      <sprite>sprites\sDispencer4_4</sprite>
-      <sprite>sprites\sDispencer4_4_360</sprite>
-      <sprite>sprites\dispenser3_0</sprite>
-      <sprite>sprites\sWall2</sprite>
-      <sprite>sprites\sWall3</sprite>
-      <sprite>sprites\sprite91</sprite>
-      <sprite>sprites\sprite92</sprite>
-      <sprite>sprites\sprite93</sprite>
-      <sprite>sprites\sprite94</sprite>
-      <sprite>sprites\sWall1</sprite>
-      <sprite>sprites\sWall1CENTER</sprite>
-      <sprite>sprites\sWall5</sprite>
-      <sprite>sprites\sWall4</sprite>
-      <sprite>sprites\sWallGhostBlock</sprite>
-      <sprite>sprites\sprite30</sprite>
-      <sprite>sprites\sCrate</sprite>
-      <sprite>sprites\sCrateRED</sprite>
-      <sprite>sprites\sprite9</sprite>
-      <sprite>sprites\sIn1use</sprite>
-      <sprite>sprites\sprite10</sprite>
-      <sprite>sprites\sSpikes</sprite>
-      <sprite>sprites\sDoor41</sprite>
-      <sprite>sprites\sDoor412</sprite>
-      <sprite>sprites\sDoor14</sprite>
-      <sprite>sprites\sprite106</sprite>
-      <sprite>sprites\sDoor14Flip</sprite>
-      <sprite>sprites\sprite79</sprite>
-      <sprite>sprites\sprite75</sprite>
-    </sprites>
-    <sprites name="Items">
-      <sprite>sprites\sCoin</sprite>
-      <sprite>sprites\sCoinBLUE</sprite>
-      <sprite>sprites\sCoinGhost</sprite>
-      <sprite>sprites\sCoinIF</sprite>
-      <sprite>sprites\sKey</sprite>
-      <sprite>sprites\sKey2</sprite>
-      <sprite>sprites\sMedpack</sprite>
-      <sprite>sprites\sManaPack</sprite>
-    </sprites>
-    <sprites name="Misc">
-      <sprite>sprites\sArrow</sprite>
-      <sprite>sprites\sMine</sprite>
-      <sprite>sprites\sMagicSign</sprite>
-      <sprite>sprites\smagicSign2</sprite>
-      <sprite>sprites\sLight</sprite>
-      <sprite>sprites\sSpellChoose</sprite>
-      <sprite>sprites\sBackEffect</sprite>
-      <sprite>sprites\sBolt</sprite>
-      <sprite>sprites\sBoltJungle</sprite>
-      <sprite>sprites\sEffectPotion</sprite>
-    </sprites>
-    <sprites name="NPC">
-      <sprite>sprites\sMerchant</sprite>
-    </sprites>
-    <sprites name="Chapters">
-      <sprite>sprites\sChapter3</sprite>
-      <sprite>sprites\sChapter1</sprite>
-      <sprite>sprites\sChapter3_2</sprite>
-      <sprite>sprites\sChapter1_2</sprite>
-    </sprites>
-    <sprite>sprites\sMessageBox</sprite>
-    <sprites name="sSetings">
-      <sprite>sprites\sMessageBox</sprite>
-      <sprite>sprites\sSetings</sprite>
-      <sprite>sprites\sprite27</sprite>
-      <sprite>sprites\sNextLevel</sprite>
-      <sprite>sprites\sprite81</sprite>
-      <sprite>sprites\sBulletin</sprite>
-      <sprite>sprites\sLever</sprite>
-      <sprite>sprites\sFlowerSource</sprite>
-      <sprite>sprites\sFlower1</sprite>
-      <sprite>sprites\sFlower1IF</sprite>
-      <sprite>sprites\sprite43</sprite>
-      <sprite>sprites\sCheckPoint</sprite>
-    </sprites>
-    <sprites name="sprite27">
-      <sprites name="Decorations">
+    <sprites name="UI">
+      <sprites name="Main menu">
+        <sprite>sprites\sLittleNightmares</sprite>
+        <sprite>sprites\sEndGame</sprite>
+        <sprite>sprites\sOptions</sprite>
+        <sprite>sprites\sCredits</sprite>
+        <sprite>sprites\sContinue</sprite>
+        <sprite>sprites\sNewGame</sprite>
+      </sprites>
+      <sprites name="Formulars">
+        <sprite>sprites\sMessageBox</sprite>
+      </sprites>
+      <sprites name="Messages">
         <sprite>sprites\sDeath</sprite>
-        <sprite>sprites\sprite48</sprite>
-        <sprite>sprites\sCursor</sprite>
-        <sprite>sprites\sShop</sprite>
-        <sprite>sprites\sManaOrb</sprite>
-        <sprite>sprites\sCutscene</sprite>
+      </sprites>
+    </sprites>
+    <sprites name="Static">
+      <sprites name="Items">
+        <sprites name="Coins">
+          <sprite>sprites\sCoin</sprite>
+          <sprite>sprites\sCoinBLUE</sprite>
+          <sprite>sprites\sCoinGhost</sprite>
+          <sprite>sprites\sCoinIF</sprite>
+        </sprites>
+        <sprites name="Keys">
+          <sprite>sprites\sKey</sprite>
+          <sprite>sprites\sKey2</sprite>
+        </sprites>
+        <sprites name="Pack(s)">
+          <sprite>sprites\sMedpack</sprite>
+          <sprite>sprites\sManaPack</sprite>
+        </sprites>
+        <sprites name="TouchAndUse">
+          <sprite>sprites\sManaOrb</sprite>
+        </sprites>
+        <sprites name="Elixirs">
+          <sprite>sprites\sHpPotion</sprite>
+          <sprite>sprites\sMpPotion</sprite>
+          <sprite>sprites\sPotionsSource</sprite>
+          <sprite>sprites\sFearPotion</sprite>
+          <sprite>sprites\sEmptyPotion</sprite>
+        </sprites>
+      </sprites>
+      <sprites name="Interactions">
+        <sprite>sprites\sBulletin</sprite>
+        <sprite>sprites\sLever</sprite>
         <sprite>sprites\sLetter</sprite>
       </sprites>
-      <sprites name="Controllers">
-        <sprite>sprites\sInventory</sprite>
-        <sprite>sprites\sPotionsSource</sprite>
-        <sprite>sprites\sHpPotion</sprite>
-        <sprite>sprites\sMpPotion</sprite>
-        <sprite>sprites\sFearPotion</sprite>
-        <sprite>sprites\sEmptyPotion</sprite>
-        <sprite>sprites\sprite67</sprite>
-        <sprite>sprites\sprite68</sprite>
-        <sprite>sprites\sDart</sprite>
-        <sprite>sprites\sprite73</sprite>
-        <sprite>sprites\sprite74</sprite>
-        <sprite>sprites\sAlphasettings</sprite>
-        <sprite>sprites\sLight1</sprite>
-        <sprite>sprites\sChest_otevrena</sprite>
-        <sprite>sprites\sprite84</sprite>
-        <sprite>sprites\sprite85</sprite>
-      </sprites>
-      <sprites name="Interactable">
-        <sprites name="Levers">
-          <sprite>sprites\sprite86</sprite>
-          <sprite>sprites\sprite87</sprite>
-          <sprite>sprites\sprite101</sprite>
-          <sprite>sprites\sprite88</sprite>
-          <sprite>sprites\sprite102</sprite>
-        </sprites>
-        <sprite>sprites\sprite89</sprite>
-        <sprite>sprites\sprite103</sprite>
-        <sprite>sprites\sprite90</sprite>
-      </sprites>
-      <sprites name="NPC">
-        <sprite>sprites\sprite105</sprite>
-        <sprite>sprites\sprite104</sprite>
-        <sprite>sprites\sGUI</sprite>
+      <sprites name="&quot;Tiles&quot;">
+        <sprite>sprites\sFlowerSource</sprite>
+        <sprite>sprites\sFlower1</sprite>
+        <sprite>sprites\sFlower1IF</sprite>
       </sprites>
     </sprites>
-    <sprite>sprites\sNextLevel</sprite>
-    <sprite>sprites\sprite81</sprite>
-    <sprite>sprites\sBulletin</sprite>
-    <sprite>sprites\sLever</sprite>
-    <sprite>sprites\sFlowerSource</sprite>
-    <sprite>sprites\sFlower1</sprite>
-    <sprite>sprites\sFlower1IF</sprite>
-    <sprite>sprites\sprite43</sprite>
-    <sprite>sprites\sCheckPoint</sprite>
-    <sprite>sprites\sDeath</sprite>
-    <sprite>sprites\sprite48</sprite>
-    <sprite>sprites\sCursor</sprite>
-    <sprite>sprites\sShop</sprite>
-    <sprite>sprites\sManaOrb</sprite>
-    <sprite>sprites\sCutscene</sprite>
-    <sprite>sprites\sLetter</sprite>
-    <sprite>sprites\sInventory</sprite>
-    <sprite>sprites\sPotionsSource</sprite>
-    <sprite>sprites\sHpPotion</sprite>
-    <sprite>sprites\sMpPotion</sprite>
-    <sprite>sprites\sFearPotion</sprite>
-    <sprite>sprites\sEmptyPotion</sprite>
-    <sprite>sprites\sprite67</sprite>
-    <sprite>sprites\sprite68</sprite>
-    <sprite>sprites\sDart</sprite>
-    <sprite>sprites\sprite73</sprite>
-    <sprite>sprites\sprite74</sprite>
-    <sprite>sprites\sAlphasettings</sprite>
-    <sprite>sprites\sLight1</sprite>
-    <sprite>sprites\sChest_otevrena</sprite>
-    <sprite>sprites\sprite84</sprite>
-    <sprite>sprites\sprite85</sprite>
-    <sprite>sprites\sprite86</sprite>
-    <sprite>sprites\sprite87</sprite>
-    <sprite>sprites\sprite101</sprite>
-    <sprite>sprites\sprite88</sprite>
-    <sprite>sprites\sprite102</sprite>
-    <sprite>sprites\sprite89</sprite>
-    <sprite>sprites\sprite103</sprite>
-    <sprite>sprites\sprite90</sprite>
-    <sprite>sprites\sprite105</sprite>
-    <sprite>sprites\sprite104</sprite>
-    <sprite>sprites\sGUI</sprite>
-    <sprite>sprites\sGUIBars</sprite>
-    <sprite>sprites\sGUIArms</sprite>
-    <sprite>sprites\sprite107</sprite>
-    <sprite>sprites\sprite108</sprite>
-    <sprite>sprites\sprite109</sprite>
-    <sprite>sprites\sDarkTexture</sprite>
-    <sprite>sprites\sPreassurePlate</sprite>
-    <sprite>sprites\sGrass1</sprite>
-    <sprite>sprites\sCable1</sprite>
-    <sprite>sprites\sCable1_180</sprite>
-    <sprite>sprites\Wall6_01</sprite>
-    <sprite>sprites\Wall6_02</sprite>
-    <sprite>sprites\Wall6_03</sprite>
-    <sprite>sprites\Wall6_04</sprite>
-    <sprite>sprites\Wall7_01</sprite>
-    <sprite>sprites\Wall7_02</sprite>
-    <sprite>sprites\Wall7_03</sprite>
-    <sprite>sprites\Wall7_04</sprite>
-    <sprite>sprites\Wall3_01</sprite>
-    <sprite>sprites\Wall3_02</sprite>
-    <sprite>sprites\Wall3_03</sprite>
-    <sprite>sprites\Wall3_04</sprite>
-    <sprite>sprites\Wall2_01</sprite>
-    <sprite>sprites\Wall2_02</sprite>
-    <sprite>sprites\Wall2_03</sprite>
-    <sprite>sprites\Wall2_04</sprite>
-    <sprite>sprites\Wall4_01</sprite>
-    <sprite>sprites\Wall4_02</sprite>
-    <sprite>sprites\Wall4_03</sprite>
-    <sprite>sprites\Wall4_04</sprite>
-    <sprite>sprites\WallCrate_01</sprite>
-    <sprite>sprites\WallCrate_02</sprite>
-    <sprite>sprites\WallCrate_03</sprite>
-    <sprite>sprites\WallCrate_04</sprite>
+    <sprites name="Walls">
+      <sprites name="Traps">
+        <sprite>sprites\sDispenser</sprite>
+        <sprite>sprites\sDispenser2_90</sprite>
+        <sprite>sprites\sDispencer4_4</sprite>
+        <sprite>sprites\sDispenser2</sprite>
+        <sprite>sprites\sDispencer4_4_360</sprite>
+        <sprite>sprites\dispenser3_0</sprite>
+        <sprite>sprites\sMine</sprite>
+        <sprite>sprites\sSpikes</sprite>
+        <sprite>sprites\sprite107</sprite>
+        <sprite>sprites\sPreassurePlate</sprite>
+        <sprite>sprites\sCable1</sprite>
+        <sprite>sprites\sCable1_180</sprite>
+      </sprites>
+      <sprites name="Doors">
+        <sprite>sprites\sDoor41</sprite>
+        <sprite>sprites\sprite106</sprite>
+        <sprite>sprites\sDoor14</sprite>
+        <sprite>sprites\sDoor14Flip</sprite>
+        <sprite>sprites\sDoor412</sprite>
+      </sprites>
+      <sprites name="Blocks">
+        <sprites name="Special">
+          <sprite>sprites\sWall1CENTER</sprite>
+          <sprite>sprites\sWallGhostBlock</sprite>
+          <sprite>sprites\sWall5</sprite>
+        </sprites>
+        <sprite>sprites\sWall3</sprite>
+        <sprite>sprites\sWall1</sprite>
+        <sprite>sprites\sWall2</sprite>
+        <sprite>sprites\sCrate</sprite>
+        <sprite>sprites\sCrateRED</sprite>
+        <sprite>sprites\sprite30</sprite>
+        <sprite>sprites\sWall4</sprite>
+        <sprite>sprites\sWall8</sprite>
+        <sprite>sprites\sWall3RED</sprite>
+        <sprite>sprites\sLavapool</sprite>
+        <sprite>sprites\sWall9</sprite>
+        <sprite>sprites\sWall10</sprite>
+      </sprites>
+      <sprites name="Open-able">
+        <sprite>sprites\sChest1</sprite>
+      </sprites>
+      <sprites name="HalfBlocks">
+        <sprite>sprites\sprite91</sprite>
+        <sprite>sprites\sprite92</sprite>
+        <sprite>sprites\sprite93</sprite>
+        <sprite>sprites\sprite94</sprite>
+        <sprite>sprites\sprite86</sprite>
+        <sprite>sprites\sprite87</sprite>
+        <sprite>sprites\sprite101</sprite>
+        <sprite>sprites\sprite102</sprite>
+        <sprite>sprites\sprite89</sprite>
+        <sprite>sprites\sprite90</sprite>
+        <sprite>sprites\sprite104</sprite>
+        <sprite>sprites\sprite105</sprite>
+        <sprite>sprites\sprite103</sprite>
+        <sprite>sprites\Wall6_01</sprite>
+        <sprite>sprites\Wall6_02</sprite>
+        <sprite>sprites\Wall6_03</sprite>
+        <sprite>sprites\Wall6_04</sprite>
+        <sprite>sprites\Wall7_01</sprite>
+        <sprite>sprites\Wall7_02</sprite>
+        <sprite>sprites\Wall7_03</sprite>
+        <sprite>sprites\Wall7_04</sprite>
+        <sprite>sprites\Wall3_01</sprite>
+        <sprite>sprites\Wall3_02</sprite>
+        <sprite>sprites\Wall3_03</sprite>
+        <sprite>sprites\Wall3_04</sprite>
+        <sprite>sprites\Wall2_01</sprite>
+        <sprite>sprites\Wall2_02</sprite>
+        <sprite>sprites\Wall2_03</sprite>
+        <sprite>sprites\Wall2_04</sprite>
+        <sprite>sprites\Wall4_01</sprite>
+        <sprite>sprites\Wall4_02</sprite>
+        <sprite>sprites\Wall4_03</sprite>
+        <sprite>sprites\Wall4_04</sprite>
+        <sprite>sprites\WallCrate_01</sprite>
+        <sprite>sprites\WallCrate_02</sprite>
+        <sprite>sprites\WallCrate_03</sprite>
+        <sprite>sprites\WallCrate_04</sprite>
+      </sprites>
+    </sprites>
+    <sprites name="Misc">
+      <sprites name="Chapters">
+        <sprite>sprites\sChapter3</sprite>
+        <sprite>sprites\sChapter1</sprite>
+        <sprite>sprites\sChapter3_2</sprite>
+        <sprite>sprites\sChapter1_2</sprite>
+      </sprites>
+      <sprites name="Projectiles">
+        <sprite>sprites\sArrow</sprite>
+        <sprite>sprites\sBoltJungle</sprite>
+        <sprite>sprites\sFireProjectile</sprite>
+        <sprite>sprites\sBolt</sprite>
+      </sprites>
+      <sprites name="Effects">
+        <sprite>sprites\sSpellChoose</sprite>
+        <sprite>sprites\sBackEffect</sprite>
+        <sprite>sprites\sLight</sprite>
+        <sprite>sprites\sEffectPotion</sprite>
+        <sprite>sprites\sprite68</sprite>
+      </sprites>
+      <sprites name="Magic signs">
+        <sprite>sprites\sMagicSign</sprite>
+        <sprite>sprites\smagicSign2</sprite>
+      </sprites>
+      <sprites name="Light control">
+        <sprite>sprites\sprite10</sprite>
+        <sprite>sprites\sprite9</sprite>
+        <sprite>sprites\sIn1use</sprite>
+      </sprites>
+      <sprites name="Next level">
+        <sprite>sprites\sNextLevel</sprite>
+      </sprites>
+      <sprites name="Sky">
+        <sprite>sprites\sCloud1</sprite>
+      </sprites>
+      <sprites name="Checkpoins">
+        <sprite>sprites\sCheckPoint</sprite>
+      </sprites>
+      <sprites name="Cursors">
+        <sprite>sprites\sCursor</sprite>
+      </sprites>
+      <sprites name="Cutscenes">
+        <sprite>sprites\sCutscene</sprite>
+        <sprite>sprites\sChapter</sprite>
+        <sprite>sprites\sprite67</sprite>
+        <sprite>sprites\sDarkTexture</sprite>
+      </sprites>
+      <sprites name="Controlers">
+        <sprite>sprites\sInventory</sprite>
+        <sprite>sprites\sAlphasettings</sprite>
+        <sprite>sprites\sLight1</sprite>
+        <sprite>sprites\sGUIBars</sprite>
+        <sprite>sprites\sGUI</sprite>
+        <sprite>sprites\sGUIArms</sprite>
+      </sprites>
+      <sprites name="Guide">
+        <sprite>sprites\sDart</sprite>
+      </sprites>
+      <sprites name="NPC">
+        <sprite>sprites\sprite74</sprite>
+        <sprite>sprites\sprite73</sprite>
+      </sprites>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Tilesets">
@@ -872,16 +867,21 @@
     <font>fonts\fntInfra</font>
   </fonts>
   <objects name="objects">
-    <object>objects\par_player</object>
     <objects name="PERSPECTIVE TOP DOWN">
+      <object>objects\par_player</object>
       <object>objects\oPlayer</object>
       <object>objects\oEnemy1</object>
       <object>objects\oPlayerGhost</object>
       <objects name="Walls">
         <objects name="Solid">
-          <object>objects\oWall1</object>
           <objects name="Halfwalls">
             <objects name="1">
+              <objects name="1RED">
+                <object>objects\oWallHalf1_1RED</object>
+                <object>objects\oWallHalf1_2RED</object>
+                <object>objects\oWallHalf1_3RED</object>
+                <object>objects\oWallHalf1_4RED</object>
+              </objects>
               <object>objects\oWallHalf1_3</object>
               <object>objects\oWallHalf1_1</object>
               <object>objects\oWallHalf1_2</object>
@@ -894,13 +894,8 @@
               <object>objects\oHalfWall2_3</object>
               <object>objects\oHalfWall2_4</object>
             </objects>
-            <objects name="1red">
-              <object>objects\oWallHalf1_1RED</object>
-              <object>objects\oWallHalf1_2RED</object>
-              <object>objects\oWallHalf1_3RED</object>
-              <object>objects\oWallHalf1_4RED</object>
-            </objects>
           </objects>
+          <object>objects\oWall1</object>
           <object>objects\oWall6</object>
           <object>objects\oWall7</object>
           <object>objects\oWall1Red</object>
@@ -945,6 +940,8 @@
           <object>objects\object122</object>
           <object>objects\oDispenser3_90</object>
           <object>objects\oPreassurePlate</object>
+          <object>objects\oCable1</object>
+          <object>objects\oCable1_180</object>
         </objects>
         <objects name="Light Control">
           <object>objects\oIn</object>
@@ -1008,8 +1005,12 @@
         <object>objects\oInventory</object>
         <object>objects\oVariableController</object>
         <object>objects\oAlphaSettings</object>
+        <object>objects\oLog</object>
+        <object>objects\oAStar</object>
+        <object>objects\par_cable</object>
         <object>objects\oLogo</object>
         <object>objects\oPlayerCutscene</object>
+        <object>objects\par_signal</object>
       </objects>
       <objects name="Interactable">
         <objects name="Levers">
@@ -1038,12 +1039,6 @@
         <object>objects\platform_oWall1STANDART</object>
       </objects>
     </objects>
-    <object>objects\oLog</object>
-    <object>objects\oAStar</object>
-    <object>objects\oCable1</object>
-    <object>objects\oCable1_180</object>
-    <object>objects\par_signal</object>
-    <object>objects\par_cable</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\tmlHuman1</timeline>
