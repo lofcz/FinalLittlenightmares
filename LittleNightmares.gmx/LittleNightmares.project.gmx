@@ -347,6 +347,7 @@
         <sprite>sprites\sDispenser</sprite>
         <sprite>sprites\sDispenser2_90</sprite>
         <sprite>sprites\sDispencer4_4</sprite>
+        <sprite>sprites\sDispencer4_4_180</sprite>
         <sprite>sprites\sDispenser2</sprite>
         <sprite>sprites\sDispencer4_4_360</sprite>
         <sprite>sprites\dispenser3_0</sprite>
@@ -448,6 +449,7 @@
       </sprites>
       <sprites name="Magic signs">
         <sprite>sprites\sMagicSign</sprite>
+        <sprite>sprites\sMagicSign3</sprite>
         <sprite>sprites\smagicSign2</sprite>
       </sprites>
       <sprites name="Light control">
@@ -895,6 +897,9 @@
               <object>objects\oHalfWall2_4</object>
             </objects>
           </objects>
+          <objects name="Effects">
+            <object>objects\object124</object>
+          </objects>
           <object>objects\oWall1</object>
           <object>objects\oWall6</object>
           <object>objects\oWall7</object>
@@ -938,6 +943,7 @@
           <object>objects\oDispenser4_4</object>
           <object>objects\oDispeser5</object>
           <object>objects\object122</object>
+          <object>objects\oDispeser5_180</object>
           <object>objects\oDispenser3_90</object>
           <object>objects\oPreassurePlate</object>
           <object>objects\oCable1</object>
@@ -974,6 +980,7 @@
         <object>objects\oManaOrb</object>
         <object>objects\oManaOrb150</object>
         <object>objects\oMagicSign</object>
+        <object>objects\oMagicSign3</object>
         <object>objects\oMagicSign2</object>
         <object>objects\par_sign</object>
         <object>objects\oMedpack</object>
@@ -1044,7 +1051,6 @@
     <timeline>timelines\tmlHuman1</timeline>
   </timelines>
   <rooms name="rooms">
-    <room>rooms\platform_mapLevel1</room>
     <room>rooms\mapLevel2</room>
     <room>rooms\mapLevel1</room>
     <room>rooms\mapLevel3</room>
@@ -1059,6 +1065,7 @@
         <room>rooms\mapLevel5</room>
         <room>rooms\mapLevel4</room>
       </rooms>
+      <room>rooms\platform_mapLevel1</room>
     </rooms>
     <rooms name="Cutscenes">
       <room>rooms\mapCutscene1</room>

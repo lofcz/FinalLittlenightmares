@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>pulse = 0
 image_speed = 0;
+dir_y = 0;
 </string>
           </argument>
         </arguments>
@@ -68,12 +69,26 @@ if (pulse = 1)
 
   
          {
-          inst = instance_xnearest(x,y,par_cable,2)
+          inst = instance_xnearest(x,y+dir_y,par_cable,2)
           if (distance_to_object(inst) &lt; 5)
              {
               pulse = 0
               inst.pulse = 1;
+              
+              
+                if (inst.y &lt; y)
+                 {
+                  inst.dir_y -= 16
+                 }
+               if (inst.y &gt; y)
+                 {
+                  inst.dir_y = 16
+                 }
+
+              
              }
+                  dir_y = 0;
+
          }
    }
    
@@ -110,7 +125,7 @@ if (pulse = 1)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//draw_self()
+            <string>draw_self()
 
 </string>
           </argument>
