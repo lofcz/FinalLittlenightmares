@@ -115,7 +115,7 @@ if (activated = 0)
 
 }
 
-     other.x = other.xprevious // Vrátí hráče na přechozí x-osovou souřadnici
+other.x = other.xprevious // Vrátí hráče na přechozí x-osovou souřadnici
 other.y = other.yprevious // Vrátí hráče na přechozí y-osovou souřadnici
 
     

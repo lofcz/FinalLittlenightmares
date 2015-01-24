@@ -360,6 +360,7 @@
       </sprites>
       <sprites name="Doors">
         <sprite>sprites\sDoor41</sprite>
+        <sprite>sprites\sprite142</sprite>
         <sprite>sprites\sprite106</sprite>
         <sprite>sprites\sDoor14</sprite>
         <sprite>sprites\sDoor14Flip</sprite>
@@ -431,6 +432,8 @@
       <sprites name="Chapters">
         <sprite>sprites\sChapter3</sprite>
         <sprite>sprites\sChapter1</sprite>
+        <sprite>sprites\sChapter2</sprite>
+        <sprite>sprites\sChapter2_2</sprite>
         <sprite>sprites\sChapter3_2</sprite>
         <sprite>sprites\sChapter1_2</sprite>
       </sprites>
@@ -898,7 +901,7 @@
             </objects>
           </objects>
           <objects name="Effects">
-            <object>objects\object124</object>
+            <object>objects\oWall1Effect1</object>
           </objects>
           <object>objects\oWall1</object>
           <object>objects\oWall6</object>
@@ -928,6 +931,7 @@
           </objects>
           <objects name="Puzzle">
             <object>objects\oDoor14PUZZLE</object>
+            <object>objects\oDoor41PUZZLE</object>
           </objects>
           <objects name="Kytky">
             <object>objects\oDoor14KYTKY</object>
