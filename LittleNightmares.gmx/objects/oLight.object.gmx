@@ -37,6 +37,7 @@ ww_minus = 0;
 object = oPlayer
 vis = ""
 changed = 0
+heartbeat = 2 // Dýchání světelného okruhu     (8-10 je na zbláznění)
 //show_message(instance_number(object))
 
 
@@ -102,7 +103,7 @@ if (mode = 1)
    {
     if (ww&lt;ww_p)
        {
-        ww += 3
+        ww += heartbeat
        }
        else {mode = 2}
    }
@@ -110,7 +111,7 @@ if (mode = 2)
    {
     if (ww &gt; ww_min)
        {
-        ww -= 3
+        ww -= heartbeat
        }
        else {mode = 1}
    }
@@ -219,6 +220,10 @@ if (instance_number(oCutscene) = 0 &amp;&amp; global.world_type = "wonderland")
          {
             draw_sprite_ext(sGUI,5,view_xview+5,view_yview+610,gui_xs,gui_ys,0,c_white,1)   
          }
+       if (object.vision_selected="vision_violet")
+         {
+            draw_sprite_ext(sGUI,7,view_xview+5,view_yview+610,gui_xs,gui_ys,0,c_white,1)   
+         }
 
 
 
@@ -228,16 +233,22 @@ if (instance_number(oCutscene) = 0 &amp;&amp; global.world_type = "wonderland")
         draw_sprite_ext(sBackEffect,0,view_xview,view_yview,1,1,0,c_white,spell_alpha)
         
         }
-    if (object.spell_on = 1 &amp;&amp;object.vision_selected = "vision_green")
+    if (object.spell_on = 1 &amp;&amp; object.vision_selected = "vision_green")
         {
         draw_sprite_ext(sBackEffect,2,view_xview,view_yview,1,1,0,c_white,spell_alpha)
         
         }
-    if (object.spell_on = 1 &amp;&amp;object.vision_selected = "vision_blue")
+    if (object.spell_on = 1 &amp;&amp; object.vision_selected = "vision_blue")
         {
         draw_sprite_ext(sBackEffect,3,view_xview,view_yview,1,1,0,c_white,spell_alpha)
         
         }
+     if (object.spell_on = 1 &amp;&amp; object.vision_selected = "vision_violet")
+        {
+        draw_sprite_ext(sBackEffect,5,view_xview,view_yview,1,1,0,c_white,spell_alpha)
+        
+        }
+
    /*    hpp = (object.hp / object.max_hp)
        hpp *= 100;
       draw_set_color(c_black)
