@@ -10,7 +10,7 @@
   <bbox_left>0</bbox_left>
   <bbox_right>167</bbox_right>
   <bbox_top>0</bbox_top>
-  <bbox_bottom>65</bbox_bottom>
+  <bbox_bottom>131</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
@@ -18,9 +18,10 @@
   </TextureGroups>
   <For3D>0</For3D>
   <width>168</width>
-  <height>66</height>
+  <height>132</height>
   <frames>
     <frame index="0">images\sSpellChoose_0.png</frame>
     <frame index="1">images\sSpellChoose_1.png</frame>
+    <frame index="2">images\sSpellChoose_2.png</frame>
   </frames>
 </sprite>

@@ -88,6 +88,7 @@ sanity = 100;
 max_sanity = 100;
 letters = 0
 letters_max = instance_number(oLetter)
+global.vision_violet = 0;
 </string>
           </argument>
         </arguments>
@@ -709,7 +710,14 @@ if (keyboard_check_pressed(ord("Q")) &amp;&amp; can_move = 1)
     spell_on = 0;
     if (vision_selected = "vision_red")   {vision_selected = "vision_green"  exit}
     if (vision_selected = "vision_green") {vision_selected = "vision_blue" exit}
-    if (vision_selected = "vision_blue")  {vision_selected = "vision_red"   exit}
+    if (vision_selected = "vision_blue")         
+       {
+       if (global.vision_violet = 0) {vision_selected = "vision_red"   exit}
+       else {vision_selected = "vision_violet" exit}
+       
+       }
+    if (vision_selected = "vision_violet")   {vision_selected = "vision_red"  exit}
+   
     }
 
 }

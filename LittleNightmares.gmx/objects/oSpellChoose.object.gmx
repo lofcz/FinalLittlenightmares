@@ -95,6 +95,14 @@ if (mouse_check_button_pressed(mb_left) &amp;&amp; mouse_x &gt; x+112 &amp;&amp;
     oPlayer.vision_selected = "vision_blue";
     instance_destroy();
     }
+if (mouse_check_button_pressed(mb_left) &amp;&amp; mouse_x &gt; x &amp;&amp; mouse_y &gt; y+66 &amp;&amp; mouse_x &lt; x +56 &amp;&amp; mouse_y &lt; y+132 &amp;&amp; global.vision_violet = 1)
+    {
+    oPlayer.vision_selected = "vision_violet";
+    instance_destroy();
+    }
+    
+    
+  
 </string>
           </argument>
         </arguments>
@@ -131,6 +139,15 @@ if (mouse_x &gt; x+112 &amp;&amp; mouse_y &gt; y &amp;&amp; mouse_x &lt; x +168 
     {
     draw_sprite(sprite_index,1,x+112,y)
     }
+if (global.vision_violet = 1)
+   {
+    draw_sprite(sSpellChoose,2,x,y)
+    if (mouse_x &gt; x &amp;&amp; mouse_y &gt; y+66 &amp;&amp; mouse_x &lt; x +56 &amp;&amp; mouse_y &lt; y+132)
+    {
+    draw_sprite(sprite_index,1,x,y+66)
+    }
+
+   }
 </string>
           </argument>
         </arguments>

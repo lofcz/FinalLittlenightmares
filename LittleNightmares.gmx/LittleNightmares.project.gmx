@@ -495,6 +495,9 @@
         <sprite>sprites\sprite73</sprite>
       </sprites>
     </sprites>
+    <sprite>sprites\sPressurePlate</sprite>
+    <sprite>sprites\sprite148</sprite>
+    <sprite>sprites\sprite149</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Tilesets">
@@ -863,6 +866,7 @@
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shaderLight.shader</shader>
+    <shader type="GLSLES">shaders\shaderBlink.shader</shader>
   </shaders>
   <fonts name="fonts">
     <font>fonts\fnt0</font>
@@ -975,7 +979,6 @@
         <object>objects\oFireballTRAP</object>
         <object>objects\oBolt</object>
         <object>objects\oBoltJungle</object>
-        <object>objects\oSpellChoose</object>
         <object>objects\oNextLevel</object>
       </objects>
       <objects name="Items">
@@ -1005,6 +1008,7 @@
         <object>objects\oEmptyPotion</object>
       </objects>
       <objects name="Controllers">
+        <object>objects\oSpellChoose</object>
         <object>objects\oRoomTransition</object>
         <object>objects\oDeathTransition</object>
         <object>objects\oOptimalizace</object>
@@ -1036,6 +1040,7 @@
         </objects>
         <object>objects\oCheckPoint</object>
         <object>objects\oLetter</object>
+        <object>objects\oVisionVioletPP</object>
         <object>objects\oChest</object>
       </objects>
       <objects name="NPC">
@@ -1053,6 +1058,7 @@
         <object>objects\platform_oWall1STANDART</object>
       </objects>
     </objects>
+    <object>objects\oPressurePlate</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\tmlHuman1</timeline>
