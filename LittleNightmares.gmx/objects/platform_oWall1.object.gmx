@@ -58,6 +58,13 @@ image_alpha = 0
    {
     if (st = 0) {st = 1}
    }
+if (instance_number(oPlayerCutscene) &gt; 0)
+   {
+   if (distance_to_object(oPlayerCutscene) &lt; 130)
+   {
+    if (st = 0) {st = 1}
+    }
+   }
    
 if (st = 1) 
 {

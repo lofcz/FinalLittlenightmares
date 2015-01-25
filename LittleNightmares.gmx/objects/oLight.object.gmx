@@ -26,6 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>ww = 801;
+ww_p = ww+40
+ww_min = ww
+mode = 1
 spell_alpha = 0;
 in_room = 0;
 shadow_f= 100;
@@ -33,6 +36,7 @@ shadow = 0;
 ww_minus = 0;
 object = oPlayer
 vis = ""
+changed = 0
 //show_message(instance_number(object))
 
 
@@ -76,28 +80,41 @@ else {spell_alpha = 0}
 
 if (in_room = 1)
     {
-    if (ww &lt; 1300)
+    ww_p = 1340
+    ww_min = 1300
+    if (ww &lt; 1300 &amp;&amp; changed = 1)
         {
         ww += 10;
+        if (ww &gt;= 1300)
+           {
+            changed = 0
+           }
         }
     }
 else 
     {
-    if (ww &gt; 801) {ww -= 10;}
+    ww_p = 840
+    ww_min = 801
+    if (ww &gt; 801 &amp;&amp; changed = 1) {ww -= 10 if (ww &lt;= 801) {changed = 0}}
     }
-/*if (oPlayer.in_shadow = 1 &amp;&amp; shadow = 0)
+    
+if (mode = 1)
    {
-    shadow = 1;
-    shadow_f = 1000;
+    if (ww&lt;ww_p)
+       {
+        ww += 3
+       }
+       else {mode = 2}
    }
-else {shadow = 0 if (ww_minus &lt; 0) {ww_minus += 1}}
-   
-if (shadow_f &gt; 0)
+if (mode = 2)
    {
-    shadow_f -= 1;
-    ww_minus -= 1;
+    if (ww &gt; ww_min)
+       {
+        ww -= 3
+       }
+       else {mode = 1}
    }
-   */
+
 </string>
           </argument>
         </arguments>

@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_speed = 0
+            <string>if (room= mapCutscene1)
+{
+image_speed = 0
 gravity = 0.3
 gravity_direction = 270
 alarm[0] = 250+30 //30
@@ -49,6 +51,36 @@ angle_dir[1] = 0
 angle_dir[2] = 1
 angle_dir[3] = 0
 angle_dir[4] = 1
+}
+if (room= mapCutscene2)
+{
+image_speed = 0
+gravity = 0.3
+gravity_direction = 270
+alarm[0] = 150 //30
+alarm[5] = 30
+dir =""
+c= 0
+a1 = 0
+a2 = 0
+a3 = 0
+a4 = 0
+a5 = 0
+pp = 0
+xs = 1
+ys = 1
+for (a = 0 a&lt;5 a++)
+    {
+angle[a] = 0
+}
+angle_dir[0] = 1
+angle_dir[1] = 0
+angle_dir[2] = 1
+angle_dir[3] = 0
+angle_dir[4] = 1
+ k = 0;
+
+}
 
 </string>
           </argument>
@@ -72,7 +104,9 @@ angle_dir[4] = 1
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm[5] = 1
+            <string>if (room = mapCutscene1)
+{
+alarm[5] = 1
  c += 1
  if (c &gt; 500) 
  {
@@ -100,6 +134,38 @@ else  if (a5 &lt; 1)
     {
      a5 += 0.02
     }
+}
+if (room = mapCutscene2)
+{
+alarm[5] = 1
+ c += 1
+ if (c &gt; 350) 
+ {
+  room = mapLevel3
+ }
+ if (a1 &lt; 1)
+    {
+     a1 += 0.02
+    }
+ else  if (a2 &lt; 1)
+    {
+     a2 += 0.02
+    }
+else  if (a3 &lt; 1)
+    {
+     a3 += 0.02
+    }
+
+else  if (a4 &lt; 1)
+    {
+     a4 += 0.02
+    }
+
+else  if (a5 &lt; 1)
+    {
+     a5 += 0.02
+    }
+}
 
 
 </string>
@@ -124,9 +190,19 @@ else  if (a5 &lt; 1)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>dir = ""
+            <string>if (room = mapCutscene1)
+{
+dir = ""
 path_start(pthCutscene,speed,0,0)
 pp = 1
+}
+if (room = mapCutscene2)
+{
+dir = ""
+path_start(pthCutscene2,speed,0,0)
+pp = 1
+}
+
 </string>
           </argument>
         </arguments>
@@ -149,10 +225,20 @@ pp = 1
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>speed = 0
+            <string>if (room = mapCutscene1)
+{
+speed = 0
 dir = "d"
 image_index = 0
 image_speed = 0
+}
+if (room = mapCutscene2)
+{
+speed = 0
+dir = "d"
+image_index = 0
+image_speed = 0
+}
 
 </string>
           </argument>
@@ -176,10 +262,22 @@ image_speed = 0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_index = 6
+            <string>if (room = mapCutscene1)
+{
+image_index = 6
 dir = "--&gt;"
 alarm[1] = 45
 alarm[2] = 38
+}
+if (room = mapCutscene2)
+{
+k = 1;
+image_index = 6
+dir = "--&gt;"
+alarm[1] = 45
+alarm[2] = 38
+}
+
 </string>
           </argument>
         </arguments>
@@ -202,7 +300,9 @@ alarm[2] = 38
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (pp = 1)
+            <string>if (room = mapCutscene1)
+{
+if (pp = 1)
    {
     if (path_speed &lt; 14) {path_speed += 0.1} 
    }
@@ -249,13 +349,114 @@ if (dir = "d")
          if (angle_dir[a] = 1) {angle[a] -= random_range(1,2)}
          }
        }
+}    
+
+// *********************************** LEVEL 2 ********************************************
+if (room = mapCutscene2)
+{
+if (path_index = pthCutscene2)
+   {
+     direction = 0
+   if (speed &lt; 8) {speed += 0.5}
+    image_speed = 0.2
+    if (image_index &gt; 8)
+       {
+        image_index = 6
+       }
+
+   }
+   if (dir = "--&gt;")
+   {
+   direction = 0
+   if (speed &lt; 8) {speed += 0.5}
+    image_speed = 0.2
+    if (image_index &gt; 8)
+       {
+        image_index = 6
+       }
+   }
+if (dir = "d")
+   {
+ direction = 0
+   if (speed &lt; 8) {speed += 0.5}
+    image_speed = 0.2
+    if (image_index &gt; 8)
+       {
+        image_index = 6
+       }
+
+
+if (pp = 1)
+   {
+    if (path_speed &lt; 14) {path_speed += 0.1} 
+   }
+
+   }
+   if (c = 250)
+      {
+       with(par_wall)
+                     {
+                      speed = random_range(5,8)
+                      direction = random(359)
+                      image_angle = random(39)
+                     }
+      }
+ if (pp =1 &amp;&amp; x &gt; 1024)
+    {
     
+     pp = 2
+    }
+    if (pp = 2) 
+       {
+       for (a= 0 a&lt; 5 a++)
+           {
+       if (angle_dir[a] = 0) {angle[a] += random_range(1,2)}
+         if (angle_dir[a] = 1) {angle[a] -= random_range(1,2)}
+         }
+       }
+       if (k = 1)
+       {
+ if (image_index &gt; 8)
+       {
+        image_index = 6
+       }
+ if (image_index &lt; 6)
+       {
+        image_index = 6
+       }
+      }
+  }         
+
 </string>
           </argument>
         </arguments>
       </action>
     </event>
     <event eventtype="4" ename="oWall1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>gravity = 0
+vspeed = 0
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="oWall1Effect1">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -296,7 +497,9 @@ vspeed = 0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_self()
+            <string>if (room = mapCutscene1)
+{
+draw_self()
 
   draw_set_halign(fa_center)
    draw_set_valign(fa_middle)
@@ -345,7 +548,49 @@ vspeed = 0
          draw_set_colour(c_black)
    draw_set_halign(fa_left)
     draw_set_valign(fa_top)
+}
+// *****************************************************************LEVEL 2***********************************************************************
+if (room = mapCutscene2)
+{
+draw_self()
 
+  draw_set_halign(fa_center)
+   draw_set_valign(fa_middle)
+      
+
+      draw_set_font(fntText)
+      draw_set_colour(c_white)
+     
+      if (c&gt;1)
+         {
+         draw_set_alpha(a1)
+          draw_text_transformed(500+180,100,"Až ti bude nejhůř",xs,ys,angle[0])
+           
+         }
+         if (c &gt; 50)
+            {
+             draw_set_alpha(a2)
+
+                 draw_text_transformed(520+300,120,"obrať se za sebe a všechny stíny padnou za tebe",xs,ys,angle[1])
+        
+            }
+               if (c &gt; 100)
+            {
+             draw_set_alpha(a3)
+
+                draw_text_transformed(500+200,140,"- John Lennon",xs,ys,angle[2])
+        
+            }
+          
+ draw_set_alpha(1)
+
+   
+         draw_set_colour(c_black)
+   draw_set_halign(fa_left)
+    draw_set_valign(fa_top)
+}
+
+      
 
       
 

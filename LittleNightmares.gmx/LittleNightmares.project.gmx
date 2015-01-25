@@ -373,6 +373,7 @@
           <sprite>sprites\sWall5</sprite>
         </sprites>
         <sprite>sprites\sWall3</sprite>
+        <sprite>sprites\sWall11</sprite>
         <sprite>sprites\sWall1</sprite>
         <sprite>sprites\sWall2</sprite>
         <sprite>sprites\sCrate</sprite>
@@ -523,6 +524,7 @@
   </backgrounds>
   <paths name="paths">
     <path>paths\pthCutscene</path>
+    <path>paths\pthCutscene2</path>
     <path>paths\pthEnemy1</path>
   </paths>
   <scripts name="scripts">
@@ -904,6 +906,7 @@
             <object>objects\oWall1Effect1</object>
           </objects>
           <object>objects\oWall1</object>
+          <object>objects\oWall11</object>
           <object>objects\oWall6</object>
           <object>objects\oWall7</object>
           <object>objects\oWall1Red</object>
@@ -1055,9 +1058,9 @@
     <timeline>timelines\tmlHuman1</timeline>
   </timelines>
   <rooms name="rooms">
+    <room>rooms\mapLevel3</room>
     <room>rooms\mapLevel2</room>
     <room>rooms\mapLevel1</room>
-    <room>rooms\mapLevel3</room>
     <room>rooms\mapMainMenu</room>
     <rooms name="Intro">
       <room>rooms\mapTutorial</room>
@@ -1073,6 +1076,7 @@
     </rooms>
     <rooms name="Cutscenes">
       <room>rooms\mapCutscene1</room>
+      <room>rooms\mapCutscene2</room>
     </rooms>
   </rooms>
   <constants number="5">

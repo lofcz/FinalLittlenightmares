@@ -57,6 +57,13 @@ p = 0;
    {
     if (p = 0) {p = 1}
    }
+if (instance_number(oPlayerCutscene)  &gt; 0) 
+   {
+   if (distance_to_object(oPlayerCutscene) &lt; 150)
+     {
+    if (p = 0) {p = 1}
+    }
+   }
    
    
    if (p = 1)
