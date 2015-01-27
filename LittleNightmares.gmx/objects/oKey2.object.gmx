@@ -31,6 +31,11 @@ sp  = 0
 m = 1
 
 
+colour_to_find = shader_get_uniform(shaderBlink, "f_Colour1");
+lerp_value = 0;
+
+
+
 </string>
           </argument>
         </arguments>
@@ -129,6 +134,44 @@ taken = 1
 scrEffectKey() // Vytvoří částicový efekt
 sound_play(sndCoin) // Přehraje zvuk
 instance_destroy() // Zničí se
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (oPlayer.spell_on = 1 &amp;&amp; oPlayer.vision_selected = "vision_violet")
+   {
+   shader_set(shaderBlink);        
+    
+        // NOTE: SIN() will give 1 to -1. The -1 will make the image seem "darker"
+        var s = sin( degtorad(lerp_value) );
+        lerp_value+=5;
+        if( lerp_value&gt;360 ) lerp_value-=360;
+    
+        // lerp to WHITE (1,1,1)
+        shader_set_uniform_f(colour_to_find, 1,1,1, s );       
+        draw_self()          
+       shader_reset()
+   }
+else {draw_self()}
+
 </string>
           </argument>
         </arguments>

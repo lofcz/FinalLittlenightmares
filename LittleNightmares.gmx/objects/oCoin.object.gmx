@@ -28,6 +28,13 @@
             <string>
 m = choose(1,2) // nestatický efekt muhahahahaha
 
+
+
+colour_to_find = shader_get_uniform(shaderBlink, "f_Colour1");
+lerp_value = 0;
+
+
+
 </string>
           </argument>
         </arguments>
@@ -122,6 +129,29 @@ instance_destroy() // Zničí se
 scrEffectCoin() // Vytvoří částicový efekt
 sound_play(sndCoin) // Přehraje zvuk
 instance_destroy() // Zničí se
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_shader_blink()
 </string>
           </argument>
         </arguments>
