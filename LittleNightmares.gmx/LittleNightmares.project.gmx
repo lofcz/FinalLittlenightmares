@@ -1079,6 +1079,7 @@
     <timeline>timelines\tmlHuman1</timeline>
   </timelines>
   <rooms name="rooms">
+    <room>rooms\mapCutscene2</room>
     <room>rooms\mapLevel3</room>
     <room>rooms\mapLevel1</room>
     <room>rooms\mapLevel2</room>
@@ -1097,7 +1098,6 @@
     </rooms>
     <rooms name="Cutscenes">
       <room>rooms\mapCutscene1</room>
-      <room>rooms\mapCutscene2</room>
     </rooms>
   </rooms>
   <constants number="5">
