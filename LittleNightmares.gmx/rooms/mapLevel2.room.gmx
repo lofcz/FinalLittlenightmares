@@ -33,8 +33,8 @@ global.map_type = "wonderland"</code>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>0</deleteUnderlyingTiles>
     <page>0</page>
-    <xoffset>1418</xoffset>
-    <yoffset>186</yoffset>
+    <xoffset>457</xoffset>
+    <yoffset>106</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="background4" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -386,7 +386,7 @@ global.map_type = "wonderland"</code>
     <instance objName="oWallHalf1_1" x="1152" y="640" name="inst_D7AF0561" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWallHalf1_5" x="576" y="640" name="inst_9003723F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWallHalf1_4" x="576" y="192" name="inst_08FAE9F2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oNextLevel" x="832" y="416" name="inst_2C794E53" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oNextLevel" x="832" y="416" name="inst_2C794E53" locked="0" code="lvl = mapCutscene2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWallHalf1_4" x="1216" y="960" name="inst_80E61505" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWallHalf1_1" x="1440" y="1280" name="inst_F1ED97A8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWallHalf1_3" x="1440" y="960" name="inst_954689F4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

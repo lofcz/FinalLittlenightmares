@@ -347,6 +347,7 @@
         <sprite>sprites\sDispenser</sprite>
         <sprite>sprites\sDispenser2_90</sprite>
         <sprite>sprites\sDispencer4_4</sprite>
+        <sprite>sprites\sDispenser6_90</sprite>
         <sprite>sprites\sDispencer4_4_180</sprite>
         <sprite>sprites\sDispenser2</sprite>
         <sprite>sprites\sDispencer4_4_360</sprite>
@@ -374,6 +375,7 @@
         </sprites>
         <sprite>sprites\sWall3</sprite>
         <sprite>sprites\sWall11</sprite>
+        <sprite>sprites\sWall12</sprite>
         <sprite>sprites\sWall11RED</sprite>
         <sprite>sprites\sWall1</sprite>
         <sprite>sprites\sWall2</sprite>
@@ -450,6 +452,9 @@
         <sprite>sprites\sSpellChoose</sprite>
         <sprite>sprites\sBackEffect</sprite>
         <sprite>sprites\sLight</sprite>
+        <sprite>sprites\sLight2</sprite>
+        <sprite>sprites\sLight4</sprite>
+        <sprite>sprites\sLight3</sprite>
         <sprite>sprites\sEffectPotion</sprite>
         <sprite>sprites\sprite68</sprite>
       </sprites>
@@ -500,6 +505,8 @@
     <sprite>sprites\sPressurePlate</sprite>
     <sprite>sprites\sprite148</sprite>
     <sprite>sprites\sprite149</sprite>
+    <sprite>sprites\sprite153</sprite>
+    <sprite>sprites\sprite155</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Tilesets">
@@ -918,6 +925,7 @@
           </objects>
           <object>objects\oWall1</object>
           <object>objects\oWall11</object>
+          <object>objects\oWall12</object>
           <object>objects\oWall6</object>
           <object>objects\oWall7</object>
           <object>objects\oWall1Red</object>
@@ -947,6 +955,7 @@
           </objects>
           <objects name="Puzzle">
             <object>objects\oDoor14PUZZLE</object>
+            <object>objects\oDoor41PUZZLE_STANDART</object>
             <object>objects\oDoor41PUZZLE</object>
           </objects>
           <objects name="Kytky">
@@ -963,6 +972,7 @@
           <object>objects\oDispenser</object>
           <object>objects\oDispenser2</object>
           <object>objects\oDispenser2_90</object>
+          <object>objects\oDispenser6_90</object>
           <object>objects\oDispenser4_4</object>
           <object>objects\oDispeser5</object>
           <object>objects\object122</object>
@@ -1074,12 +1084,12 @@
     <object>objects\oTransitionControler</object>
     <object>objects\oRoomControler</object>
     <object>objects\oTorch</object>
+    <object>objects\object138</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\tmlHuman1</timeline>
   </timelines>
   <rooms name="rooms">
-    <room>rooms\mapCutscene2</room>
     <room>rooms\mapLevel3</room>
     <room>rooms\mapLevel1</room>
     <room>rooms\mapLevel2</room>
@@ -1098,6 +1108,7 @@
     </rooms>
     <rooms name="Cutscenes">
       <room>rooms\mapCutscene1</room>
+      <room>rooms\mapCutscene2</room>
     </rooms>
   </rooms>
   <constants number="5">

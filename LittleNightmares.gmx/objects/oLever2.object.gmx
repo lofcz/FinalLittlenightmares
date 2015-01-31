@@ -3,7 +3,7 @@
   <spriteName>sLever</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-2</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -26,6 +26,11 @@
           <argument>
             <kind>1</kind>
             <string>activated = 0;
+xc = 1;
+yc = 1;
+pp = 0;
+m = 1
+
 
 image_speed = 0;
 text_alpha = 0;
@@ -60,20 +65,30 @@ text_alpha = 0;
     }
     image_index = activated;
     
-    if (distance_to_object(oPlayer) &lt; 30)
-    {
-    if (text_alpha &lt; 1)
-        {
-        text_alpha += 0.05;
-        }
-    }
-else
-    {
-      if (text_alpha &gt; 0)
-        {
-        text_alpha -= 0.05;
-        }
-    }
+if (distance_to_object(oPlayer) &lt; 20)
+   {
+    pp = 1
+   }
+else {pp =0 xs = 1 ys = 1 m = 1}
+
+if (pp = 1)
+   {
+    if (xs &lt; 1.2 &amp;&amp; m = 1)
+       {
+        xs += 0.01
+        ys = xs
+       }
+       else {m = 2}
+       
+    if (xs &gt; 1 &amp;&amp; m = 2)
+       {
+        xs -= 0.01
+        ys = xs
+       }
+       else {m = 1}
+
+   }
+
 
 </string>
           </argument>
@@ -125,17 +140,18 @@ else
           <argument>
             <kind>1</kind>
             <string>draw_self()
-
-if (distance_to_object(oPlayer) &lt; 30)
+if (distance_to_object(oPlayer) &lt; 20)
    {
-   depth = -10
-   draw_set_alpha(text_alpha)
-   draw_set_color(c_white)
-   draw_text(x-50,y-50,"Použij stisknutím E")
-      draw_set_color(c_black)
-  draw_set_alpha(1)
+   draw_set_halign(fa_center)
+   draw_set_valign(fa_middle)
+draw_text_transformed_colour(x+20,y-35,"Použij stisknutím E#",xs,ys,0,c_white,c_white,c_white,c_white,1) 
+    draw_set_halign(fa_left)
+    draw_set_valign(fa_top)
    }
-        else {depth = 0}
+   
+
+
+
 </string>
           </argument>
         </arguments>

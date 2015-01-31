@@ -26,7 +26,11 @@
           <argument>
             <kind>1</kind>
             <string>ww = 801;
-ww_p = ww+40
+ca = ww+40
+globalvar light;
+light = surface_create(room_width,room_height);
+
+ww_p = ca
 ww_min = ww
 mode = 1
 spell_alpha = 0;
@@ -84,7 +88,7 @@ else {spell_alpha = 0}
 
 if (in_room = 1)
     {
-    ww_p = 1340
+    ww_p = 1400
     ww_min = 1300
     if (ww &lt; 1300 &amp;&amp; changed = 1)
         {
@@ -97,7 +101,7 @@ if (in_room = 1)
     }
 else 
     {
-    ww_p = 840
+    ww_p = ca
     ww_min = 801
     if (ww &gt; 801 &amp;&amp; changed = 1) {ww -= 10 if (ww &lt;= 801) {changed = 0}}
     }
@@ -123,8 +127,6 @@ if (mode = 2)
           </argument>
         </arguments>
       </action>
-    </event>
-    <event eventtype="8" enumb="64">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -141,12 +143,33 @@ if (mode = 2)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/*
-shader_set(shd_multiply);
-shader_set_uniform_f(uniform_ambient, ambient_light);
-texture_set_stage(sampler_light, surface_get_texture(light_surface));
-draw_surface(application_surface, 0, 0);
-shader_reset();
+            <string>surface_set_target(light);
+
+//fill in the lighting dark again
+draw_set_color(c_white); //choose different colors here to change the darkness eg: c_white, c_gray
+draw_rectangle(0,0,view_wview,view_hview,false);
+
+//put drawing back to normal
+surface_reset_target();
+
+
+
+size = oLight.ww; // change this number to change the size of the light
+
+//switch drawing mode to draw on the light surface
+draw_set_blend_mode(bm_subtract);
+surface_set_target(light);
+
+//change c_gray to another color for colored lights!
+draw_ellipse_color(oPlayer.x-size/2-view_xview,oPlayer.y-size/2-view_yview,oPlayer.x+size/2-view_xview,oPlayer.y+size/2-view_yview,c_white,c_black,false);
+
+//this draws the lense flare effect
+//draw_sprite(sLight2,0,x-view_xview, y - view_yview);
+
+//put the drawing mode back to normal
+surface_reset_target();
+draw_set_blend_mode(bm_normal);
+
 
 
 </string>
@@ -171,7 +194,12 @@ shader_reset();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/*
+            <string>draw_set_blend_mode(bm_subtract);
+draw_surface(light,view_xview,view_yview);
+draw_set_blend_mode(bm_normal);
+
+
+/*
 surface_set_target(light_surface);
 draw_clear_alpha(c_black, 1);
 draw_set_blend_mode(bm_add);
@@ -189,6 +217,7 @@ surface_reset_target();
 
 
 draw_set_font(fntText)
+/*
     x1 = object.x-ww/2;
     x2 = object.x+ww/2;
     y1 = object.y-ww/2;
@@ -203,9 +232,17 @@ draw_set_font(fntText)
     draw_set_blend_mode(bm_subtract);
     draw_sprite_stretched(sLight,-1,x1,y1,ww,ww)
     draw_text(view_xview+400,view_yview+400,ww_minus)
+    draw_set_blend_mode(bm_add)
+     if (instance_number(oTorch) &gt; 0)
+     {
+     with(oTorch)
+                {
+                 draw_sprite_stretched(sLight2,-0,x,y,200,200)
+                }
+     }
     draw_set_blend_mode(bm_normal);
     
-
+*/
 if (instance_number(oCutscene) = 0 &amp;&amp; global.world_type = "wonderland")
    {    
       draw_sprite_ext(sGUI,0,view_xview+5,view_yview+610,gui_xs,gui_ys,0,c_white,1)   // +60
@@ -334,6 +371,7 @@ if (instance_number(oCutscene) = 0 &amp;&amp; global.world_type = "wonderland")
     draw_text(view_xview+5,view_yview+670,"Mince: "+string(object.gold))
     draw_set_color(c_black)
                               */
+   
     }
 
 </string>
