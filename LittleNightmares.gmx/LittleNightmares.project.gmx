@@ -1092,6 +1092,7 @@
   <rooms name="rooms">
     <room>rooms\mapLevel3</room>
     <room>rooms\mapLevel1</room>
+    <room>rooms\mapLevel4</room>
     <room>rooms\mapLevel2</room>
     <room>rooms\mapMainMenu</room>
     <rooms name="Intro">
@@ -1102,7 +1103,7 @@
     <rooms name="Levels">
       <rooms name="Perspective top down">
         <room>rooms\mapLevel5</room>
-        <room>rooms\mapLevel4</room>
+        <room>rooms\mapLevelneurcito</room>
       </rooms>
       <room>rooms\platform_mapLevel1</room>
     </rooms>
