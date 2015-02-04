@@ -507,6 +507,7 @@
     <sprite>sprites\sprite149</sprite>
     <sprite>sprites\sprite153</sprite>
     <sprite>sprites\sprite155</sprite>
+    <sprite>sprites\sprite158</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Tilesets">
@@ -1090,11 +1091,11 @@
     <timeline>timelines\tmlHuman1</timeline>
   </timelines>
   <rooms name="rooms">
-    <room>rooms\mapLevel3</room>
-    <room>rooms\mapLevel1</room>
-    <room>rooms\mapLevel4</room>
-    <room>rooms\mapLevel2</room>
     <room>rooms\mapMainMenu</room>
+    <room>rooms\mapLevel1</room>
+    <room>rooms\mapLevel2</room>
+    <room>rooms\mapLevel3</room>
+    <room>rooms\mapLevel4</room>
     <rooms name="Intro">
       <room>rooms\mapTutorial</room>
       <room>rooms\mapAlphaSettings</room>
