@@ -507,7 +507,7 @@
     <sprite>sprites\sprite149</sprite>
     <sprite>sprites\sprite153</sprite>
     <sprite>sprites\sprite155</sprite>
-    <sprite>sprites\sprite158</sprite>
+    <sprite>sprites\sLoading</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Tilesets">
@@ -1113,7 +1113,8 @@
       <room>rooms\mapCutscene2</room>
     </rooms>
   </rooms>
-  <constants number="5">
+  <constants number="6">
+    <constant name="dreveny_skin">3</constant>
     <constant name="jungle_skin">2</constant>
     <constant name="c_dkgreen">make_colour_rgb(0,250,20)</constant>
     <constant name="c_dkred">make_colour_rgb(145,38,38)</constant>

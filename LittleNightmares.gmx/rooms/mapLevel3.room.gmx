@@ -18,8 +18,8 @@ global.map_type = "wonderland"</code>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1456</w>
-    <h>876</h>
+    <w>1024</w>
+    <h>600</h>
     <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
@@ -29,8 +29,8 @@ global.map_type = "wonderland"</code>
     <deleteUnderlyingObj>-1</deleteUnderlyingObj>
     <deleteUnderlyingTiles>0</deleteUnderlyingTiles>
     <page>0</page>
-    <xoffset>-64</xoffset>
-    <yoffset>158</yoffset>
+    <xoffset>594</xoffset>
+    <yoffset>20</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="background14" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -159,7 +159,7 @@ global.map_type = "wonderland"</code>
     <instance objName="oPressurePlate" x="1904" y="2352" name="inst_42D09F3A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oCrateMoveable" x="2016" y="2352" name="inst_999835FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oCheckPoint" x="2176" y="2352" name="inst_ED58DA78" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oBulletin" x="2288" y="2464" name="inst_4FF7EA8D" locked="0" code="text = &quot;Pokud se ti nepodaří překonat překážku a způsobil jsi, že dostat se dál je nemožné, můžeš se přes nejbližší aktivovaný přenašeč vzpomínek vrátit v čase a zkusit to znovu.&quot;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBulletin" x="2288" y="2464" name="inst_4FF7EA8D" locked="0" code="image_index = jungle_skin;&#xA;text = &quot;Pokud se ti nepodaří překonat překážku a způsobil jsi, že dostat se dál je nemožné, můžeš se přes nejbližší aktivovaný přenašeč vzpomínek vrátit v čase a zkusit to znovu.&quot;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWall11" x="1760" y="2144" name="inst_8DBD8B4E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWall11" x="1728" y="2144" name="inst_1A1DFA91" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWall11" x="1696" y="2144" name="inst_A1EA6D79" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

@@ -69,4 +69,6 @@ while (true) {
         }
     }
 }
-draw_primitive_end();   
+draw_primitive_end();
+draw_sprite(sBackEffect,1,view_xview,view_yview[0])
+draw_sprite(sLoading,0,1024/2,768/2)   
