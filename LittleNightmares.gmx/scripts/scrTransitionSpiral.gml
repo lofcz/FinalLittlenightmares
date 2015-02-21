@@ -70,5 +70,11 @@ while (true) {
     }
 }
 draw_primitive_end();
-draw_sprite(sBackEffect,1,view_xview,view_yview[0])
+if (aa > 1) {aa -= 0.1}
+if (aaa > 1) {aaa += 0.1}
+if (xss < 1.3) {xss += 0.02 yss = xss}
+
+draw_set_alpha(aa)
+draw_sprite_ext(sBackEffect,4,view_xview,view_yview[0],xss,yss,0,c_white,aaa)
+draw_set_alpha(1)
 draw_sprite(sLoading,0,1024/2,768/2)   

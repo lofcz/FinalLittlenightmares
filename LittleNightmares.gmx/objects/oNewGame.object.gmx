@@ -25,10 +25,14 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>c =0
-frc = 0
-srf = 1
-srf2 = 1
+            <string>aa = 1;
+c =0;
+frc = 0;
+srf = 1;
+srf2 = 1;
+aaa = 0;
+xss = 1;
+yss = 1;
 </string>
           </argument>
         </arguments>
@@ -74,12 +78,9 @@ srf2 = 1
 if (mouse_check_button_pressed(mb_left) &amp;&amp; distance_to_point(mouse_x,mouse_y) = 0)
     {
     global.srf = surface_create(1024,768)
-    //background_index[0] = 
     instance_deactivate_all(1)
     background_index[1] = background17
     global.srf2 =  surface_create(1024,768)
-   // ba
-     //room_goto_previous()
     c = 1
     depth = -1000
     }
