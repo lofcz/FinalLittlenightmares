@@ -33,8 +33,8 @@ global.map_type = "wonderland"</code>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>0</deleteUnderlyingTiles>
     <page>0</page>
-    <xoffset>821</xoffset>
-    <yoffset>211</yoffset>
+    <xoffset>634</xoffset>
+    <yoffset>260</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="background4" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -1201,6 +1201,7 @@ global.map_type = "wonderland"</code>
     <instance objName="oWall14" x="1792" y="160" name="inst_6B28CDEC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWall14" x="1824" y="160" name="inst_DB411AA7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWall14" x="1856" y="128" name="inst_CBD508D8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBulletin" x="3200" y="2528" name="inst_9EE475DC" locked="0" code="image_index = jungle_skin;&#xA;text = &quot;Nezapomínej kontrolovat oblasti použitím několika vizí, můžeš najít zajímavé věci.&quot;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="background10" x="1280" y="128" w="128" h="128" xo="0" yo="0" id="10005060" name="inst_8C118F1A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
