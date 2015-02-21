@@ -1,4 +1,5 @@
- var pointx,pointy,object,n,list,nearest;
+ /// instance_xnearest(x,y,object,n) 
+  var pointx,pointy,object,n,list,nearest;
     pointx = argument0;
     pointy = argument1;
     object = argument2;

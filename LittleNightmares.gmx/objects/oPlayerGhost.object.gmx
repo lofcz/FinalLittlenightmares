@@ -53,7 +53,8 @@ key = 0; // Zda má hráč klíč (1,0)
 in_shadow = 0 // Zda je hráč ve stínu (tzn. snížená viditelnost)
 ghost = 0 // Zda má hráč vyvolaného ducha
 can_move2 = 1 // Určuje zda se hráč může pohybovat
-
+oLight.object = oPlayerGhost
+view_object = oPlayerGhost;
 </string>
           </argument>
         </arguments>
@@ -102,6 +103,8 @@ flower1if = instance_number(oFlower1IF)
           <argument>
             <kind>1</kind>
             <string>oPlayer.spell_on = 0;
+oLight.object = oPlayer
+
 instance_activate_all()
 with(all)
          {
@@ -154,6 +157,7 @@ with(all)
           <argument>
             <kind>1</kind>
             <string>/// Pohyb
+oLight.object = oPlayerGhost
 
 if (can_move = 1 &amp;&amp; can_move2 = 1)  // Pokud se může pohybovat
     {   // Začátek bloku akcí
@@ -308,12 +312,17 @@ if (oPlayer.mana &lt;= 0)
             <string>/// Vize ducha
 with (all)
      {
-      if (image_alpha &gt; 0.3)
+      if (distance_to_object(oPlayerGhost) &lt; 100 &amp;&amp; image_alpha &gt; 0.3)
          {
           image_alpha -= 0.05
          }
-     
+      if (distance_to_object(oPlayerGhost) &gt; 100 &amp;&amp; image_alpha &lt; 1)
+         {
+          image_alpha += 0.05
+         }
+
      }
+ 
      image_alpha = 1
 </string>
           </argument>

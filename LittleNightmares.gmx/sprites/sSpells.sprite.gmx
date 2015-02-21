@@ -8,22 +8,23 @@
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
   <bbox_left>0</bbox_left>
-  <bbox_right>56</bbox_right>
+  <bbox_right>63</bbox_right>
   <bbox_top>0</bbox_top>
-  <bbox_bottom>65</bbox_bottom>
+  <bbox_bottom>63</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>168</width>
-  <height>132</height>
+  <width>64</width>
+  <height>64</height>
   <frames>
-    <frame index="0">images\sSpellChoose_0.png</frame>
-    <frame index="1">images\sSpellChoose_1.png</frame>
-    <frame index="2">images\sSpellChoose_2.png</frame>
-    <frame index="3">images\sSpellChoose_3.png</frame>
-    <frame index="4">images\sSpellChoose_4.png</frame>
+    <frame index="0">images\sSpells_0.png</frame>
+    <frame index="1">images\sSpells_1.png</frame>
+    <frame index="2">images\sSpells_2.png</frame>
+    <frame index="3">images\sSpells_3.png</frame>
+    <frame index="4">images\sSpells_4.png</frame>
+    <frame index="5">images\sSpells_5.png</frame>
   </frames>
 </sprite>

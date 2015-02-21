@@ -72,7 +72,7 @@ instance_activate_object(oLever5)
 instance_activate_object(oInventory)
 instance_activate_object(oChapter)
 instance_activate_object(oAStar)
-
+instance_activate_object(oDecoy)
 </string>
           </argument>
         </arguments>

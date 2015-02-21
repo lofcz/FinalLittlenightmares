@@ -76,7 +76,7 @@ dir = ""; // Směr pohybu (w,s,a,d)
 rychlost = 8.1; // rychlost pohybu 
 a1 = 0;// pro volání alarm[0]
 spell_on = 0; // Určuje zda hráč sesílá kouzlo
-mana_recovery = 1; // Rychlost regenerace many
+mana_recovery = 0.1; // Rychlost regenerace many
 vision_selected= "vision_red";
 can_port = 0; // Zda se hráč může teleportovat
 key = 0; // Zda má hráč klíč (1,0)
@@ -88,6 +88,10 @@ sanity = 100;
 max_sanity = 100;
 letters = 0
 letters_max = instance_number(oLetter)
+wheels = 0
+wheels_max = 0
+spell = "fireball"
+
 global.vision_violet = 1;
 </string>
           </argument>
@@ -169,7 +173,7 @@ if (room = mapLevel5) {global.world_type = "wonderland"}
           <argument>
             <kind>1</kind>
             <string>image_index = 12;
-
+dir = "";
 </string>
           </argument>
         </arguments>
@@ -237,8 +241,7 @@ if (can_move = 1 &amp;&amp; can_move2 = 1)  // Pokud se může pohybovat
     if ((!keyboard_check(ord("W")) &amp;&amp; !keyboard_check(ord("S"))  &amp;&amp; !keyboard_check(ord("A"))  &amp;&amp; !keyboard_check(ord("D"))) &amp;&amp; a1 = 0)
         {
         a1 = 1;
-        alarm[0] = 3;
-        dir = "";
+        alarm[0] = 4;
         image_speed = 0;
         speed = 0;
        
@@ -356,234 +359,101 @@ if (spell_on = 1 &amp;&amp; vision_selected = "vision_green")
     {
     rychlost = 10.1;
     }
-    
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/// Speciální pohyb
-/*
-if (special_moving = 1)
+    if (keyboard_check_pressed(ord("N")))
     {
-    can_move = 0;
-    speed = 0;
-    image_index = 12;
-    }
-else
-    {
-    can_move = 1;
-    
-    }
-if (mouse_check_button_pressed(mb_right) &amp;&amp; distance_to_point(mouse_x,mouse_y) &gt; 0 &amp;&amp; perform_special_move = 0) 
-    {
-    special_moving = 1;
-    
-    for (a = 0 a&lt;5 a++)
+        if (spell = "fireball" )
         {
-        if (point_x[a] = 0)
-            {
-            point_x[a] = mouse_x;
-            point_y[a] = mouse_y;
-            break
-            }
-        }
-        
-        
-    }
-if (mouse_check_button_pressed(mb_right) &amp;&amp; distance_to_point(mouse_x,mouse_y) = 0 &amp;&amp; perform_special_move = 0)
-    {
-    special_moving = 0;
-    scrNullSpecialPoints()
-    }
-if (mouse_check_button_pressed(mb_left) &amp;&amp; special_moving = 1)
-    {
-     if (point_x[0]!= 0)
-        {
-        if (!collision_line(x,y,point_x[0],point_y[0],par_wall,0,1))
-            {
-            can_perform = 1;
-            }
-            else { can_perform = 0}
-        }
-    if (point_x[1]!= 0)
-        {
-        if (!collision_line(point_x[0],point_y[0],point_x[1],point_y[1],par_wall,0,1))
-            {
-            can_perform = 1;
-            }
-             else { can_perform = 0}
-        }
-    if (can_perform = 1)
-    {    
-    if (point_x[2]!= 0)
-        {
-        if (!collision_line(point_x[1],point_y[1],point_x[2],point_y[2],par_wall,0,1))
-            {
-            can_perform = 1;
-            }
-             else { can_perform = 0}
-        }
-    }
-     if (can_perform = 1)
-    {      
-    if (point_x[3]!= 0)
-        {
-        if (!collision_line(point_x[2],point_y[2],point_x[3],point_y[3],par_wall,0,1))
-            {
-            can_perform = 1;
-            }
-             else { can_perform = 0}
-        }
-    }
-    if (can_perform = 1)
-    {       
-    if (point_x[4]!= 0)
-        {
-        if (!collision_line(point_x[3],point_y[3],point_x[4],point_y[4],par_wall,0,1))
-            {
-            can_perform = 1;
-            }
-             else { can_perform = 0}
-        }
-     }   
-    if (can_perform = 1)
-        {    
-        perform_special_move = 1;
-        }
-    }
-    
-if (perform_special_move = 1)
-    {
-    if (direction &gt; 45 &amp;&amp; direction &lt; 135)
-        {
-        image_index = 9;
-        }
-    if (direction &gt; 135 &amp;&amp; direction &lt; 225)
-        {
-        image_index = 3;
-        }
-     if (direction &gt; 225 &amp;&amp; direction &lt; 315)
-        {
-        image_index = 0;
-        }
-      if ((direction &gt; 315 &amp;&amp; direction &lt; 360) || (direction &gt; 0 &amp;&amp; direction &lt; 45))
-        {
-        image_index = 6;
-        }
-    if (point_x[0]!= 0 &amp;&amp; point = 0)
-        {
-        if (distance_to_point(point_x[0],point_y[0]) &gt; 4)
-            {
-            move_towards_point(point_x[0],point_y[0],12)
-            }
-        if (distance_to_point(point_x[0],point_y[0]) &lt; 4)  
+        if (mana &gt;= 30)
            {
-           point = 1
+           mana -= 30;
+           f = instance_create(x,y,oFireball)
+           if (dir = "w")
+              {
+               f.direction = 90
+              }
+            if (dir = "s" || dir = "")
+              {
+               f.direction = 270
+              }
+             if (dir = "a")
+              {
+               f.direction = 180
+              }
+
+
+              f.direction+= random(4)
+              f.direction-= random(4)
+
+              f.speed = 12
+
            }
-        }
-    if (point_x[1] = 0 &amp;&amp; point = 1)
+           
+           else {   scrLog("Nedostatek many! (30 bodů)",c_red)}
+        }  
+        
+        if (spell = "veins" )
         {
-        perform_special_move = 0;
-        special_moving = 0;
-        scrNullSpecialPoints()
-        }
+        if (mana &gt;= 40)
+           {
+           mana -= 40;
+           mnm = 0
+           repeat(irandom_range(5,8))
+           {
+           mnm += 1;
+            f = instance_create(x,y,oVein)
+            f.obj = instance_xnearest(f.x-random(32)+random(32),f.y-random(32)+random(32),par_bolts,mnm)
+             f.direction = random(359)
        
-    if (point_x[1]!= 0 &amp;&amp; point = 1)
-        {
-        if (distance_to_point(point_x[1],point_y[1]) &gt; 4)
-            {
-            move_towards_point(point_x[1],point_y[1],12)
-            }
-        if (distance_to_point(point_x[1],point_y[1]) &lt; 4)  
-           {
-           point = 2
+             
            }
-        }
-     if (point_x[2] = 0 &amp;&amp; point = 2)
-        {
-        perform_special_move = 0;
-        special_moving = 0;
-        scrNullSpecialPoints()
-        }
-        
-     if (point_x[2]!= 0 &amp;&amp; point = 2)
-        {
-        if (distance_to_point(point_x[2],point_y[2]) &gt; 4)
-            {
-            move_towards_point(point_x[2],point_y[2],12)
-            }
-        if (distance_to_point(point_x[2],point_y[2]) &lt; 4)  
-           {
-           point = 3
            }
-        }
-    
-    if (point_x[3] = 0 &amp;&amp; point = 3)
-        {
-        perform_special_move = 0;
-        special_moving = 0;
-        scrNullSpecialPoints()
+           else {   scrLog("Nedostatek many! (40 bodů)",c_red)}
         }
         
-     if (point_x[3]!= 0 &amp;&amp; point = 3)
+        
+        if (spell = "water" )
         {
-        if (distance_to_point(point_x[3],point_y[3]) &gt; 4)
-            {
-            move_towards_point(point_x[3],point_y[3],12)
-            }
-        if (distance_to_point(point_x[3],point_y[3]) &lt; 4)  
+        if (mana &gt;= 25)
            {
-           point = 4
+           mana -= 25;
+           mnm = 0
+           if (dir = "" || dir = "s") {bon = 270}
+           if (dir = "w") {bon = 90}
+           if (dir = "a")  {bon = 180}
+           if (dir = "d")  {bon = 0}
+   
+           for(a=0 a&lt;5 a++)
+           {
+            mnm += 5;
+            f = instance_create(x,y,oWaterbite)
+            f.direction = (bon-15+mnm)
+            f.speed = 15;
            }
-        }   
-        
-     if (point_x[4] = 0 &amp;&amp; point = 4)
-        {
-        perform_special_move = 0;
-        special_moving = 0;
-        scrNullSpecialPoints()
+                     
+           }
+           else {   scrLog("Nedostatek many! (25 bodů)",c_red)}
         }
         
-     if (point_x[4]!= 0 &amp;&amp; point = 4)
+        
+          if (spell = "decoy" )
         {
-        if (distance_to_point(point_x[4],point_y[4]) &gt; 4)
-            {
-            move_towards_point(point_x[4],point_y[4],12)
-            }
-        if (distance_to_point(point_x[4],point_y[4]) &lt; 4)  
+        if (instance_number(oDecoy) = 0)
+        {
+        if (mana &gt;= 50)
            {
-           point = 5
+           mana -= 50;
+           mnm = 0
+          
+            f = instance_create(x,y,oDecoy)
            }
-        }       
+           else {   scrLog("Nedostatek many! (50 bodů)",c_red)}
         
-        
-        
-        
-        
-        
-        
-        
-    }
-        
-        
-    
+        }
+        else {x = oDecoy.x y=oDecoy.y with(oDecoy) {instance_destroy()}}
+
+        }  
+  }
+}
 </string>
           </argument>
         </arguments>
@@ -708,15 +578,15 @@ if (keyboard_check_pressed(vk_tab) &amp;&amp; can_move = 1 &amp;&amp; instance_n
 if (keyboard_check_pressed(ord("Q")) &amp;&amp; can_move = 1)
     {
     spell_on = 0;
-    if (vision_selected = "vision_red")   {vision_selected = "vision_green"  exit}
-    if (vision_selected = "vision_green") {vision_selected = "vision_blue" exit}
+    if (vision_selected = "vision_red")   {vision_selected = "vision_green" spell = "veins" exit}
+    if (vision_selected = "vision_green") {vision_selected = "vision_blue" spell = "water"  exit}
     if (vision_selected = "vision_blue")         
        {
-       if (global.vision_violet = 0) {vision_selected = "vision_red"   exit}
-       else {vision_selected = "vision_violet" exit}
+       if (global.vision_violet = 0) {vision_selected = "vision_red" spell = "fireball"  exit}
+       else {vision_selected = "vision_violet" spell = "" exit}
        
        }
-    if (vision_selected = "vision_violet")   {vision_selected = "vision_red"  exit}
+    if (vision_selected = "vision_violet")   {vision_selected = "vision_red" spell = "fireball"  exit}
    
     }
 
@@ -791,26 +661,6 @@ if (keyboard_check_pressed(ord("P")))
    }
   
 </string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string></string>
           </argument>
         </arguments>
       </action>

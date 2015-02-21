@@ -162,6 +162,7 @@ surface_set_target(light);
 
 //change c_gray to another color for colored lights!
 draw_ellipse_color(oPlayer.x-size/2-view_xview,oPlayer.y-size/2-view_yview,oPlayer.x+size/2-view_xview,oPlayer.y+size/2-view_yview,c_white,c_black,false);
+if (instance_number(oPlayerGhost) &gt; 0) {draw_ellipse_color(oPlayerGhost.x-size/4-view_xview,oPlayerGhost.y-size/4-view_yview,oPlayerGhost.x+size/4-view_xview,oPlayerGhost.y+size/4-view_yview,c_white,c_black,false);}
 
 //this draws the lense flare effect
 //draw_sprite(sLight2,0,x-view_xview, y - view_yview);
@@ -252,6 +253,37 @@ if (instance_number(oCutscene) = 0 &amp;&amp; global.world_type = "wonderland")
       // mp
          draw_sprite_ext(sGUIBars,3,view_xview+5+123,view_yview+658+15,gui_xs,gui_ys,0,c_white,1)
       draw_sprite_part_ext(sGUIBars,2,0,0,199*(oPlayer.mana/oPlayer.max_mana),49,view_xview+5+123,view_yview+658+15,gui_xs,gui_ys,c_white,1);
+     switch(oPlayer.spell)
+                          {
+                           case "":
+                                {
+                                spell = "";
+                                break;
+                                }
+                           case "fireball":
+                                {
+                                spell = "Ohnivá koule";
+                                break;
+                                }
+                           case "veins":
+                                {
+                                spell = "Rozštěpení";
+                                break;
+                                }
+                            case "water":
+                                {
+                                spell = "Síla vody";
+                                break;
+                                }
+
+
+                          }
+      draw_set_halign(fa_center)
+   draw_set_valign(fa_middle)
+        draw_text(view_xview+5+128+66,view_yview+658+32,spell)
+draw_set_halign(fa_left)
+   draw_set_valign(fa_top)
+
       // sanity
            draw_sprite_ext(sGUIBars,5,view_xview+5+138,view_yview+711+15,gui_xs,gui_ys,0,c_white,1)
       draw_sprite_part_ext(sGUIBars,4,0,0,199*(oPlayer.sanity/oPlayer.max_sanity),49,view_xview+5+138,view_yview+711+15,gui_xs,gui_ys,c_white,1);

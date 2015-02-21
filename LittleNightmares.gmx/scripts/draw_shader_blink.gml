@@ -14,4 +14,3 @@ if (oPlayer.spell_on = 1 && oPlayer.vision_selected = "vision_violet")
        shader_reset()
    }
 else {draw_self()}
-
