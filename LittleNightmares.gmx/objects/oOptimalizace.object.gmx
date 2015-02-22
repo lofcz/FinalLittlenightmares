@@ -73,6 +73,8 @@ instance_activate_object(oInventory)
 instance_activate_object(oChapter)
 instance_activate_object(oAStar)
 instance_activate_object(oDecoy)
+instance_activate_object(oAchievment)
+
 </string>
           </argument>
         </arguments>

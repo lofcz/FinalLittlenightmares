@@ -8,7 +8,50 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="0" enumb="0">
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (text_scale1 &gt; 1) {text_scale1 -= 0.02}
+if (text_scale2 &gt; 1) {text_scale2 -= 0.02}
+if (text_scale3 &gt; 1) {text_scale3 -= 0.02}
+
+x = view_xview[0]+928
+y = view_yview[0]+704
+
+
+
+if (keyboard_check_pressed(ord("C")) &amp;&amp; elik_hp &gt; 0 &amp;&amp; oPlayer.hp != oPlayer.max_hp ) {instance_create(oPlayer.x,oPlayer.y,oMedpack) elik_hp -= 1 text_scale1 = 1.3 instance_create(oPlayer.x,oPlayer.y,oEmptyPotion)}
+if (keyboard_check_pressed(ord("V")) &amp;&amp; elik_mp &gt; 0 &amp;&amp; oPlayer.mana != oPlayer.max_mana ) {instance_create(oPlayer.x,oPlayer.y,oManapack) elik_mp -= 1 text_scale2 = 1.3 instance_create(oPlayer.x,oPlayer.y,oEmptyPotion)}
+
+
+if (mouse_check_button_pressed(mb_left) &amp;&amp; mouse_x &gt; x &amp;&amp; mouse_x &lt; x + 32 &amp;&amp; mouse_y &gt; y &amp;&amp; mouse_y &lt; y + 32 &amp;&amp; elik_hp &gt; 0 &amp;&amp; oPlayer.hp != oPlayer.max_hp ) {instance_create(oPlayer.x,oPlayer.y,oMedpack) elik_hp -= 1 text_scale1 = 1.3 instance_create(oPlayer.x,oPlayer.y,oEmptyPotion)}
+if (mouse_check_button_pressed(mb_left) &amp;&amp; mouse_x &gt; x+32 &amp;&amp; mouse_x &lt; x + 64 &amp;&amp; mouse_y &gt; y &amp;&amp; mouse_y &lt; y + 32 &amp;&amp; elik_hp &gt; 0 &amp;&amp; oPlayer.hp != oPlayer.max_hp ) { elik_mp -= 1 text_scale2 = 1.3 instance_create(oPlayer.x,oPlayer.y,oEmptyPotion)}
+
+
+
+
+
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="2">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -55,49 +98,6 @@ text_scale3 = 1;
 elik_hp_popis = "Léčivý elixír, obnoví 30 bodů zdraví.#(c)"
 elik_mp_popis = "Substance, která obnoví 30 bodů zdraví.   (v)"
 elik_fear_popis = "Flakón obnovující 30 bodů rozumu.  (b)"
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="3" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if (text_scale1 &gt; 1) {text_scale1 -= 0.02}
-if (text_scale2 &gt; 1) {text_scale2 -= 0.02}
-if (text_scale3 &gt; 1) {text_scale3 -= 0.02}
-
-x = view_xview[0]+928
-y = view_yview[0]+704
-
-
-
-if (keyboard_check_pressed(ord("C")) &amp;&amp; elik_hp &gt; 0 &amp;&amp; oPlayer.hp != oPlayer.max_hp ) {instance_create(oPlayer.x,oPlayer.y,oMedpack) elik_hp -= 1 text_scale1 = 1.3 instance_create(oPlayer.x,oPlayer.y,oEmptyPotion)}
-if (keyboard_check_pressed(ord("V")) &amp;&amp; elik_mp &gt; 0 &amp;&amp; oPlayer.mana != oPlayer.max_mana ) {instance_create(oPlayer.x,oPlayer.y,oManapack) elik_mp -= 1 text_scale2 = 1.3 instance_create(oPlayer.x,oPlayer.y,oEmptyPotion)}
-
-
-if (mouse_check_button_pressed(mb_left) &amp;&amp; mouse_x &gt; x &amp;&amp; mouse_x &lt; x + 32 &amp;&amp; mouse_y &gt; y &amp;&amp; mouse_y &lt; y + 32 &amp;&amp; elik_hp &gt; 0 &amp;&amp; oPlayer.hp != oPlayer.max_hp ) {instance_create(oPlayer.x,oPlayer.y,oMedpack) elik_hp -= 1 text_scale1 = 1.3 instance_create(oPlayer.x,oPlayer.y,oEmptyPotion)}
-if (mouse_check_button_pressed(mb_left) &amp;&amp; mouse_x &gt; x+32 &amp;&amp; mouse_x &lt; x + 64 &amp;&amp; mouse_y &gt; y &amp;&amp; mouse_y &lt; y + 32 &amp;&amp; elik_hp &gt; 0 &amp;&amp; oPlayer.hp != oPlayer.max_hp ) { elik_mp -= 1 text_scale2 = 1.3 instance_create(oPlayer.x,oPlayer.y,oEmptyPotion)}
-
-
-
-
-
 
 </string>
           </argument>

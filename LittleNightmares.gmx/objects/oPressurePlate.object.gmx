@@ -76,6 +76,7 @@ if (instance_number(oCrateMoveable) &gt; 0)
        {
        if (coll_crate = 0)
           {
+          sga_PlayFX(oVariableController.sndCrate)
             coll_crate = 1;
             activated = 1; // Crate on it´s position 
             scrEffectPressurePlate1() // Motivate player a bit :)
@@ -88,6 +89,7 @@ if (instance_number(oCrateMoveable) &gt; 0)
        {
          if (distance_to_object(crate) &gt; 0)
             {
+             sga_PlayFX(oVariableController.sndCrate)
              coll_crate = 0;
              activated = 0;
             }

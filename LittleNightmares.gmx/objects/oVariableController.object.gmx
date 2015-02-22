@@ -34,6 +34,8 @@ sndBigDoorsClosed = sga_CreateFX("Sounds/sndCloseDoor.wav", 0 );
 sndDoorUnlocked = sga_CreateFX("Sounds/sndDoorUnlocked.wav", 0 );
 sndOldDoorCreaking =  sga_CreateFX("Sounds/sndOldDoorCreaking.wav", 0 );
 sndBolt =  sga_CreateFX("Sounds/sndBolt.wav", 0 );
+sndAchievment =  sga_CreateFX("Sounds/sndAchievment.wav", 0 );
+sndCrate =  sga_CreateFX("Sounds/sndCrate.wav", 0 );
 
                              
                                               

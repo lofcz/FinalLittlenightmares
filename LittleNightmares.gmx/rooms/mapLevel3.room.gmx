@@ -12,7 +12,9 @@
   <showcolour>-1</showcolour>
   <code>instance_create(0,0,oLight)
 instance_create(0,0,oOptimalizace)
-global.map_type = "wonderland"</code>
+global.map_type = "wonderland"
+
+scrAchievment("Vzpomínky","Dostal ses do třetí úrovně, gratulujeme!",2,1)</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -26,11 +28,11 @@ global.map_type = "wonderland"</code>
     <showBackgrounds>-1</showBackgrounds>
     <showForegrounds>-1</showForegrounds>
     <showViews>0</showViews>
-    <deleteUnderlyingObj>-1</deleteUnderlyingObj>
+    <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>0</deleteUnderlyingTiles>
-    <page>0</page>
-    <xoffset>435</xoffset>
-    <yoffset>1252</yoffset>
+    <page>1</page>
+    <xoffset>233</xoffset>
+    <yoffset>372</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="background14" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -150,7 +152,7 @@ global.map_type = "wonderland"</code>
     <instance objName="oWall11" x="2784" y="1504" name="inst_9FA4FFB0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWall11" x="2784" y="1536" name="inst_660C5D60" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWall11" x="2784" y="1632" name="inst_B0BB2D16" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oIn1use" x="2240" y="2432" name="inst_90BCE6F5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oIn1use" x="2128" y="2448" name="inst_90BCE6F5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oDoorPressure41" x="2080" y="2160" name="inst_47940449" locked="0" code="" scaleX="1.70000004768372" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWall11" x="2048" y="2144" name="inst_7FC234AF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWall11" x="2240" y="2144" name="inst_5AD5C887" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -999,7 +1001,7 @@ global.map_type = "wonderland"</code>
     <instance objName="oLever3" x="2720" y="4128" name="inst_5BF31036" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oDoor41PUZZLE_STANDART" x="2976" y="4208" name="inst_C0422C4A" locked="0" code="lever_number = 3;&#xA;lever1ac = 1;&#xA;lever2ac = 1;&#xA;lever3ac = 1;&#xA;" scaleX="1.70000004768372" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWall12" x="2944" y="4192" name="inst_CCC8E605" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oNextLevel" x="3616" y="4672" name="inst_BABEA438" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oNextLevel" x="3616" y="4672" name="inst_BABEA438" locked="0" code="lvl = mapCutscene3&#xA;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="object138" x="3392" y="3952" name="inst_F95D75B1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="180"/>
     <instance objName="object138" x="3392" y="4048" name="inst_1D989292" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="180"/>
     <instance objName="object138" x="3392" y="4144" name="inst_9DD8AD9D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="180"/>
@@ -1117,6 +1119,23 @@ global.map_type = "wonderland"</code>
     <instance objName="oTorch" x="3408" y="4944" name="inst_320013CD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oTorch" x="3760" y="4592" name="inst_F7EE603A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oTorch" x="3760" y="4784" name="inst_BD447A78" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oCollectible2" x="2464" y="2608" name="inst_F8C13354" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oCollectible2" x="1904" y="1760" name="inst_4047084A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oCollectible2" x="2400" y="1984" name="inst_1F61D74C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oWall14" x="2624" y="1728" name="inst_D0DECF92" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oWall14" x="2656" y="1728" name="inst_0A6BA764" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oWall14" x="2688" y="1728" name="inst_2C3D2781" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oWall14" x="2720" y="1728" name="inst_AE5E0606" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oWall14" x="2752" y="1728" name="inst_85E9472E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oWall14" x="2752" y="1760" name="inst_C52CE837" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oWall14" x="2720" y="1760" name="inst_872540A9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oWall14" x="2688" y="1760" name="inst_192CD39C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oWall14" x="2656" y="1760" name="inst_CB395EA8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oWall14" x="2624" y="1760" name="inst_9EF57243" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBulletin" x="2640" y="1856" name="inst_B66761CA" locked="0" code="&#xA;text = &quot;Pulzní vlna je ideální na odhazování lehčích překážek z cesty.&quot;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oCollectible2" x="3376" y="3760" name="inst_4D30D019" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oCollectible2" x="2688" y="4480" name="inst_15CDBDB7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oCollectible2" x="3728" y="4672" name="inst_3878755F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="background15" x="1824" y="2176" w="128" h="128" xo="0" yo="0" id="10005570" name="inst_AA849A97" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

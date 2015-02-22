@@ -25,10 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//show_message(plt_multiply(3,6))
+            <string>///Referenční adresář
+
+flower1if = instance_number(oFlower1IF)
+
 /// Tvorba globálních objektů
 
-//view_angle = 270;
 
 if (instance_number(oVariableController) = 0)
    {
@@ -38,7 +40,9 @@ if (instance_number(oInventory) = 0)
    {
     instance_create(x,y,oInventory)
    }
- 
+
+  
+
 </string>
           </argument>
         </arguments>
@@ -63,9 +67,12 @@ if (instance_number(oInventory) = 0)
 
 // Nastavení zabudovaných proměnných:
 image_speed = 0; // Rychlost animace spritu (n*room_speed)
+// *********************************
 
 
-// Proměnné:    (názvy proměnných doporučuji v aj, VŽDY bez interpunkce a diakritiky)
+
+// Lokální proměnné:    (názvy proměnných doporučuji v aj, VŽDY bez interpunkce a diakritiky)
+
 gold = oVariableController.gold; // Zlato, které má hráč k dispozici
 hp = 100; // Výchozí hodnota života
 max_hp = 100; // Maximální možný život 
@@ -83,41 +90,27 @@ key = 0; // Zda má hráč klíč (1,0)
 in_shadow = 0 // Zda je hráč ve stínu (tzn. snížená viditelnost)
 ghost = 0 // Zda má hráč vyvolaného ducha
 can_move2 = 1 // Určuje zda se hráč může pohybovat
-hp_temp = 100;
-sanity = 100;
-max_sanity = 100;
-letters = 0
-letters_max = instance_number(oLetter)
-wheels = 0
-wheels_max = 0
-spell = "fireball"
+hp_temp = 100; // Kontrola změny zdraví
+sanity = 100;  // Zdravý rozum
+max_sanity = 100; // Max. zdravý rozum
+letters = 0  // Počet sebraných dopisů
+letters_max = instance_number(oLetter) // Počet dopisů v místnosti
+wheels = 0 // Počet sebraných fragmentů minulosti
+wheels_max = 0 // Počet fragmentů v místnosti
+creators = 0 // Počet sebraných poznámek stvořitelů 
+creators_max = 0  // Počet poznámek stvořitelů v místnosti 
+spell = "fireball" // Zvolené kouzlo (výchozí pro červenou vizi)
 
+for (a = 0 a &lt; 5 a++)  // Odemčené kouzla
+    {
+     can_spell[a] = 0;
+    }
+
+/***********************************
+ Debug ****************************/
 global.vision_violet = 1;
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Proměnné pro ostatní objekty
-
-flower1if = instance_number(oFlower1IF)
-
-
+if (room != mapLevel1 &amp;&amp; room != mapLevel2) {can_spell[1] = 1}
+//***********************************
 </string>
           </argument>
         </arguments>
@@ -452,6 +445,22 @@ if (spell_on = 1 &amp;&amp; vision_selected = "vision_green")
         else {x = oDecoy.x y=oDecoy.y with(oDecoy) {instance_destroy()}}
 
         }  
+        
+        if (spell = "wave" )
+        {
+        
+        if (mana &gt;= 40)
+           {
+           mana -= 40;
+          
+            f = instance_create(x,y,oWave)
+           }
+           else {   scrLog("Nedostatek many! (40 bodů)",c_red)}
+        
+       
+
+        }  
+
   }
 }
 </string>

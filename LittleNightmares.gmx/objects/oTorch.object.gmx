@@ -72,6 +72,7 @@ draw_sprite_stretched(sLight2,0,x -view_xview-oPlayer.hspeed-size/2, y  - view_y
 surface_reset_target();
 draw_set_blend_mode(bm_normal);
 
+
 if (fire = 0)
    {
    depth = 1

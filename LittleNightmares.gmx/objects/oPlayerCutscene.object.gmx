@@ -81,6 +81,35 @@ angle_dir[4] = 1
  k = 0;
 
 }
+if (room= mapCutscene3)
+{
+image_speed = 0
+gravity = 0.3
+gravity_direction = 270
+alarm[0] = 50 //30
+alarm[5] = 30
+dir =""
+c= 0
+a1 = 0
+a2 = 0
+a3 = 0
+a4 = 0
+a5 = 0
+pp = 0
+xs = 1
+ys = 1
+for (a = 0 a&lt;5 a++)
+    {
+angle[a] = 0
+}
+angle_dir[0] = 1
+angle_dir[1] = 0
+angle_dir[2] = 1
+angle_dir[3] = 0
+angle_dir[4] = 1
+ k = 0;
+
+}
 
 </string>
           </argument>
@@ -202,6 +231,12 @@ dir = ""
 path_start(pthCutscene2,speed,0,0)
 pp = 1
 }
+if (room = mapCutscene3)
+{
+dir = ""
+path_start(pthCutscene3,speed,0,0)
+pp = 1
+}
 
 </string>
           </argument>
@@ -239,6 +274,14 @@ dir = "d"
 image_index = 0
 image_speed = 0
 }
+if (room = mapCutscene3)
+{
+speed = 0
+dir = "d"
+image_index = 0
+image_speed = 0
+}
+
 
 </string>
           </argument>
@@ -277,6 +320,15 @@ dir = "--&gt;"
 alarm[1] = 45
 alarm[2] = 38
 }
+if (room = mapCutscene3)
+{
+k = 1;
+image_index = 6
+dir = "--&gt;"
+alarm[1] = 45
+alarm[2] = 38
+}
+
 
 </string>
           </argument>
@@ -426,7 +478,82 @@ if (pp = 1)
        }
       }
   }         
+// *********************************** LEVEL 3 ********************************************
+if (room = mapCutscene3)
+{
+if (k = 1) {c += 1}
+if (path_index = pthCutscene2)
+   {
+     direction = 0
+   if (speed &lt; 8) {speed += 0.5}
+    image_speed = 0.2
+    if (image_index &gt; 8)
+       {
+        image_index = 6
+       }
 
+   }
+   if (dir = "--&gt;")
+   {
+   direction = 0
+   if (speed &lt; 8) {speed += 0.5}
+    image_speed = 0.2
+    if (image_index &gt; 8)
+       {
+        image_index = 6
+       }
+   }
+if (dir = "d")
+   {
+ direction = 0
+   if (speed &lt; 8) {speed += 0.5}
+    image_speed = 0.2
+    if (image_index &gt; 8)
+       {
+        image_index = 6
+       }
+
+
+if (pp = 1)
+   {
+    if (path_speed &lt; 14) {path_speed += 0.1} 
+   }
+
+   }
+   if (c = 250)
+      {
+       with(par_wall)
+                     {
+                      speed = random_range(5,8)
+                      direction = random(359)
+                      image_angle = random(39)
+                     }
+      }
+ if (pp =1 &amp;&amp; x &gt; 1024)
+    {
+    
+     pp = 2
+    }
+    if (pp = 2) 
+       {
+       for (a= 0 a&lt; 5 a++)
+           {
+       if (angle_dir[a] = 0) {angle[a] += random_range(1,2)}
+         if (angle_dir[a] = 1) {angle[a] -= random_range(1,2)}
+         }
+       }
+       if (k = 1)
+       {
+ if (image_index &gt; 8)
+       {
+        image_index = 6
+       }
+ if (image_index &lt; 6)
+       {
+        image_index = 6
+       }
+      }
+  }         
 </string>
           </argument>
         </arguments>
@@ -564,14 +691,14 @@ draw_self()
       if (c&gt;1)
          {
          draw_set_alpha(a1)
-          draw_text_transformed(500+180,100,"Až ti bude nejhůř",xs,ys,angle[0])
+          draw_text_transformed(500+180,100,"Až ti bude nejhůř,",xs,ys,angle[0])
            
          }
          if (c &gt; 50)
             {
              draw_set_alpha(a2)
 
-                 draw_text_transformed(520+300,120,"obrať se za sebe a všechny stíny padnou za tebe",xs,ys,angle[1])
+                 draw_text_transformed(520+300,120,"obrať se za sebe a všechny stíny padnou za tebe.",xs,ys,angle[1])
         
             }
                if (c &gt; 100)
@@ -579,6 +706,46 @@ draw_self()
              draw_set_alpha(a3)
 
                 draw_text_transformed(500+200,140,"- John Lennon",xs,ys,angle[2])
+        
+            }
+          
+ draw_set_alpha(1)
+
+   
+         draw_set_colour(c_black)
+   draw_set_halign(fa_left)
+    draw_set_valign(fa_top)
+}
+// *****************************************************************LEVEL 3***********************************************************************
+if (room = mapCutscene3)
+{
+draw_self()
+
+  draw_set_halign(fa_center)
+   draw_set_valign(fa_middle)
+      
+
+      draw_set_font(fntText)
+      draw_set_colour(c_white)
+     
+      if (c&gt;1)
+         {
+         draw_set_alpha(a1)
+          draw_text_transformed(500+180,100,"Nikdy neměj strach ze stínů.",xs,ys,angle[0])
+           
+         }
+         if (c &gt; 50)
+            {
+             draw_set_alpha(a2)
+
+                 draw_text_transformed(520+300,120,"Prostě znamenají, že někde nablízku svítí světlo.",xs,ys,angle[1])
+        
+            }
+               if (c &gt; 100)
+            {
+             draw_set_alpha(a3)
+
+                draw_text_transformed(500+200,140,"- Ruth Rendellová",xs,ys,angle[2])
         
             }
           

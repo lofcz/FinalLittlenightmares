@@ -3,8 +3,8 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="20" name="datafiles">
-    <datafiles number="20" name="Sounds">
+  <datafiles number="26" name="datafiles">
+    <datafiles number="26" name="Sounds">
       <datafile>
         <name>sndBigDoorsClosed.wav</name>
         <exists>-1</exists>
@@ -107,8 +107,42 @@
         </ConfigOptions>
         <filename>sndBolt.wav</filename>
       </datafile>
+      <datafile>
+        <name>sndAchievment.wav</name>
+        <exists>-1</exists>
+        <size>291276</size>
+        <exportAction>2</exportAction>
+        <exportDir></exportDir>
+        <overwrite>0</overwrite>
+        <freeData>-1</freeData>
+        <removeEnd>0</removeEnd>
+        <store>0</store>
+        <ConfigOptions>
+          <Config name="Default">
+            <CopyToMask>9223372036854775807</CopyToMask>
+          </Config>
+        </ConfigOptions>
+        <filename>sndAchievment.wav</filename>
+      </datafile>
+      <datafile>
+        <name>sndCrate.wav</name>
+        <exists>-1</exists>
+        <size>137260</size>
+        <exportAction>2</exportAction>
+        <exportDir></exportDir>
+        <overwrite>0</overwrite>
+        <freeData>-1</freeData>
+        <removeEnd>0</removeEnd>
+        <store>0</store>
+        <ConfigOptions>
+          <Config name="Default">
+            <CopyToMask>9223372036854775807</CopyToMask>
+          </Config>
+        </ConfigOptions>
+        <filename>sndCrate.wav</filename>
+      </datafile>
     </datafiles>
-    <datafiles number="20" name="Video">
+    <datafiles number="26" name="Video">
       <datafile>
         <name>intro2.avi</name>
         <exists>-1</exists>
@@ -510,12 +544,14 @@
     <sprite>sprites\sprite153</sprite>
     <sprite>sprites\sprite155</sprite>
     <sprite>sprites\sLoading</sprite>
-    <sprite>sprites\sBonus1</sprite>
+    <sprite>sprites\sCollectible1</sprite>
     <sprite>sprites\sSpells</sprite>
     <sprite>sprites\sprite161</sprite>
     <sprite>sprites\sFireball</sprite>
     <sprite>sprites\sVein</sprite>
     <sprite>sprites\sWaterbite</sprite>
+    <sprite>sprites\sAchievment</sprite>
+    <sprite>sprites\sCollectible2</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Tilesets">
@@ -558,6 +594,7 @@
       <script>scripts\scrEffectFireball3.gml</script>
       <script>scripts\scrEffectMagicSign.gml</script>
       <script>scripts\scrEffectCoin.gml</script>
+      <script>scripts\scrEffectAchievment.gml</script>
       <script>scripts\scrEffectCoin2Blue.gml</script>
       <script>scripts\scrEffectPressurePlate1.gml</script>
       <script>scripts\scrEffectCoin2.gml</script>
@@ -569,6 +606,7 @@
       <script>scripts\scrEffectManaOrb.gml</script>
       <script>scripts\scrEffectKey.gml</script>
       <script>scripts\scrEffectHeal.gml</script>
+      <script>scripts\scrEffectWave.gml</script>
     </scripts>
     <scripts name="Functions">
       <script>scripts\scrRoomTransition.gml</script>
@@ -887,6 +925,7 @@
     <script>scripts\inventory_delete.gml</script>
     <script>scripts\scrChangeRoom.gml</script>
     <script>scripts\draw_shader_blink.gml</script>
+    <script>scripts\scrAchievment.gml</script>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shaderLight.shader</shader>
@@ -1076,7 +1115,9 @@
         </objects>
         <object>objects\oCheckPoint</object>
         <object>objects\oLetter</object>
+        <object>objects\oCollectible2</object>
         <object>objects\oWheel</object>
+        <object>objects\oCreatorsnotes</object>
         <object>objects\oVisionVioletPP</object>
         <object>objects\oChest</object>
       </objects>
@@ -1104,12 +1145,15 @@
     <object>objects\oVein</object>
     <object>objects\oWaterbite</object>
     <object>objects\oDecoy</object>
+    <object>objects\oAchievment</object>
+    <object>objects\oWave</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\tmlHuman1</timeline>
   </timelines>
   <rooms name="rooms">
     <room>rooms\mapLevel3</room>
+    <room>rooms\mapCutscene3</room>
     <room>rooms\mapMainMenu</room>
     <room>rooms\mapLevel1</room>
     <room>rooms\mapLevel2</room>
@@ -1131,7 +1175,8 @@
       <room>rooms\mapCutscene2</room>
     </rooms>
   </rooms>
-  <constants number="6">
+  <constants number="7">
+    <constant name="littlenightmares_ini">"littlenightmares.data"</constant>
     <constant name="dreveny_skin">3</constant>
     <constant name="jungle_skin">2</constant>
     <constant name="c_dkgreen">make_colour_rgb(0,250,20)</constant>
