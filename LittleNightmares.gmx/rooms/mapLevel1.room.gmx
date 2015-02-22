@@ -19,8 +19,8 @@ global.map_type = "wonderland"</code>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1024</w>
-    <h>600</h>
+    <w>1456</w>
+    <h>876</h>
     <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
@@ -30,8 +30,8 @@ global.map_type = "wonderland"</code>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>0</deleteUnderlyingTiles>
     <page>0</page>
-    <xoffset>253</xoffset>
-    <yoffset>13</yoffset>
+    <xoffset>2325</xoffset>
+    <yoffset>70</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="bcgMainMenu" x="0" y="0" htiled="-1" vtiled="-1" hspeed="1" vspeed="0" stretch="0"/>
@@ -1235,6 +1235,10 @@ global.map_type = "wonderland"</code>
     <instance objName="oWall14" x="3520" y="1664" name="inst_6B7ECB6F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oBulletin" x="3584" y="1552" name="inst_B493A361" locked="0" code="text = &quot;Tahle sláma by mohla snadno chytit, zkus použít schopnost kouzlo ohnivá koule (červená vize).&quot; &#xA;image_index = 1&#xA;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWheel" x="3376" y="1616" name="inst_95A6A830" locked="0" code="x1 = 3296;&#xA;y1 = 1504-32;&#xA;x2 = 4128;&#xA;y2 = 1696-32&#xA;tile = wonderTile1&#xA;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oCollectible2" x="4288" y="160" name="inst_06FDBB6B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oCollectible2" x="4064" y="1632" name="inst_19C4EBFC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oCollectible2" x="2880" y="1600" name="inst_55A5778A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oCollectible2" x="1376" y="608" name="inst_035D58D1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bcgTilesetCave" x="128" y="320" w="64" h="64" xo="64" yo="64" id="10000024" name="inst_769C3EC3" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

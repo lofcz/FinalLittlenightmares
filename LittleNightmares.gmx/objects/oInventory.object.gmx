@@ -8,6 +8,58 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>elik_mp = 0;
+item[0] = ""
+item[1] = ""
+item[2] = ""
+
+
+item_spr[0] = ""
+item_spr[1] = ""
+item_spr[2] = ""
+
+item_popis[0] = ""
+item_popis[1] = ""
+item_popis[2] = ""
+
+
+
+
+elik_hp = 0;
+elik_mp = 0;
+elik_fear = 0;
+
+text_scale1 = 1;
+text_scale2 = 1;
+text_scale3 = 1;
+
+
+elik_hp_popis = "Léčivý elixír, obnoví 30 bodů zdraví.#(c)"
+elik_mp_popis = "Substance, která obnoví 30 bodů zdraví.   (v)"
+elik_fear_popis = "Flakón obnovující 30 bodů rozumu.  (b)"
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -45,59 +97,6 @@ if (mouse_check_button_pressed(mb_left) &amp;&amp; mouse_x &gt; x+32 &amp;&amp; 
 
 
 
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="7" enumb="2">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>elik_mp = 0;
-
-item[0] = ""
-item[1] = ""
-item[2] = ""
-
-
-item_spr[0] = ""
-item_spr[1] = ""
-item_spr[2] = ""
-
-item_popis[0] = ""
-item_popis[1] = ""
-item_popis[2] = ""
-
-
-
-
-elik_hp = 0;
-elik_mp = 0;
-elik_fear = 0;
-
-text_scale1 = 1;
-text_scale2 = 1;
-text_scale3 = 1;
-
-
-elik_hp_popis = "Léčivý elixír, obnoví 30 bodů zdraví.#(c)"
-elik_mp_popis = "Substance, která obnoví 30 bodů zdraví.   (v)"
-elik_fear_popis = "Flakón obnovující 30 bodů rozumu.  (b)"
 
 </string>
           </argument>
