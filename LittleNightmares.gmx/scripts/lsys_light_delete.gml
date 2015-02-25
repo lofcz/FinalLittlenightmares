@@ -3,4 +3,3 @@
 global._lsys_light_deleted[argument0] = true;
 surface_free(global._lsys_light_surface[argument0]);
 global._lsys_light_surface[argument0] = -1;
-//surface_reset_target()

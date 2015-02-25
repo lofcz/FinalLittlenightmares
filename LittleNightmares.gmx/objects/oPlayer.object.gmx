@@ -100,7 +100,8 @@ wheels_max = 0 // Počet fragmentů v místnosti
 creators = 0 // Počet sebraných poznámek stvořitelů 
 creators_max = 0  // Počet poznámek stvořitelů v místnosti 
 spell = "fireball" // Zvolené kouzlo (výchozí pro červenou vizi)
-
+footstep = 0; // Přehrávání kroků chůze;
+foot = 1 // Aktuální krok
 for (a = 0 a &lt; 5 a++)  // Odemčené kouzla
     {
      can_spell[a] = 0;
@@ -110,6 +111,8 @@ for (a = 0 a &lt; 5 a++)  // Odemčené kouzla
  Debug ****************************/
 global.vision_violet = 1;
 if (room != mapLevel1 &amp;&amp; room != mapLevel2) {can_spell[1] = 1}
+if (room != mapLevel1 ) {can_spell[2] = 1}
+
 //***********************************
 </string>
           </argument>
@@ -239,6 +242,23 @@ if (can_move = 1 &amp;&amp; can_move2 = 1)  // Pokud se může pohybovat
         speed = 0;
        
         }
+        
+        if (footstep = 0 &amp;&amp; speed != 0)
+           {
+           //show_message("")
+           footstep = 1;
+           foot = irandom_range(1,4)
+           //if (foot &lt; 4) {foot += 1} else {foot = 1}
+           if (foot = 1) {sga_PlayFX(oVariableController.sndFootstep1)}
+           if (foot = 2) {sga_PlayFX(oVariableController.sndFootstep2)}
+           if (foot = 3) {sga_PlayFX(oVariableController.sndFootstep3)}
+           if (foot = 4) {sga_PlayFX(oVariableController.sndFootstep4)}
+
+           }
+        if (!sga_IsPlaying(oVariableController.sndFootstep1) &amp;&amp; !sga_IsPlaying(oVariableController.sndFootstep2) &amp;&amp; !sga_IsPlaying(oVariableController.sndFootstep3) &amp;&amp; !sga_IsPlaying(oVariableController.sndFootstep4))
+           {
+            footstep = 0
+           }
     }  // Konec bloku akcí
 if (can_move = 0)
     {
@@ -460,6 +480,22 @@ if (spell_on = 1 &amp;&amp; vision_selected = "vision_green")
        
 
         }  
+        if (spell = "energitize" )
+        {
+        
+        if (mana &gt;= 40)
+           {
+           mana -= 40;
+          
+            f = instance_create(x,y,oEnergitize)
+            f.dir = dir;
+           }
+           else {   scrLog("Nedostatek many! (40 bodů)",c_red)}
+        
+       
+
+        }  
+
 
   }
 }
@@ -592,7 +628,7 @@ if (keyboard_check_pressed(ord("Q")) &amp;&amp; can_move = 1)
     if (vision_selected = "vision_blue")         
        {
        if (global.vision_violet = 0) {vision_selected = "vision_red" spell = "fireball"  exit}
-       else {vision_selected = "vision_violet" spell = "" exit}
+       else {vision_selected = "vision_violet" spell = "decoy" exit}
        
        }
     if (vision_selected = "vision_violet")   {vision_selected = "vision_red" spell = "fireball"  exit}
@@ -674,31 +710,6 @@ if (keyboard_check_pressed(ord("P")))
         </arguments>
       </action>
     </event>
-    <event eventtype="6" enumb="4">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>//scrMessageBox("NAdpis","text")
-
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
@@ -717,10 +728,6 @@ if (keyboard_check_pressed(ord("P")))
           <argument>
             <kind>1</kind>
             <string>draw_self()
-
-//draw_set_color(c_white);
-//d3d_set_projection_ortho(view_xview[0],view_yview[0],view_xview[0]+640,view_yview[0]+480,0); 
-
 </string>
           </argument>
         </arguments>

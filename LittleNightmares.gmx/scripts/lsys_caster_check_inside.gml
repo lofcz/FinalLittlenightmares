@@ -8,6 +8,4 @@ for (i = 0; i < global._lsys_caster_points[argument0]; i += 1)
     && global._lsys_caster_ypos[argument0] + global._lsys_caster_point_y[argument0, i] <= global._lsys_light_ypos[argument1] + global._lsys_light_radius[argument1])
         return 1;
 }
-surface_reset_target();
-
 return 0;

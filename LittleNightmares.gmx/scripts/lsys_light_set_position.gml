@@ -3,4 +3,3 @@
 global._lsys_light_xpos[argument0] = argument1 * global._lsys_quality;
 global._lsys_light_ypos[argument0] = argument2 * global._lsys_quality;
 global._lsys_light_changed[argument0] = true;
-//surface_reset_target()

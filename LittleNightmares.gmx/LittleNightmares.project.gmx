@@ -3,8 +3,8 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="26" name="datafiles">
-    <datafiles number="26" name="Sounds">
+  <datafiles number="33" name="datafiles">
+    <datafiles number="33" name="Sounds">
       <datafile>
         <name>sndBigDoorsClosed.wav</name>
         <exists>-1</exists>
@@ -141,8 +141,76 @@
         </ConfigOptions>
         <filename>sndCrate.wav</filename>
       </datafile>
+      <datafile>
+        <name>footstep1.wav</name>
+        <exists>-1</exists>
+        <size>52268</size>
+        <exportAction>2</exportAction>
+        <exportDir></exportDir>
+        <overwrite>0</overwrite>
+        <freeData>-1</freeData>
+        <removeEnd>0</removeEnd>
+        <store>0</store>
+        <ConfigOptions>
+          <Config name="Default">
+            <CopyToMask>9223372036854775807</CopyToMask>
+          </Config>
+        </ConfigOptions>
+        <filename>footstep1.wav</filename>
+      </datafile>
+      <datafile>
+        <name>footstep2.wav</name>
+        <exists>-1</exists>
+        <size>50988</size>
+        <exportAction>2</exportAction>
+        <exportDir></exportDir>
+        <overwrite>0</overwrite>
+        <freeData>-1</freeData>
+        <removeEnd>0</removeEnd>
+        <store>0</store>
+        <ConfigOptions>
+          <Config name="Default">
+            <CopyToMask>9223372036854775807</CopyToMask>
+          </Config>
+        </ConfigOptions>
+        <filename>footstep2.wav</filename>
+      </datafile>
+      <datafile>
+        <name>footstep3.wav</name>
+        <exists>-1</exists>
+        <size>48172</size>
+        <exportAction>2</exportAction>
+        <exportDir></exportDir>
+        <overwrite>0</overwrite>
+        <freeData>-1</freeData>
+        <removeEnd>0</removeEnd>
+        <store>0</store>
+        <ConfigOptions>
+          <Config name="Default">
+            <CopyToMask>9223372036854775807</CopyToMask>
+          </Config>
+        </ConfigOptions>
+        <filename>footstep3.wav</filename>
+      </datafile>
+      <datafile>
+        <name>footstep4.wav</name>
+        <exists>-1</exists>
+        <size>54060</size>
+        <exportAction>2</exportAction>
+        <exportDir></exportDir>
+        <overwrite>0</overwrite>
+        <freeData>-1</freeData>
+        <removeEnd>0</removeEnd>
+        <store>0</store>
+        <ConfigOptions>
+          <Config name="Default">
+            <CopyToMask>9223372036854775807</CopyToMask>
+          </Config>
+        </ConfigOptions>
+        <filename>footstep4.wav</filename>
+      </datafile>
     </datafiles>
-    <datafiles number="26" name="Video">
+    <datafiles number="33" name="Video">
       <datafile>
         <name>intro2.avi</name>
         <exists>-1</exists>
@@ -616,18 +684,25 @@
       <script>scripts\scrTransitionSpiral.gml</script>
       <script>scripts\scrMulticoloredText.gml</script>
       <script>scripts\instance_xnearest.gml</script>
-      <scripts name="Lightining)">
-        <script>scripts\xg_start.gml</script>
-        <script>scripts\xg_set_region.gml</script>
-        <script>scripts\xg_apply_lighting.gml</script>
-        <script>scripts\xg_update.gml</script>
-        <script>scripts\xg_add_diffuse.gml</script>
-        <script>scripts\xg_add_heightmap.gml</script>
-        <script>scripts\xg_add_end.gml</script>
-        <script>scripts\xg_add_sprite.gml</script>
-        <script>scripts\xg_add_background.gml</script>
-        <script>scripts\xg_add_light_sprite.gml</script>
-        <script>scripts\xg_add_light_background.gml</script>
+      <scripts name="lighting">
+        <script>scripts\lsys_init.gml</script>
+        <script>scripts\lsys_light_add.gml</script>
+        <script>scripts\lsys_light_set_position.gml</script>
+        <script>scripts\lsys_light_set_radius.gml</script>
+        <script>scripts\lsys_light_set_rotation.gml</script>
+        <script>scripts\lsys_light_set_color.gml</script>
+        <script>scripts\lsys_light_set_sprite.gml</script>
+        <script>scripts\lsys_light_delete.gml</script>
+        <script>scripts\lsys_caster_add.gml</script>
+        <script>scripts\lsys_caster_add_point.gml</script>
+        <script>scripts\lsys_caster_set_position.gml</script>
+        <script>scripts\lsys_caster_check_inside.gml</script>
+        <script>scripts\lsys_caster_delete.gml</script>
+        <script>scripts\lsys_update.gml</script>
+        <script>scripts\lsys_draw.gml</script>
+        <script>scripts\lsys_free.gml</script>
+        <script>scripts\merge_walls.gml</script>
+        <script>scripts\vram_usage.gml</script>
       </scripts>
     </scripts>
     <scripts name="Inventory">
@@ -932,6 +1007,7 @@
     <shader type="GLSLES">shaders\shaderBlink.shader</shader>
     <shader type="GLSLES">shaders\shaderCircleTransition.shader</shader>
     <shader type="GLSLES">shaders\shd_multiply.shader</shader>
+    <shader type="GLSLES">shaders\sh_shadow.shader</shader>
   </shaders>
   <fonts name="fonts">
     <font>fonts\fnt0</font>
@@ -1147,16 +1223,17 @@
     <object>objects\oDecoy</object>
     <object>objects\oAchievment</object>
     <object>objects\oWave</object>
+    <object>objects\oEnergitize</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\tmlHuman1</timeline>
   </timelines>
   <rooms name="rooms">
-    <room>rooms\mapMainMenu</room>
+    <room>rooms\mapLevel2</room>
     <room>rooms\mapLevel3</room>
+    <room>rooms\mapMainMenu</room>
     <room>rooms\mapLevel1</room>
     <room>rooms\mapCutscene3</room>
-    <room>rooms\mapLevel2</room>
     <room>rooms\mapLevel4</room>
     <rooms name="Intro">
       <room>rooms\mapTutorial</room>

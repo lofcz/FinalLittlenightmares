@@ -27,5 +27,5 @@ global._lsys_light_surface[global._lsys_lights] = surface_create(argument2 * 2 *
 global._lsys_light_deleted[global._lsys_lights] = false;
 global._lsys_light_changed[global._lsys_lights] = true;
 global._lsys_lights += 1;
+ surface_reset_target()
 return global._lsys_lights - 1;
-//surface_reset_target()

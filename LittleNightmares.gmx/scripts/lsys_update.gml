@@ -46,8 +46,6 @@ draw_clear(c_black);
 draw_set_blend_mode(bm_add);
 for (i = 0; i < global._lsys_lights; i += 1)
 {
-    surface_set_target(global._lsys_light_surface[i]);
-
     if (!global._lsys_light_deleted[i])
         draw_surface_ext(global._lsys_light_surface[i], global._lsys_light_xpos[i] - global._lsys_light_radius[i], global._lsys_light_ypos[i] - global._lsys_light_radius[i], 1, 1, 0, global._lsys_light_color[i], 1);
 }
@@ -57,5 +55,3 @@ draw_rectangle_color(0, 0, room_width * global._lsys_quality, room_height * glob
 draw_set_alpha(1);
 surface_reset_target();
 global._lsys_changed = false;
-surface_reset_target();
-
