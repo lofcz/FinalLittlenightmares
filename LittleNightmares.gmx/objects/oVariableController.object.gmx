@@ -42,6 +42,9 @@ sndFootstep3 =  sga_CreateFX("Sounds/footstep3.wav", 0 );
 sndFootstep4 =  sga_CreateFX("Sounds/footstep4.wav", 0 );
 
 
+// Dabing - Cutscény:
+cut0 =  sga_CreateFX("Dabing/cut0.ogg", 0 );
+cut1 =  sga_CreateFX("Dabing/cut1.ogg", 0 );
 
                              
                                               

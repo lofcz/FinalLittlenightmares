@@ -19,9 +19,9 @@ global.map_type = "wonderland"</code>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1936</w>
-    <h>1056</h>
-    <showGrid>-1</showGrid>
+    <w>1456</w>
+    <h>876</h>
+    <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
     <showBackgrounds>-1</showBackgrounds>
@@ -29,9 +29,9 @@ global.map_type = "wonderland"</code>
     <showViews>-1</showViews>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>0</deleteUnderlyingTiles>
-    <page>2</page>
-    <xoffset>1302</xoffset>
-    <yoffset>1239</yoffset>
+    <page>1</page>
+    <xoffset>-145</xoffset>
+    <yoffset>-69</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="bcgMainMenu" x="0" y="0" htiled="-1" vtiled="-1" hspeed="1" vspeed="0" stretch="0"/>
@@ -1081,7 +1081,7 @@ global.map_type = "wonderland"</code>
     <tile bgName="background11" x="2592" y="2144" w="128" h="128" xo="0" yo="0" id="10005850" name="inst_4DABBB59" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="background11" x="2688" y="1888" w="128" h="128" xo="0" yo="0" id="10005851" name="inst_5B6A2510" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="background11" x="2688" y="2016" w="128" h="128" xo="0" yo="0" id="10005852" name="inst_B5ABCF98" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="background11" x="2688" y="2112" w="128" h="128" xo="0" yo="0" id="10005853" name="inst_6D3BEA2E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background11" x="2720" y="2144" w="128" h="128" xo="0" yo="0" id="10005853" name="inst_6D3BEA2E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="background11" x="2720" y="2240" w="128" h="128" xo="0" yo="0" id="10005854" name="inst_E0FFAFAF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="background11" x="2848" y="2240" w="128" h="128" xo="0" yo="0" id="10005855" name="inst_76D3E42F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="background11" x="2976" y="2240" w="128" h="128" xo="0" yo="0" id="10005856" name="inst_FA4E2365" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
