@@ -3,8 +3,8 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="48" name="datafiles">
-    <datafiles number="48" name="Sounds">
+  <datafiles number="52" name="datafiles">
+    <datafiles number="52" name="Sounds">
       <datafile>
         <name>sndBigDoorsClosed.wav</name>
         <exists>-1</exists>
@@ -210,7 +210,7 @@
         <filename>footstep4.wav</filename>
       </datafile>
     </datafiles>
-    <datafiles number="48" name="Video">
+    <datafiles number="52" name="Video">
       <datafile>
         <name>intro2.avi</name>
         <exists>-1</exists>
@@ -229,7 +229,7 @@
         <filename>intro2.avi</filename>
       </datafile>
     </datafiles>
-    <datafiles number="48" name="Dabing">
+    <datafiles number="52" name="Dabing">
       <datafile>
         <name>cut0.ogg</name>
         <exists>-1</exists>
@@ -263,6 +263,57 @@
           </Config>
         </ConfigOptions>
         <filename>cut1.ogg</filename>
+      </datafile>
+      <datafile>
+        <name>cut2.ogg</name>
+        <exists>-1</exists>
+        <size>37387</size>
+        <exportAction>2</exportAction>
+        <exportDir></exportDir>
+        <overwrite>0</overwrite>
+        <freeData>-1</freeData>
+        <removeEnd>0</removeEnd>
+        <store>0</store>
+        <ConfigOptions>
+          <Config name="Default">
+            <CopyToMask>9223372036854775807</CopyToMask>
+          </Config>
+        </ConfigOptions>
+        <filename>cut2.ogg</filename>
+      </datafile>
+      <datafile>
+        <name>cut3.ogg</name>
+        <exists>-1</exists>
+        <size>36247</size>
+        <exportAction>2</exportAction>
+        <exportDir></exportDir>
+        <overwrite>0</overwrite>
+        <freeData>-1</freeData>
+        <removeEnd>0</removeEnd>
+        <store>0</store>
+        <ConfigOptions>
+          <Config name="Default">
+            <CopyToMask>9223372036854775807</CopyToMask>
+          </Config>
+        </ConfigOptions>
+        <filename>cut3.ogg</filename>
+      </datafile>
+      <datafile>
+        <name>cut4.ogg</name>
+        <exists>-1</exists>
+        <size>34728</size>
+        <exportAction>2</exportAction>
+        <exportDir></exportDir>
+        <overwrite>0</overwrite>
+        <freeData>-1</freeData>
+        <removeEnd>0</removeEnd>
+        <store>0</store>
+        <ConfigOptions>
+          <Config name="Default">
+            <CopyToMask>9223372036854775807</CopyToMask>
+          </Config>
+        </ConfigOptions>
+        <filename>cut4.ogg</filename>
       </datafile>
     </datafiles>
     <datafile>
@@ -493,7 +544,7 @@
         <sprite>sprites\dispenser3_0</sprite>
         <sprite>sprites\sMine</sprite>
         <sprite>sprites\sSpikes</sprite>
-        <sprite>sprites\sprite107</sprite>
+        <sprite>sprites\sFireBreather</sprite>
         <sprite>sprites\sPreassurePlate</sprite>
         <sprite>sprites\sCable1</sprite>
         <sprite>sprites\sCable1_180</sprite>
@@ -517,6 +568,7 @@
         <sprite>sprites\sWall12</sprite>
         <sprite>sprites\sWall11RED</sprite>
         <sprite>sprites\sWall1</sprite>
+        <sprite>sprites\sWall15</sprite>
         <sprite>sprites\sWall2</sprite>
         <sprite>sprites\sCrate</sprite>
         <sprite>sprites\sCrateMoveable</sprite>
@@ -656,6 +708,10 @@
     <sprite>sprites\sWaterbite</sprite>
     <sprite>sprites\sAchievment</sprite>
     <sprite>sprites\sCollectible2</sprite>
+    <sprite>sprites\sHay</sprite>
+    <sprite>sprites\sprite170</sprite>
+    <sprite>sprites\sWarnCircle</sprite>
+    <sprite>sprites\sTurnicet</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Tilesets">
@@ -711,6 +767,9 @@
       <script>scripts\scrEffectKey.gml</script>
       <script>scripts\scrEffectHeal.gml</script>
       <script>scripts\scrEffectWave.gml</script>
+      <script>scripts\scrEffectRealFire.gml</script>
+      <script>scripts\scrEffectEnergetize.gml</script>
+      <script>scripts\scrEffectEnergetizeExplosion.gml</script>
     </scripts>
     <scripts name="Functions">
       <script>scripts\scrRoomTransition.gml</script>
@@ -1037,6 +1096,11 @@
     <script>scripts\scrChangeRoom.gml</script>
     <script>scripts\draw_shader_blink.gml</script>
     <script>scripts\scrAchievment.gml</script>
+    <script>scripts\scrPrepareShaderBlink.gml</script>
+    <script>scripts\scrClearParticles.gml</script>
+    <script>scripts\scrPrepareBubbleEffect.gml</script>
+    <script>scripts\scrBubbleEffect.gml</script>
+    <script>scripts\scrPickup.gml</script>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shaderLight.shader</shader>
@@ -1087,6 +1151,7 @@
             <object>objects\oWall1Effect1</object>
           </objects>
           <object>objects\oWall1</object>
+          <object>objects\oWall15</object>
           <object>objects\oWall11</object>
           <object>objects\oWall12</object>
           <object>objects\oWall14</object>
@@ -1260,15 +1325,17 @@
     <object>objects\oAchievment</object>
     <object>objects\oWave</object>
     <object>objects\oEnergitize</object>
+    <object>objects\oHay</object>
+    <object>objects\oWarnCircle</object>
+    <object>objects\oTurnicet</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\tmlHuman1</timeline>
   </timelines>
   <rooms name="rooms">
-    <room>rooms\mapCutscene1</room>
+    <room>rooms\mapLevel3</room>
     <room>rooms\mapLevel1</room>
     <room>rooms\mapLevel2</room>
-    <room>rooms\mapLevel3</room>
     <room>rooms\mapMainMenu</room>
     <room>rooms\mapLevel4</room>
     <rooms name="Intro">
@@ -1286,6 +1353,7 @@
     <rooms name="Cutscenes">
       <room>rooms\mapCutscene2</room>
       <room>rooms\mapCutscene3</room>
+      <room>rooms\mapCutscene1</room>
     </rooms>
   </rooms>
   <constants number="7">
