@@ -712,6 +712,8 @@
     <sprite>sprites\sprite170</sprite>
     <sprite>sprites\sWarnCircle</sprite>
     <sprite>sprites\sTurnicet</sprite>
+    <sprite>sprites\sLockpick</sprite>
+    <sprite>sprites\sprite175</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Tilesets">
@@ -1333,10 +1335,10 @@
     <timeline>timelines\tmlHuman1</timeline>
   </timelines>
   <rooms name="rooms">
+    <room>rooms\mapMainMenu</room>
     <room>rooms\mapLevel3</room>
     <room>rooms\mapLevel1</room>
     <room>rooms\mapLevel2</room>
-    <room>rooms\mapMainMenu</room>
     <room>rooms\mapLevel4</room>
     <rooms name="Intro">
       <room>rooms\mapTutorial</room>

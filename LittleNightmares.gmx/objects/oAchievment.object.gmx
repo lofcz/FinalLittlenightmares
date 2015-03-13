@@ -170,7 +170,7 @@ draw_set_alpha(aa)
 
 draw_set_halign(fa_center)
 draw_set_valign(fa_middle)
-draw_text(view_xview+xx-256+100,view_yview+16,"Získáno ocenění")
+draw_text(view_xview+xx-256+100,view_yview+16,prefix)
 draw_set_alpha(aaa)
 draw_set_font(fntText)
 draw_text_ext_transformed(view_xview+xx-256+100,view_yview+36,name,25,256-5,xc,xc,0)

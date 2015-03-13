@@ -3,8 +3,8 @@
   <caption></caption>
   <width>5000</width>
   <height>5000</height>
-  <vsnap>16</vsnap>
-  <hsnap>16</hsnap>
+  <vsnap>32</vsnap>
+  <hsnap>32</hsnap>
   <isometric>0</isometric>
   <speed>30</speed>
   <persistent>0</persistent>
@@ -14,14 +14,14 @@
 instance_create(0,0,oOptimalizace)
 global.map_type = "wonderland"
 
-scrAchievment("Vzpomínky","Dostal ses do třetí úrovně, gratulujeme!",2,1)</code>
+scrAchievment("Pulzní otřes","Strom vzpomínek: Vize ohně",2,"Získáno kouzlo",1)</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1024</w>
-    <h>600</h>
+    <w>1456</w>
+    <h>876</h>
     <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
@@ -31,8 +31,8 @@ scrAchievment("Vzpomínky","Dostal ses do třetí úrovně, gratulujeme!",2,1)</
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>0</deleteUnderlyingTiles>
     <page>0</page>
-    <xoffset>1573</xoffset>
-    <yoffset>1539</yoffset>
+    <xoffset>2113</xoffset>
+    <yoffset>3878</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="background14" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -195,8 +195,8 @@ scrAchievment("Vzpomínky","Dostal ses do třetí úrovně, gratulujeme!",2,1)</
     <instance objName="oWall11" x="2784" y="2080" name="inst_FA6F23DF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWall11" x="1536" y="1632" name="inst_55543B53" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWall11" x="1536" y="1664" name="inst_73125413" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oCoin" x="1664" y="1824" name="inst_E8D7175D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oCoin" x="1664" y="1856" name="inst_89FB9E9B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oCoin" x="1664" y="1760" name="inst_E8D7175D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oCoin" x="1664" y="1792" name="inst_89FB9E9B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWall11" x="1536" y="1760" name="inst_41FAB48C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWall11" x="1536" y="1568" name="inst_7F7F3694" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWall11" x="1536" y="1536" name="inst_EEE2697F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -782,10 +782,10 @@ scrAchievment("Vzpomínky","Dostal ses do třetí úrovně, gratulujeme!",2,1)</
     <instance objName="oCrate" x="2208" y="1952" name="inst_7729CB04" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oCrate" x="2208" y="1984" name="inst_183CD732" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oCrate" x="2176" y="1952" name="inst_161CDE91" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oCoin" x="1696" y="1824" name="inst_09421862" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oCoin" x="1696" y="1856" name="inst_4424D12C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oDispenser6_90" x="1536" y="1696" name="inst_C798560A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oDispenser6_90" x="1536" y="1728" name="inst_CF7912F0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oCoin" x="1696" y="1760" name="inst_09421862" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oCoin" x="1696" y="1792" name="inst_4424D12C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oCollectible2" x="3728" y="4672" name="inst_3878755F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oCollectible2" x="2688" y="4480" name="inst_15CDBDB7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oCrate" x="1568" y="1408" name="inst_E2E8BD2D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oCrate" x="1600" y="1408" name="inst_EC79B3A6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oCrate" x="1568" y="1440" name="inst_DF4D9FD9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -1134,8 +1134,8 @@ scrAchievment("Vzpomínky","Dostal ses do třetí úrovně, gratulujeme!",2,1)</
     <instance objName="oWall14" x="2624" y="1760" name="inst_9EF57243" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oBulletin" x="2640" y="1856" name="inst_B66761CA" locked="0" code="&#xA;text = &quot;Pulzní vlna je ideální na odhazování lehčích překážek z cesty.&quot;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oCollectible2" x="3376" y="3760" name="inst_4D30D019" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oCollectible2" x="2688" y="4480" name="inst_15CDBDB7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oCollectible2" x="3728" y="4672" name="inst_3878755F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oWall11" x="1536" y="1696" name="inst_CF7A83B6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oWall11" x="1536" y="1728" name="inst_FFA7837A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="background15" x="1824" y="2176" w="128" h="128" xo="0" yo="0" id="10005570" name="inst_AA849A97" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

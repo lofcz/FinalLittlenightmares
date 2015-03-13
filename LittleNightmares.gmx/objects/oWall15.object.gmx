@@ -81,31 +81,6 @@ ani = 0;
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="oWall15">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if (activated = 1) {other.activated = 1
-if (other.ani = 0) {other.image_speed = 0.2 other.ani = 1} 
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="4" ename="oEnergitize">
       <action>
         <libid>1</libid>
@@ -153,6 +128,31 @@ image_speed = 0.2
     
    }
 //   else {other.activated = 1}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="oWall15">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (activated = 1) {other.activated = 1
+if (other.ani = 0) {other.image_speed = 0.2 other.ani = 1} 
+}
 </string>
           </argument>
         </arguments>
