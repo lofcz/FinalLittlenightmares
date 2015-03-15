@@ -12,7 +12,7 @@
     <point>1376,2128,100</point>
     <point>1376,1792,100</point>
     <point>1520,1792,100</point>
-    <point>1520,2016,100</point>
+    <point>1520,1888,100</point>
     <point>1520,1792,100</point>
     <point>1376,1792,100</point>
     <point>1376,2128,100</point>
@@ -29,12 +29,12 @@
     <point>1840,1776,100</point>
     <point>1840,2144,100</point>
     <point>2016,2144,100</point>
-    <point>2016,2032,100</point>
-    <point>1904,2032,100</point>
-    <point>1904,1936,100</point>
+    <point>2016,2048,100</point>
+    <point>1888,2048,100</point>
+    <point>1888,1936,100</point>
     <point>2192,1936,100</point>
     <point>2192,1680,100</point>
     <point>2000,1680,100</point>
-    <point>2000,1776,100</point>
+    <point>2000,1712,100</point>
   </points>
 </path>

@@ -3,7 +3,7 @@
   <spriteName>sDoor412</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-1</depth>
   <persistent>0</persistent>
   <parentName>par_wall</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -115,7 +115,7 @@ if (activated = 0)
 
 }
 
-     other.x = other.xprevious // Vrátí hráče na přechozí x-osovou souřadnici
+other.x = other.xprevious // Vrátí hráče na přechozí x-osovou souřadnici
 other.y = other.yprevious // Vrátí hráče na přechozí y-osovou souřadnici
 
     

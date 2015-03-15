@@ -7,7 +7,7 @@ fraction = argument4; // Fraction (between 0 and 1)
 
 /******* Configuration variables ********/
 var turns, angle_step;
-turns = 2; // Number of turns to take to wipe out the image; should be >=2
+turns = 3; // Number of turns to take to wipe out the image; should be >=2
 angle_step = 5; // Precision used on drawing circles
 /********/
 
@@ -69,4 +69,12 @@ while (true) {
         }
     }
 }
-draw_primitive_end();   
+draw_primitive_end();
+if (aa > 0) {aa -= 0.02}
+if (aaa < 1) {aaa += 0.1}
+if (xss < 1.3) {xss += 0.02 yss = xss}
+
+draw_set_alpha(aa)
+draw_sprite(sBackEffect,4,view_xview,view_yview[0])
+draw_set_alpha(1)
+draw_sprite_ext(sLoading,0,1024/2,768/2,xss,yss,0,c_white,aaa)   

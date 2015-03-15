@@ -22,5 +22,3 @@ for (i = 0; i < global._lsys_lights; i += 1)
         global._lsys_light_changed[i] = true;
 }
 return global._lsys_caster_points[argument0];
-
-//surface_reset_target()

@@ -133,7 +133,7 @@ a = 1
           <argument>
             <kind>1</kind>
             <string>/// Motion
-
+direction  = ((direction div 90) *90)
 
 if (direction = 0 || direction = 360)
    {
@@ -183,6 +183,7 @@ if (dir = "d")
             } 
             
      }
+direction  = ((direction div 90) *90)
 
 </string>
           </argument>
@@ -223,7 +224,7 @@ if (mode = 2)
        path=path_add();
 
        mp_grid_path(global.grid,path,x,y,((oPlayer.x div 32) *32),((oPlayer.y div 32) *32),0);
-       path_start(path,7,'',1);
+       path_start(path,5,'',1);
 
    }
    /*            

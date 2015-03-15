@@ -26,6 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>oLight.in_room = 1;
+oLight.changed = 1;
+
+
 instance_destroy()
 </string>
           </argument>

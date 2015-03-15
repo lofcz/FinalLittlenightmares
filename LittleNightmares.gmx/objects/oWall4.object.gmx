@@ -8,6 +8,87 @@
   <parentName>par_wall</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Read me!
+
+/*
+Creation code:
+s = "&gt;" || "&lt;" (relative to player)
+axis = "x" || "y"
+
+
+
+*/
+
+
+p = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (axis = "x") 
+   {
+   if (s = "&gt;") {if (oPlayer.x &gt; x) {if (p = 0) {p = 1}}}
+   if (s = "&lt;") {if (oPlayer.x &lt; x) {if (p = 0) {p = 1}}}
+  
+   }  
+   
+  if (axis = "y") 
+   {
+   if (s = "&gt;") {if (oPlayer.y &gt; y) {if (p = 0) {p = 1}}}
+   if (s = "&lt;") {if (oPlayer.y &lt; y) {if (p = 0) {p = 1}}}
+  
+   }  
+
+if (p = 1)
+   {
+    if (image_alpha &gt; 0)
+       {
+               image_alpha -= 0.05
+               image_xscale -= 0.05
+               image_yscale = image_xscale
+        }
+        else {instance_destroy()}
+   }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="4" ename="oPlayer">
       <action>
         <libid>1</libid>

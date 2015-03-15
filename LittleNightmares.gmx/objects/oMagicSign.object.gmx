@@ -26,6 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>image_alpha = 0;
+over = 1;
+dis = 0;
 </string>
           </argument>
         </arguments>
@@ -48,8 +50,29 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (oPlayer.spell_on = 1 &amp;&amp; oPlayer.vision_selected = "vision_blue")
+            <string>if (distance_to_object(oPlayer) = 0)
+   {
+    if (over = 1 &amp;&amp; !(oPlayer.spell_on = 1 &amp;&amp; oPlayer.vision_selected = "vision_blue") &amp;&amp; dis = 0)
+       {
+        over = 0
+        instance_create(oPlayer.x,oPlayer.y,oWarnCircle)
+       }
+   }
+   else 
+        {
+         if (over = 0)
+            {
+             over = 1;
+            }
+        }
+
+
+if (oPlayer.spell_on = 1 &amp;&amp; oPlayer.vision_selected = "vision_blue")
     {
+    if (distance_to_object(oPlayer) = 0)
+       {
+        if (dis = 0) {dis = 1}
+       }
     if (image_alpha &lt; 1)
         {
         image_alpha += 0.1;
@@ -57,10 +80,21 @@
     }
 else
     {
+    if (dis = 0)
+    {
     if (image_alpha &gt; 0)
         {
         image_alpha -= 0.1;
         }
+    }
+    if (dis = 1)
+    {
+    if (image_alpha &gt; 0.4)
+        {
+        image_alpha -= 0.1;
+        }
+
+    }
     
     }
     

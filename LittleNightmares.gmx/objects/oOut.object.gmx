@@ -26,6 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>oLight.in_room = 0;
+oLight.changed = 1;
+
+
 </string>
           </argument>
         </arguments>

@@ -54,9 +54,16 @@ image_alpha = 0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (distance_to_object(platform_oPlayer) -200 &lt; 250)
+            <string>if (distance_to_object(platform_oPlayer) -200 &lt; 200)
    {
     if (st = 0) {st = 1}
+   }
+if (instance_number(oPlayerCutscene) &gt; 0)
+   {
+   if (distance_to_object(oPlayerCutscene) &lt; 130)
+   {
+    if (st = 0) {st = 1}
+    }
    }
    
 if (st = 1) 

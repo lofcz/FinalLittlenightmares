@@ -10,4 +10,3 @@ for (i = 0; i < global._lsys_lights; i += 1)
     if (lsys_caster_check_inside(argument0, i))
         global._lsys_light_changed[i] = true;
 }
-//surface_reset_target()

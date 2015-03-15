@@ -34,6 +34,22 @@ sndBigDoorsClosed = sga_CreateFX("Sounds/sndCloseDoor.wav", 0 );
 sndDoorUnlocked = sga_CreateFX("Sounds/sndDoorUnlocked.wav", 0 );
 sndOldDoorCreaking =  sga_CreateFX("Sounds/sndOldDoorCreaking.wav", 0 );
 sndBolt =  sga_CreateFX("Sounds/sndBolt.wav", 0 );
+sndAchievment =  sga_CreateFX("Sounds/sndAchievment.wav", 0 );
+sndCrate =  sga_CreateFX("Sounds/sndCrate.wav", 0 );
+sndFootstep1 =  sga_CreateFX("Sounds/footstep1.wav", 0 );
+sndFootstep2 =  sga_CreateFX("Sounds/footstep2.wav", 0 );
+sndFootstep3 =  sga_CreateFX("Sounds/footstep3.wav", 0 );
+sndFootstep4 =  sga_CreateFX("Sounds/footstep4.wav", 0 );
+
+
+// Dabing - Cutscény:          
+
+// Cut1
+cut0 =  sga_CreateFX("Dabing/cut0.ogg", 0 );
+cut1 =  sga_CreateFX("Dabing/cut1.ogg", 0 );
+cut2 =  sga_CreateFX("Dabing/cut2.ogg", 0 );
+cut3 =  sga_CreateFX("Dabing/cut3.ogg", 0 );
+cut4 =  sga_CreateFX("Dabing/cut4.ogg", 0 );
 
                              
                                               

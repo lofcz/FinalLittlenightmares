@@ -22,5 +22,3 @@ global._lsys_caster_cy[global._lsys_casters] = 0;
 global._lsys_caster_deleted[global._lsys_casters] = false;
 global._lsys_casters += 1;
 return global._lsys_casters - 1;
-
-//surface_reset_target()
