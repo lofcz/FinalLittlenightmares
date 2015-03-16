@@ -15,4 +15,3 @@ scrEffectCoin() // Vytvoří částicový efekt
 sound_play(sound) // Přehraje zvuk
 mode = 2;
 }
-

@@ -714,6 +714,8 @@
     <sprite>sprites\sTurnicet</sprite>
     <sprite>sprites\sLockpick</sprite>
     <sprite>sprites\sprite175</sprite>
+    <sprite>sprites\sBlood</sprite>
+    <sprite>sprites\sprite177</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Tilesets">
@@ -740,6 +742,8 @@
     <background>background\background16</background>
     <background>background\background17</background>
     <background>background\background18</background>
+    <background>background\background20</background>
+    <background>background\background21</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\pthCutscene</path>
@@ -771,16 +775,12 @@
       <script>scripts\scrEffectWave.gml</script>
       <script>scripts\scrEffectRealFire.gml</script>
       <script>scripts\scrEffectEnergetize.gml</script>
+      <script>scripts\scrPrepareBubbleEffect.gml</script>
+      <script>scripts\scrBubbleEffect.gml</script>
       <script>scripts\scrEffectEnergetizeExplosion.gml</script>
+      <script>scripts\scrEffectImpact.gml</script>
     </scripts>
     <scripts name="Functions">
-      <script>scripts\scrRoomTransition.gml</script>
-      <script>scripts\scrDeathTransition.gml</script>
-      <script>scripts\scrNullSpecialPoints.gml</script>
-      <script>scripts\scrMessageBox.gml</script>
-      <script>scripts\scrTransitionSpiral.gml</script>
-      <script>scripts\scrMulticoloredText.gml</script>
-      <script>scripts\instance_xnearest.gml</script>
       <scripts name="lighting">
         <script>scripts\lsys_init.gml</script>
         <script>scripts\lsys_light_add.gml</script>
@@ -801,10 +801,26 @@
         <script>scripts\merge_walls.gml</script>
         <script>scripts\vram_usage.gml</script>
       </scripts>
+      <script>scripts\scrRoomTransition.gml</script>
+      <script>scripts\scrDeathTransition.gml</script>
+      <script>scripts\scrNullSpecialPoints.gml</script>
+      <script>scripts\scrMessageBox.gml</script>
+      <script>scripts\scrTransitionSpiral.gml</script>
+      <script>scripts\scrMulticoloredText.gml</script>
+      <script>scripts\instance_xnearest.gml</script>
+      <script>scripts\scrPickup.gml</script>
+      <script>scripts\scrClearParticles.gml</script>
+      <script>scripts\scrPrepareShaderBlink.gml</script>
+      <script>scripts\scrAchievment.gml</script>
+      <script>scripts\scrWalk.gml</script>
+      <script>scripts\scrLog.gml</script>
+      <script>scripts\scrChangeRoom.gml</script>
+      <script>scripts\fx.gml</script>
     </scripts>
     <scripts name="Inventory">
       <script>scripts\inventory_item_add.gml</script>
       <script>scripts\inventory_item.gml</script>
+      <script>scripts\inventory_delete.gml</script>
     </scripts>
     <scripts name="Dlls">
       <scripts name="GMMovie">
@@ -1091,18 +1107,8 @@
         <script>scripts\sga_PlayFX.gml</script>
       </scripts>
     </scripts>
-    <script>scripts\scrWalk.gml</script>
-    <script>scripts\scrLog.gml</script>
-    <script>scripts\fx.gml</script>
-    <script>scripts\inventory_delete.gml</script>
-    <script>scripts\scrChangeRoom.gml</script>
+    <script>scripts\scrEffectRain.gml</script>
     <script>scripts\draw_shader_blink.gml</script>
-    <script>scripts\scrAchievment.gml</script>
-    <script>scripts\scrPrepareShaderBlink.gml</script>
-    <script>scripts\scrClearParticles.gml</script>
-    <script>scripts\scrPrepareBubbleEffect.gml</script>
-    <script>scripts\scrBubbleEffect.gml</script>
-    <script>scripts\scrPickup.gml</script>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shaderLight.shader</shader>
@@ -1110,6 +1116,7 @@
     <shader type="GLSLES">shaders\shaderCircleTransition.shader</shader>
     <shader type="GLSLES">shaders\shd_multiply.shader</shader>
     <shader type="GLSLES">shaders\sh_shadow.shader</shader>
+    <shader type="GLSLES">shaders\shd_radial_blur.shader</shader>
   </shaders>
   <fonts name="fonts">
     <font>fonts\fnt0</font>
@@ -1153,6 +1160,7 @@
             <object>objects\oWall1Effect1</object>
           </objects>
           <object>objects\oWall1</object>
+          <object>objects\oWallAntiRed</object>
           <object>objects\oWall15</object>
           <object>objects\oWall11</object>
           <object>objects\oWall12</object>
@@ -1197,6 +1205,9 @@
           </objects>
           <objects name="Pressure plate">
             <object>objects\oDoorPressure41</object>
+          </objects>
+          <objects name="Energetize">
+            <object>objects\oDoor41Energetize</object>
           </objects>
         </objects>
         <objects name="Traps">
@@ -1330,16 +1341,20 @@
     <object>objects\oHay</object>
     <object>objects\oWarnCircle</object>
     <object>objects\oTurnicet</object>
+    <object>objects\oMainMenuShader</object>
+    <object>objects\oBlood</object>
+    <object>objects\oIlusion1</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\tmlHuman1</timeline>
   </timelines>
   <rooms name="rooms">
     <room>rooms\mapMainMenu</room>
-    <room>rooms\mapLevel3</room>
-    <room>rooms\mapLevel1</room>
-    <room>rooms\mapLevel2</room>
     <room>rooms\mapLevel4</room>
+    <room>rooms\mapLevel3</room>
+    <room>rooms\mapLevel2</room>
+    <room>rooms\mapLevel1</room>
+    <room>rooms\platform_mapLevel1</room>
     <rooms name="Intro">
       <room>rooms\mapTutorial</room>
       <room>rooms\mapAlphaSettings</room>
@@ -1349,7 +1364,6 @@
       <rooms name="Perspective top down">
         <room>rooms\mapLevel5</room>
         <room>rooms\mapLevelneurcito</room>
-        <room>rooms\platform_mapLevel1</room>
       </rooms>
     </rooms>
     <rooms name="Cutscenes">
