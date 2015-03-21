@@ -62,13 +62,16 @@ text_spell[3] = "Síla vody"
 text_spell[4] = "Vzpomínka"
 text_spell[5] = "Pulzní otřes"
 text_spell[6] = "Energitizace"
+text_spell[7] = "Zmražení"
+
 
 text_spell_help[1] = "Má 1001 způsobů využití, ideální na odhánění přízraků, přepalování lan, zapalování dveří, odpalu výbušnin..."
 text_spell_help[2] = "Zláme všechny fyzické projektily v oblasti hráče."
-text_spell_help[3] = "Vytvoří pět vodních projektilů, které se rozletí k místu určení. Ideální na zhasínání světel, odvádění pozornosti, připravování pastí-."
+text_spell_help[3] = "Vytvoří pět vodních projektilů, které se rozletí k místu určení. Ideální na zhasínání světel, odvádění pozornosti, připravování pastí."
 text_spell_help[4] = "Alice vytvoří na své pozici svůj odraz. Aktivováním kouzla se Alice vtělí do odrazu. Odraz při znovuaktivaci zanikne."
 text_spell_help[5] = "Alice koncentruje všechen svůj hněv do rychlého impulzu, kterým odhodí lehčí překážky z cesty."
 text_spell_help[6] = "Alice se napojí na přírodní energetickou síť a následně získanou sílu uvolní."
+text_spell_help[7] = "."
 
 </string>
           </argument>

@@ -581,6 +581,7 @@
         <sprite>sprites\sWall9</sprite>
         <sprite>sprites\sWall10</sprite>
         <sprite>sprites\sWall14</sprite>
+        <sprite>sprites\sprite178</sprite>
       </sprites>
       <sprites name="Open-able">
         <sprite>sprites\sChest1</sprite>
@@ -716,6 +717,7 @@
     <sprite>sprites\sprite175</sprite>
     <sprite>sprites\sBlood</sprite>
     <sprite>sprites\sprite177</sprite>
+    <sprite>sprites\sprite179</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Tilesets">
@@ -744,6 +746,7 @@
     <background>background\background18</background>
     <background>background\background20</background>
     <background>background\background21</background>
+    <background>background\background22</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\pthCutscene</path>
@@ -779,6 +782,8 @@
       <script>scripts\scrBubbleEffect.gml</script>
       <script>scripts\scrEffectEnergetizeExplosion.gml</script>
       <script>scripts\scrEffectImpact.gml</script>
+      <script>scripts\scrEffectFrozenImpact.gml</script>
+      <script>scripts\scrEffectFrozenTrail.gml</script>
     </scripts>
     <scripts name="Functions">
       <scripts name="lighting">
@@ -1109,6 +1114,7 @@
     </scripts>
     <script>scripts\scrEffectRain.gml</script>
     <script>scripts\draw_shader_blink.gml</script>
+    <script>scripts\draw_shader_blink_ext.gml</script>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shaderLight.shader</shader>
@@ -1160,6 +1166,7 @@
             <object>objects\oWall1Effect1</object>
           </objects>
           <object>objects\oWall1</object>
+          <object>objects\oWall16</object>
           <object>objects\oWallAntiRed</object>
           <object>objects\oWall15</object>
           <object>objects\oWall11</object>
@@ -1351,9 +1358,9 @@
   <rooms name="rooms">
     <room>rooms\mapMainMenu</room>
     <room>rooms\mapLevel4</room>
+    <room>rooms\mapLevel1</room>
     <room>rooms\mapLevel3</room>
     <room>rooms\mapLevel2</room>
-    <room>rooms\mapLevel1</room>
     <room>rooms\platform_mapLevel1</room>
     <rooms name="Intro">
       <room>rooms\mapTutorial</room>
