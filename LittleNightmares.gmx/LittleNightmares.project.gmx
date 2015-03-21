@@ -1386,9 +1386,9 @@
     <timeline>timelines\tmlHuman1</timeline>
   </timelines>
   <rooms name="rooms">
+    <room>rooms\mapMainMenu</room>
     <room>rooms\mapLevel4</room>
     <room>rooms\mapLevel1</room>
-    <room>rooms\mapMainMenu</room>
     <room>rooms\mapLevel3</room>
     <room>rooms\mapLevel2</room>
     <room>rooms\platform_mapLevel1</room>
