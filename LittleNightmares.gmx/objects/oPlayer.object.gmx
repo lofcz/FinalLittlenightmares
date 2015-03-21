@@ -102,7 +102,7 @@ creators_max = 0  // Počet poznámek stvořitelů v místnosti
 spell = "fireball" // Zvolené kouzlo (výchozí pro červenou vizi)
 footstep = 0; // Přehrávání kroků chůze;
 foot = 1 // Aktuální krok
-for (a = 0 a &lt; 5 a++)  // Odemčené kouzla
+for (a = 0 a &lt; 10 a++)  // Odemčené kouzla
     {
      can_spell[a] = 0;
     }
@@ -112,6 +112,7 @@ for (a = 0 a &lt; 5 a++)  // Odemčené kouzla
 global.vision_violet = 1;
 if (room != mapLevel1 &amp;&amp; room != mapLevel2) {can_spell[1] = 1}
 if (room != mapLevel1 ) {can_spell[2] = 1}
+if (room != mapLevel1 &amp;&amp; room != mapLevel2 &amp;&amp; room != mapLevel3) {can_spell[3] = 1}
 
 //***********************************
 </string>
@@ -495,7 +496,21 @@ if (spell_on = 1 &amp;&amp; vision_selected = "vision_green")
        
 
         }  
+        if (spell = "frost" )
+        {
+        
+        if (mana &gt;= 40)
+           {
+           mana -= 40;
+          
+            f = instance_create(x,y,oFrost)
+            f.dir = dir;
+           }
+           else {   scrLog("Nedostatek many! (40 bodů)",c_red)}
+        
+       
 
+        }
 
   }
 }
