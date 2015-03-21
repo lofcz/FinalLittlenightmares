@@ -14,6 +14,7 @@
 
 instance_create(0,0,oLight)
 instance_create(0,0,oOptimalizace)
+scrAchievment("Energetizace","Strom vzpomínek: Vize života",4,"Získáno kouzlo",1)
 
 
 global.map_type = "wonderland"</code>
@@ -22,8 +23,8 @@ global.map_type = "wonderland"</code>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1024</w>
-    <h>600</h>
+    <w>1456</w>
+    <h>876</h>
     <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
@@ -32,9 +33,9 @@ global.map_type = "wonderland"</code>
     <showViews>0</showViews>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>0</deleteUnderlyingTiles>
-    <page>0</page>
-    <xoffset>546</xoffset>
-    <yoffset>586</yoffset>
+    <page>1</page>
+    <xoffset>1379</xoffset>
+    <yoffset>68</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="background4" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>

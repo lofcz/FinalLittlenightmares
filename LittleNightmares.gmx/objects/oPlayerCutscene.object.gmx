@@ -570,7 +570,7 @@ if (pp = 1)
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="oWall1">
+    <event eventtype="4" ename="oWall1Effect1">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -594,7 +594,7 @@ vspeed = 0
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="oWall1Effect1">
+    <event eventtype="4" ename="oWall1">
       <action>
         <libid>1</libid>
         <id>603</id>

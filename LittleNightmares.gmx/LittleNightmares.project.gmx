@@ -546,6 +546,7 @@
         <sprite>sprites\sSpikes</sprite>
         <sprite>sprites\sSpikes2</sprite>
         <sprite>sprites\sFireBreather</sprite>
+        <sprite>sprites\sFireBreather2</sprite>
         <sprite>sprites\sPreassurePlate</sprite>
         <sprite>sprites\sCable1</sprite>
         <sprite>sprites\sCable1_180</sprite>
@@ -707,6 +708,7 @@
     <sprite>sprites\sSpells</sprite>
     <sprite>sprites\sprite161</sprite>
     <sprite>sprites\sFireball</sprite>
+    <sprite>sprites\sEnergyball</sprite>
     <sprite>sprites\sVein</sprite>
     <sprite>sprites\sWaterbite</sprite>
     <sprite>sprites\sAchievment</sprite>
@@ -789,6 +791,7 @@
       <script>scripts\scrEffectFrozenImpact.gml</script>
       <script>scripts\scrEffectFrozenTrail.gml</script>
       <script>scripts\scrEffectRain.gml</script>
+      <script>scripts\scrEffectDarkEnergy.gml</script>
     </scripts>
     <scripts name="Functions">
       <scripts name="lighting">
@@ -1142,6 +1145,7 @@
     <objects name="Walls (blocks)">
       <objects name="Solid">
         <object>objects\oWall1</object>
+        <object>objects\oWall19</object>
         <object>objects\oWall1Red</object>
         <object>objects\oWall2</object>
         <object>objects\oWall3</object>
@@ -1233,6 +1237,7 @@
         <object>objects\object122</object>
         <object>objects\oDispeser5_180</object>
         <object>objects\oDispenser3_90</object>
+        <object>objects\oDispenser3_2_90</object>
         <object>objects\oPreassurePlate</object>
         <object>objects\oPressurePlate</object>
         <object>objects\oCable1</object>
@@ -1283,6 +1288,7 @@
       <objects name="Bolts">
         <object>objects\oArrow</object>
         <object>objects\oFireballTRAP</object>
+        <object>objects\oEnergyballTRAP</object>
         <object>objects\oBoltJungle</object>
         <object>objects\oBolt</object>
         <object>objects\par_bolts</object>
@@ -1332,9 +1338,10 @@
     </objects>
     <objects name="Decorations">
       <objects name="Effects">
+        <object>objects\oBlood</object>
+        <object>objects\oBloodTriger</object>
         <object>objects\oIcicle</object>
         <object>objects\oHay</object>
-        <object>objects\oBlood</object>
         <object>objects\oWarnCircle</object>
         <object>objects\oEmptyPotion</object>
       </objects>
@@ -1377,20 +1384,20 @@
     <timeline>timelines\tmlHuman1</timeline>
   </timelines>
   <rooms name="rooms">
-    <room>rooms\mapMainMenu</room>
     <room>rooms\mapLevel4</room>
     <room>rooms\mapLevel1</room>
+    <room>rooms\mapMainMenu</room>
     <room>rooms\mapLevel3</room>
     <room>rooms\mapLevel2</room>
     <room>rooms\platform_mapLevel1</room>
     <rooms name="Intro">
+      <room>rooms\mapLevel5</room>
       <room>rooms\mapTutorial</room>
       <room>rooms\mapAlphaSettings</room>
       <room>rooms\mapLogo</room>
     </rooms>
     <rooms name="Levels">
       <rooms name="Perspective top down">
-        <room>rooms\mapLevel5</room>
         <room>rooms\mapLevelneurcito</room>
       </rooms>
     </rooms>
