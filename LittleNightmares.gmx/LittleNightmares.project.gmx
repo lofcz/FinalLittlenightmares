@@ -723,6 +723,7 @@
     <sprite>sprites\sprite177</sprite>
     <sprite>sprites\sprite179</sprite>
     <sprite>sprites\sIcicle</sprite>
+    <sprite>sprites\sBrickFrozen</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Tilesets">
@@ -1341,6 +1342,7 @@
         <object>objects\oBlood</object>
         <object>objects\oBloodTriger</object>
         <object>objects\oIcicle</object>
+        <object>objects\oBrickFrozen</object>
         <object>objects\oHay</object>
         <object>objects\oWarnCircle</object>
         <object>objects\oEmptyPotion</object>
@@ -1407,7 +1409,8 @@
       <room>rooms\mapCutscene1</room>
     </rooms>
   </rooms>
-  <constants number="7">
+  <constants number="8">
+    <constant name="dark_skin">4</constant>
     <constant name="littlenightmares_ini">"littlenightmares.data"</constant>
     <constant name="dreveny_skin">3</constant>
     <constant name="jungle_skin">2</constant>

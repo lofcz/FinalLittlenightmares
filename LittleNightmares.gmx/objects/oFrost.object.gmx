@@ -163,6 +163,9 @@ scrEffectFrozenImpact()
             <string>repeat(irandom_range(12,20))
                            {
                             instance_create(xprevious,yprevious,oIcicle)
+                            instance_create(xprevious,yprevious,oBrickFrozen)
+
+            
                            }
 instance_destroy()
 //scrEffectFrozenImpact()
