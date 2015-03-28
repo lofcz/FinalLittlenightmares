@@ -36,4 +36,3 @@ if (mode = 2)
     }
     else {instance_destroy()}
    }
-

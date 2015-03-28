@@ -28,5 +28,8 @@
     <frame index="5">images\sGUI_5.png</frame>
     <frame index="6">images\sGUI_6.png</frame>
     <frame index="7">images\sGUI_7.png</frame>
+    <frame index="8">images\sGUI_8.png</frame>
+    <frame index="9">images\sGUI_9.png</frame>
+    <frame index="10">images\sGUI_10.png</frame>
   </frames>
 </sprite>

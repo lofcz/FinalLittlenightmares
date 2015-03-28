@@ -498,6 +498,8 @@
       <sprites name="Items">
         <sprites name="Coins">
           <sprite>sprites\sCoin</sprite>
+          <sprite>sprites\sCoinBACKUP</sprite>
+          <sprite>sprites\sCoinFrozen</sprite>
           <sprite>sprites\sCoinBLUE</sprite>
           <sprite>sprites\sCoinGhost</sprite>
           <sprite>sprites\sCoinIF</sprite>
@@ -553,6 +555,7 @@
       </sprites>
       <sprites name="Doors">
         <sprite>sprites\sDoor41</sprite>
+        <sprite>sprites\sprite197</sprite>
         <sprite>sprites\sprite142</sprite>
         <sprite>sprites\sprite106</sprite>
         <sprite>sprites\sDoor14</sprite>
@@ -571,6 +574,7 @@
         <sprite>sprites\sWall11RED</sprite>
         <sprite>sprites\sWall1</sprite>
         <sprite>sprites\sWall17</sprite>
+        <sprite>sprites\sWall18</sprite>
         <sprite>sprites\sWall15</sprite>
         <sprite>sprites\sWall2</sprite>
         <sprite>sprites\sCrate</sprite>
@@ -591,6 +595,10 @@
       </sprites>
       <sprites name="HalfBlocks">
         <sprite>sprites\sprite91</sprite>
+        <sprite>sprites\Wall18_01</sprite>
+        <sprite>sprites\Wall18_02</sprite>
+        <sprite>sprites\Wall18_03</sprite>
+        <sprite>sprites\Wall18_04</sprite>
         <sprite>sprites\sprite92</sprite>
         <sprite>sprites\sprite93</sprite>
         <sprite>sprites\sprite94</sprite>
@@ -724,6 +732,11 @@
     <sprite>sprites\sprite179</sprite>
     <sprite>sprites\sIcicle</sprite>
     <sprite>sprites\sBrickFrozen</sprite>
+    <sprite>sprites\sprite187</sprite>
+    <sprite>sprites\sprite189</sprite>
+    <sprite>sprites\sprite196</sprite>
+    <sprite>sprites\sprite191</sprite>
+    <sprite>sprites\sprite198</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Tilesets">
@@ -731,6 +744,7 @@
       <background>background\bcgTilesetFloor</background>
       <background>background\bcgTilesetCave</background>
       <background>background\bcgTileFloorMetal1</background>
+      <background>background\background22</background>
       <background>background\bcgTileCarpet</background>
       <background>background\bcgTileWoodenFloor</background>
       <background>background\background3</background>
@@ -786,7 +800,6 @@
       <script>scripts\scrEffectRealFire.gml</script>
       <script>scripts\scrEffectEnergetize.gml</script>
       <script>scripts\scrPrepareBubbleEffect.gml</script>
-      <script>scripts\scrBubbleEffect.gml</script>
       <script>scripts\scrEffectEnergetizeExplosion.gml</script>
       <script>scripts\scrEffectImpact.gml</script>
       <script>scripts\scrEffectFrozenImpact.gml</script>
@@ -815,6 +828,8 @@
         <script>scripts\merge_walls.gml</script>
         <script>scripts\vram_usage.gml</script>
       </scripts>
+      <script>scripts\scrBubbleEffect.gml</script>
+      <script>scripts\scrBubbleEffectExt.gml</script>
       <script>scripts\scrRoomTransition.gml</script>
       <script>scripts\scrDeathTransition.gml</script>
       <script>scripts\scrNullSpecialPoints.gml</script>
@@ -1140,12 +1155,14 @@
     <font>fonts\fntTextSmall</font>
     <font>fonts\fntLetters</font>
     <font>fonts\fntInfra</font>
+    <font>fonts\font7</font>
   </fonts>
   <objects name="objects">
     <object>objects\oPlayer</object>
     <objects name="Walls (blocks)">
       <objects name="Solid">
         <object>objects\oWall1</object>
+        <object>objects\oWall20</object>
         <object>objects\oWall19</object>
         <object>objects\oWall1Red</object>
         <object>objects\oWall2</object>
@@ -1184,6 +1201,12 @@
           <object>objects\oHalfWall2_3</object>
           <object>objects\oHalfWall2_4</object>
         </objects>
+        <objects name="3">
+          <object>objects\oWallHalf3_1</object>
+          <object>objects\oWallHalf3_2</object>
+          <object>objects\oWallHalf3_3</object>
+          <object>objects\oWallHalf4_4</object>
+        </objects>
       </objects>
       <objects name="Effects">
         <object>objects\oWall1Effect1</object>
@@ -1221,6 +1244,7 @@
         </objects>
         <objects name="Energetize">
           <object>objects\oDoor41Energetize</object>
+          <object>objects\oDoor412Energetize</object>
         </objects>
       </objects>
       <objects name="Traps">
@@ -1257,6 +1281,9 @@
     </objects>
     <objects name="Pickable">
       <object>objects\oCoin</object>
+      <object>objects\oCoinEffect</object>
+      <object>objects\oCoin5</object>
+      <object>objects\oCoinFrozen</object>
       <object>objects\oCoinBLUE</object>
       <object>objects\oCoinIF</object>
       <object>objects\oKey</object>
@@ -1381,17 +1408,19 @@
         <object>objects\platform_oPlayer</object>
       </objects>
     </objects>
+    <object>objects\oCreditList</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\tmlHuman1</timeline>
   </timelines>
   <rooms name="rooms">
-    <room>rooms\mapMainMenu</room>
     <room>rooms\mapLevel4</room>
     <room>rooms\mapLevel1</room>
+    <room>rooms\mapMainMenu</room>
     <room>rooms\mapLevel3</room>
     <room>rooms\mapLevel2</room>
     <room>rooms\platform_mapLevel1</room>
+    <room>rooms\mapCredits</room>
     <rooms name="Intro">
       <room>rooms\mapLevel5</room>
       <room>rooms\mapTutorial</room>
