@@ -737,6 +737,8 @@
     <sprite>sprites\sprite196</sprite>
     <sprite>sprites\sprite191</sprite>
     <sprite>sprites\sprite198</sprite>
+    <sprite>sprites\sprite199</sprite>
+    <sprite>sprites\sprite200</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Tilesets">
@@ -768,6 +770,7 @@
     <backgrounds name="Loading">
       <background>background\background17</background>
     </backgrounds>
+    <background>background\bcgPattern</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\pthCutscene</path>
@@ -1414,11 +1417,11 @@
     <timeline>timelines\tmlHuman1</timeline>
   </timelines>
   <rooms name="rooms">
-    <room>rooms\mapMainMenu</room>
-    <room>rooms\mapLevel1</room>
-    <room>rooms\mapLevel4</room>
-    <room>rooms\mapLevel3</room>
     <room>rooms\mapLevel2</room>
+    <room>rooms\mapLevel3</room>
+    <room>rooms\mapLevel1</room>
+    <room>rooms\mapMainMenu</room>
+    <room>rooms\mapLevel4</room>
     <room>rooms\platform_mapLevel1</room>
     <room>rooms\mapCredits</room>
     <rooms name="Intro">

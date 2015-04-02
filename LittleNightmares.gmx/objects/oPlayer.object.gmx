@@ -3,7 +3,7 @@
   <spriteName>sPlayer</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-1</depth>
+  <depth>-2</depth>
   <persistent>0</persistent>
   <parentName>par_player</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -643,7 +643,7 @@ if (keyboard_check_pressed(ord("Q")) &amp;&amp; can_move = 1)
     if (vision_selected = "vision_blue")         
        {
        if (global.vision_violet = 0) {vision_selected = "vision_red" spell = "fireball"  exit}
-       else {vision_selected = "vision_violet" spell = "decoy" exit}
+       else {vision_selected = "vision_violet" spell = "decoy" oLight.spell = "Vzpomínka" exit}
        
        }
     if (vision_selected = "vision_violet")   {vision_selected = "vision_red" spell = "fireball"  exit}

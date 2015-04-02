@@ -28,8 +28,94 @@
             <string>text_alpha = 0;
 color = c_white
 green = 100
-
+alarm[0] = 1;
 image_speed = 0;
+d = 0;
+ss = "";
+
+
+width = 400;
+height = 500;
+padding = 8;
+
+start = ds_list_create();
+ds_list_add( start, 0);
+count = 0;
+last_space = 0;
+line = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>message = text;
+d = 1;
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>
+repeat(string_length(text))
+{
+if ( string_width( ss ) &gt; width-padding-padding ){
+message = string_delete( message, last_space, 1);
+message = string_insert ("#", message, last_space);
+ds_list_add( start, last_space+1 );
+
+}
+
+//Make sure
+if(count &lt; string_length( message )) {
+    //Set the last space variable
+    if (string_char_at( message, count ) == " ") {
+         last_space = count;
+    }
+    
+    //Increme the count
+    count ++;
+}
+
+//Move up a line
+if(string_height( ss ) &gt; height-padding ) {
+   line ++;
+}
+
+//Grab the string
+ss = string_copy( message, ds_list_find_value( start, line), count-ds_list_find_value( start, line) );
+}
 </string>
           </argument>
         </arguments>
@@ -95,6 +181,7 @@ else
     x = xprevious
     y = yprevious
     }
+
 </string>
           </argument>
         </arguments>
@@ -117,17 +204,25 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_font(fntText)
+            <string>if (d = 1)
+{
+draw_set_font(fntText)
 draw_sprite_ext(sprite_index,image_index,x,y,1,1,image_angle,color,image_alpha)
 draw_set_colour(c_white);
 draw_set_alpha(text_alpha);
 if (distance_to_object(par_player) &lt; 30)
     {
     depth = -10
-     draw_set_colour(c_dkgray)    
-    draw_text_ext(x-131,y-60,text,15,399)
+     draw_set_colour(c_dkgray)
+     //#Owned:  [c="+string(c_lime)+"]Yes[/c]    
+ //   draw_text_ext(x-131,y-60,text,15,399)
 draw_set_color(c_white)
-    draw_text_ext(x-130,y-60,text,15,400)
+  //  draw_text_ext(x-130,y-60,text,15,400)
+  
+
+
+  
+ scrMulticoloredText(x-130,y-60,ss)
    
 
     }
@@ -137,6 +232,7 @@ depth = 0
 }
 draw_set_alpha(1);
 draw_set_colour(c_black);
+}
 </string>
           </argument>
         </arguments>

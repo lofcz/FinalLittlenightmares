@@ -5,7 +5,7 @@
     st = '[c=';
     et = ']';
     ct = '[/c]';
-    
+
     l = string_length(str);
     h = string_height(' ');
     stl = string_length(st);
@@ -41,4 +41,3 @@
         }
     }
     draw_set_color(pc);
-

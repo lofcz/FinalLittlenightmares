@@ -369,7 +369,7 @@ if (line = 3)
    draw_sprite(sSpells,3,view_xview+512,view_yview+256)
    if (oPlayer.can_spell[3] = 1) {draw_sprite(sSpells,8,view_xview+512,view_yview+256+96)}
 
-   if (mouse_x &gt; view_xview+512 &amp;&amp; mouse_x &lt; view_xview+512+64 &amp;&amp; mouse_y &gt; view_yview+256 &amp;&amp; mouse_y &lt; view_yview+256+64 &amp;&amp; oPlayer.can_spell[3] = 1)
+   if (mouse_x &gt; view_xview+512 &amp;&amp; mouse_x &lt; view_xview+512+64 &amp;&amp; mouse_y &gt; view_yview+256 &amp;&amp; mouse_y &lt; view_yview+256+64)
    {
    if (text_alpha3 &lt; 1) {text_alpha3 += 0.1}
    if (text_alpha4 &lt; 1) {text_alpha4 += 0.05}
@@ -394,7 +394,7 @@ if (line = 3)
        instance_destroy()
       } 
    }
- else if (mouse_x &gt; view_xview+512 &amp;&amp; mouse_x &lt; view_xview+512+64 &amp;&amp; mouse_y &gt; view_yview+256+96 &amp;&amp; mouse_y &lt; view_yview+256+96+64)
+ else if (mouse_x &gt; view_xview+512 &amp;&amp; mouse_x &lt; view_xview+512+64 &amp;&amp; mouse_y &gt; view_yview+256+96 &amp;&amp; mouse_y &lt; view_yview+256+96+64 &amp;&amp; oPlayer.can_spell[3] = 1)
    {
    if (text_alpha3 &lt; 1) {text_alpha3 += 0.1}
    if (text_alpha4 &lt; 1) {text_alpha4 += 0.05}
