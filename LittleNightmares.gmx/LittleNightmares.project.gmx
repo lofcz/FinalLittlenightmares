@@ -739,6 +739,11 @@
     <sprite>sprites\sprite198</sprite>
     <sprite>sprites\sprite199</sprite>
     <sprite>sprites\sprite200</sprite>
+    <sprite>sprites\sCollisionBlock</sprite>
+    <sprite>sprites\sCollisionRect1</sprite>
+    <sprite>sprites\sCollisionRect2</sprite>
+    <sprite>sprites\sCollisionRect3</sprite>
+    <sprite>sprites\sCollisionRect4</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Tilesets">
@@ -771,6 +776,7 @@
       <background>background\background17</background>
     </backgrounds>
     <background>background\bcgPattern</background>
+    <background>background\bcgWalls</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\pthCutscene</path>
@@ -1165,6 +1171,11 @@
     <objects name="Walls (blocks)">
       <objects name="Solid">
         <object>objects\oWall1</object>
+        <object>objects\oCollisionBlock</object>
+        <object>objects\oCollisionRect1</object>
+        <object>objects\oCollisionRect2</object>
+        <object>objects\oCollisionRect3</object>
+        <object>objects\oCollisionRect4</object>
         <object>objects\oWall20</object>
         <object>objects\oWall19</object>
         <object>objects\oWall1Red</object>
@@ -1417,10 +1428,10 @@
     <timeline>timelines\tmlHuman1</timeline>
   </timelines>
   <rooms name="rooms">
+    <room>rooms\mapMainMenu</room>
+    <room>rooms\mapLevel1</room>
     <room>rooms\mapLevel2</room>
     <room>rooms\mapLevel3</room>
-    <room>rooms\mapLevel1</room>
-    <room>rooms\mapMainMenu</room>
     <room>rooms\mapLevel4</room>
     <room>rooms\platform_mapLevel1</room>
     <room>rooms\mapCredits</room>

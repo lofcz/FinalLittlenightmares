@@ -20,8 +20,8 @@ scrAchievment("Pulzní otřes","Strom vzpomínek: Vize ohně",2,"Získáno kouzl
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1024</w>
-    <h>600</h>
+    <w>1456</w>
+    <h>876</h>
     <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
@@ -31,8 +31,8 @@ scrAchievment("Pulzní otřes","Strom vzpomínek: Vize ohně",2,"Získáno kouzl
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>0</deleteUnderlyingTiles>
     <page>1</page>
-    <xoffset>12</xoffset>
-    <yoffset>-57</yoffset>
+    <xoffset>2329</xoffset>
+    <yoffset>2094</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="background14" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
